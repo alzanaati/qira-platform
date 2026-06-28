@@ -1,1 +1,60 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VSZWYsIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnOw0KaW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAnQC9saWIvc3VwYWJhc2UvY2xpZW50JzsNCmltcG9ydCB7IFNlbmQgfSBmcm9tICdsdWNpZGUtcmVhY3QnOw0KaW50ZXJmYWNlIE1lc3NhZ2UgeyBpZDogc3RyaW5nOyB1c2VyX2lkOiBzdHJpbmc7IGNvbnRlbnQ6IHN0cmluZzsgY3JlYXRlZF9hdDogc3RyaW5nOyB1c2Vycz86IHsgdXNlcm5hbWU6IHN0cmluZzsgYXZhdGFyX3VybD86IHN0cmluZyB9OyB9DQppbnRlcmZhY2UgTGl2ZUNoYXRQcm9wcyB7IHN0cmVhbUlkOiBzdHJpbmc7IHVzZXJJZDogc3RyaW5nOyB9DQpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBMaXZlQ2hhdCh7IHN0cmVhbUlkLCB1c2VySWQgfTogTGl2ZUNoYXRQcm9wcykgew0KICBjb25zdCBzdXBhYmFzZSA9IGNyZWF0ZUNsaWVudCgpOw0KICBjb25zdCBbbWVzc2FnZXMsIHNldE1lc3NhZ2VzXSA9IHVzZVN0YXRlPE1lc3NhZ2VbXT4oW10pOw0KICBjb25zdCBbdGV4dCwgc2V0VGV4dF0gPSB1c2VTdGF0ZSgnJyk7DQogIGNvbnN0IFtzZW5kaW5nLCBzZXRTZW5kaW5nXSA9IHVzZVN0YXRlKGZhbHNlKTsNCiAgY29uc3QgYm90dG9tUmVmID0gdXNlUmVmPEhUTUxEaXZFbGVtZW50PihudWxsKTsNCiAgdXNlRWZmZWN0KCgpID0+IHsNCiAgICBzdXBhYmFzZS5mcm9tKCdsaXZlX21lc3NhZ2VzJykuc2VsZWN0KCcqLCB1c2Vycyh1c2VybmFtZSwgYXZhdGFyX3VybCknKS5lcSgnc3RyZWFtX2lkJywgc3RyZWFtSWQpLm9yZGVyKCdjcmVhdGVkX2F0JykudGhlbigoeyBkYXRhIH0pID0+IHsgaWYgKGRhdGEpIHNldE1lc3NhZ2VzKGRhdGEgYXMgTWVzc2FnZVtdKTsgfSk7DQogICAgY29uc3QgY2ggPSBzdXBhYmFzZS5jaGFubmVsKCdjaGF0LScgKyBzdHJlYW1JZCkNCiAgICAgIC5vbigncG9zdGdyZXNfY2hhbmdlcycsIHsgZXZlbnQ6ICdJTlNFUlQnLCBzY2hlbWE6ICdwdWJsaWMnLCB0YWJsZTogJ2xpdmVfbWVzc2FnZXMnLCBmaWx0ZXI6ICdzdHJlYW1faWQ9ZXEuJyArIHN0cmVhbUlkIH0sDQogICAgICAgIGFzeW5jIChwYXlsb2FkOiBhbnkpID0+IHsNCiAgICAgICAgICBjb25zdCB7IGRhdGEgfSA9IGF3YWl0IHN1cGFiYXNlLmZyb20oJ3VzZXJzJykuc2VsZWN0KCd1c2VybmFtZSxhdmF0YXJfdXJsJykuZXEoJ2lkJywgcGF5bG9hZC5uZXcudXNlcl9pZCkuc2luZ2xlKCk7DQogICAgICAgICAgc2V0TWVzc2FnZXMocHJldiA9PiBbLi4ucHJldiwgeyAuLi5wYXlsb2FkLm5ldywgdXNlcnM6IGRhdGEgfV0pOw0KICAgICAgICB9KS5zdWJzY3JpYmUoKTsNCiAgICByZXR1cm4gKCkgPT4geyBzdXBhYmFzZS5yZW1vdmVDaGFubmVsKGNoKTsgfTsNCiAgfSwgW3N0cmVhbUlkXSk7DQogIHVzZUVmZmVjdCgoKSA9PiB7IGJvdHRvbVJlZi5jdXJyZW50Py5zY3JvbGxJbnRvVmlldyh7IGJlaGF2aW9yOiAnc21vb3RoJyB9KTsgfSwgW21lc3NhZ2VzXSk7DQogIGNvbnN0IHNlbmQgPSBhc3luYyAoKSA9PiB7DQogICAgaWYgKCF0ZXh0LnRyaW0oKSB8fCBzZW5kaW5nKSByZXR1cm47DQogICAgc2V0U2VuZGluZyh0cnVlKTsNCiAgICBhd2FpdCBzdXBhYmFzZS5mcm9tKCdsaXZlX21lc3NhZ2VzJykuaW5zZXJ0KHsgc3RyZWFtX2lkOiBzdHJlYW1JZCwgdXNlcl9pZDogdXNlcklkLCBjb250ZW50OiB0ZXh0LnRyaW0oKSB9KTsNCiAgICBzZXRUZXh0KCcnKTsNCiAgICBzZXRTZW5kaW5nKGZhbHNlKTsNCiAgfTsNCiAgcmV0dXJuICgNCiAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBoLWZ1bGwgYmctZ3JheS05MDAiPg0KICAgICAgPGRpdiBjbGFzc05hbWU9InAtMyBib3JkZXItYiBib3JkZXItZ3JheS03MDAiPjxoMyBjbGFzc05hbWU9InRleHQtd2hpdGUgZm9udC1tZWRpdW0gdGV4dC1zbSI+2KfZhNiv2LHYr9i02Kkg2KfZhNmF2KjYp9i02LHYqTwvaDM+PC9kaXY+DQogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleC0xIG92ZXJmbG93LXktYXV0byBwLTMgc3BhY2UteS0zIj4NCiAgICAgICAge21lc3NhZ2VzLm1hcChtID0+ICgNCiAgICAgICAgICA8ZGl2IGtleT17bS5pZH0gY2xhc3NOYW1lPXtgZmxleCBnYXAtMiAke20udXNlcl9pZCA9PT0gdXNlcklkID8gJ2ZsZXgtcm93LXJldmVyc2UnIDogJyd9YH0+DQogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy03IGgtNyByb3VuZGVkLWZ1bGwgYmctYmx1ZS02MDAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgdGV4dC13aGl0ZSB0ZXh0LXhzIHNocmluay0wIj4NCiAgICAgICAgICAgICAge20udXNlcnM/LnVzZXJuYW1lPy5bMF0/LnRvVXBwZXJDYXNlKCkgfHwgJ9ifJ30NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2BtYXgtdy1bNzUlXSAke20udXNlcl9pZCA9PT0gdXNlcklkID8gJ2l0ZW1zLWVuZCcgOiAnaXRlbXMtc3RhcnQnfSBmbGV4IGZsZXgtY29sYH0+DQogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1ncmF5LTQwMCB0ZXh0LXhzIG1iLTEiPnttLnVzZXJzPy51c2VybmFtZSB8fCAn2YXYrNmH2YjZhCd9PC9zcGFuPg0KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17YHB4LTMgcHktMiByb3VuZGVkLTJ4bCB0ZXh0LXNtIHRleHQtd2hpdGUgJHttLnVzZXJfaWQgPT09IHVzZXJJZCA/ICdiZy1ibHVlLTYwMCByb3VuZGVkLXRyLXNtJyA6ICdiZy1ncmF5LTcwMCByb3VuZGVkLXRsLXNtJ31gfT4NCiAgICAgICAgICAgICAgICB7bS5jb250ZW50fQ0KICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgIDwvZGl2Pg0KICAgICAgICApKX0NCiAgICAgICAgPGRpdiByZWY9e2JvdHRvbVJlZn0gLz4NCiAgICAgIDwvZGl2Pg0KICAgICAgPGRpdiBjbGFzc05hbWU9InAtMyBib3JkZXItdCBib3JkZXItZ3JheS03MDAgZmxleCBnYXAtMiI+DQogICAgICAgIDxpbnB1dCB2YWx1ZT17dGV4dH0gb25DaGFuZ2U9e2UgPT4gc2V0VGV4dChlLnRhcmdldC52YWx1ZSl9IG9uS2V5RG93bj17ZSA9PiB7IGlmIChlLmtleSA9PT0gJ0VudGVyJyAmJiAhZS5zaGlmdEtleSkgeyBlLnByZXZlbnREZWZhdWx0KCk7IHNlbmQoKTsgfSB9fQ0KICAgICAgICAgIHBsYWNlaG9sZGVyPSLYp9mD2KrYqCDYsdiz2KfZhNipLi4uIiBjbGFzc05hbWU9ImZsZXgtMSBiZy1ncmF5LTgwMCB0ZXh0LXdoaXRlIHRleHQtc20gcm91bmRlZC1mdWxsIHB4LTQgcHktMiBvdXRsaW5lLW5vbmUgYm9yZGVyIGJvcmRlci1ncmF5LTYwMCBmb2N1czpib3JkZXItYmx1ZS01MDAgdGV4dC1yaWdodCIgLz4NCiAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXtzZW5kfSBkaXNhYmxlZD17IXRleHQudHJpbSgpIHx8IHNlbmRpbmd9DQogICAgICAgICAgY2xhc3NOYW1lPSJ3LTkgaC05IGJnLWJsdWUtNjAwIGhvdmVyOmJnLWJsdWUtNzAwIGRpc2FibGVkOm9wYWNpdHktNDAgcm91bmRlZC1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHRyYW5zaXRpb24tY29sb3JzIj4NCiAgICAgICAgICA8U2VuZCBzaXplPXsxNH0gY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIiAvPg0KICAgICAgICA8L2J1dHRvbj4NCiAgICAgIDwvZGl2Pg0KICAgIDwvZGl2Pg0KICApOw0KfQ0K"}
+'use client';
+import { useEffect, useRef, useState } from 'react';
+import { createClient } from '@/lib/supabase/client';
+import { Send } from 'lucide-react';
+interface Message { id: string; user_id: string; content: string; created_at: string; users?: { username: string; avatar_url?: string }; }
+interface LiveChatProps { streamId: string; userId: string; }
+export default function LiveChat({ streamId, userId }: LiveChatProps) {
+  const supabase = createClient();
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [text, setText] = useState('');
+  const [sending, setSending] = useState(false);
+  const bottomRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    supabase.from('live_messages').select('*, users(username, avatar_url)').eq('stream_id', streamId).order('created_at').then(({ data }) => { if (data) setMessages(data as Message[]); });
+    const ch = supabase.channel('chat-' + streamId)
+      .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'live_messages', filter: 'stream_id=eq.' + streamId },
+        async (payload: any) => {
+          const { data } = await supabase.from('users').select('username,avatar_url').eq('id', payload.new.user_id).single();
+          setMessages(prev => [...prev, { ...payload.new, users: data }]);
+        }).subscribe();
+    return () => { supabase.removeChannel(ch); };
+  }, [streamId]);
+  useEffect(() => { bottomRef.current?.scrollIntoView({ behavior: 'smooth' }); }, [messages]);
+  const send = async () => {
+    if (!text.trim() || sending) return;
+    setSending(true);
+    await supabase.from('live_messages').insert({ stream_id: streamId, user_id: userId, content: text.trim() });
+    setText('');
+    setSending(false);
+  };
+  return (
+    <div className="flex flex-col h-full bg-gray-900">
+      <div className="p-3 border-b border-gray-700"><h3 className="text-white font-medium text-sm">Ø§ÙØ¯Ø±Ø¯Ø´Ø© Ø§ÙÙØ¨Ø§Ø´Ø±Ø©</h3></div>
+      <div className="flex-1 overflow-y-auto p-3 space-y-3">
+        {messages.map(m => (
+          <div key={m.id} className={`flex gap-2 ${m.user_id === userId ? 'flex-row-reverse' : ''}`}>
+            <div className="w-7 h-7 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs shrink-0">
+              {m.users?.username?.[0]?.toUpperCase() || 'Ø'}
+            </div>
+            <div className={`max-w-[75%] ${m.user_id === userId ? 'items-end' : 'items-start'} flex flex-col`}>
+              <span className="text-gray-400 text-xs mb-1">{m.users?.username || 'ÙØ¬ÙÙÙ'}</span>
+              <div className={`px-3 py-2 rounded-2xl text-sm text-white ${m.user_id === userId ? 'bg-blue-600 rounded-tr-sm' : 'bg-gray-700 rounded-tl-sm'}`}>
+                {m.content}
+              </div>
+            </div>
+          </div>
+        ))}
+        <div ref={bottomRef} />
+      </div>
+      <div className="p-3 border-t border-gray-700 flex gap-2">
+        <input value={text} onChange={e => setText(e.target.value)} onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); } }}
+          placeholder="Ø§ÙØªØ¨ Ø±Ø³Ø§ÙØ©..." className="flex-1 bg-gray-800 text-white text-sm rounded-full px-4 py-2 outline-none border border-gray-600 focus:border-blue-500 text-right" />
+        <button onClick={send} disabled={!text.trim() || sending}
+          className="w-9 h-9 bg-blue-600 hover:bg-blue-700 disabled:opacity-40 rounded-full flex items-center justify-center transition-colors">
+          <Send size={14} className="text-white" />
+        </button>
+      </div>
+    </div>
+  );
+}
