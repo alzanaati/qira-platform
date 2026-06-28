@@ -1,1 +1,13 @@
-{"data":"aW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAnQC9saWIvc3VwYWJhc2Uvc2VydmVyJzsNCmltcG9ydCB7IG5vdEZvdW5kIH0gZnJvbSAnbmV4dC9uYXZpZ2F0aW9uJzsNCmltcG9ydCBQcm9maWxlQ2xpZW50IGZyb20gJ0AvY29tcG9uZW50cy9wcm9maWxlL1Byb2ZpbGVDbGllbnQnOw0KDQpleHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiBVc2VyUHJvZmlsZVBhZ2UoeyBwYXJhbXMgfTogeyBwYXJhbXM6IHsgdXNlcm5hbWU6IHN0cmluZyB9IH0pIHsNCiAgY29uc3Qgc3VwYWJhc2UgPSBjcmVhdGVDbGllbnQoKTsNCiAgY29uc3QgeyBkYXRhOiB7IHVzZXIgfSB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5nZXRVc2VyKCk7DQogIGNvbnN0IHsgZGF0YTogcHJvZmlsZSB9ID0gYXdhaXQgc3VwYWJhc2UuZnJvbSgndXNlcnMnKS5zZWxlY3QoJyonKS5lcSgndXNlcm5hbWUnLCBwYXJhbXMudXNlcm5hbWUpLnNpbmdsZSgpOw0KICBpZiAoIXByb2ZpbGUpIG5vdEZvdW5kKCk7DQogIGNvbnN0IHsgZGF0YTogY3VycmVudFVzZXIgfSA9IGF3YWl0IHN1cGFiYXNlLmZyb20oJ3VzZXJzJykuc2VsZWN0KCcqJykuZXEoJ2lkJywgdXNlciEuaWQpLnNpbmdsZSgpOw0KICBjb25zdCBpc093biA9IHVzZXI/LmlkID09PSBwcm9maWxlLmlkOw0KICByZXR1cm4gPFByb2ZpbGVDbGllbnQgcHJvZmlsZT17cHJvZmlsZX0gY3VycmVudFVzZXI9e2N1cnJlbnRVc2VyfSBpc093bj17aXNPd259IC8+Ow0KfQ0K"}
+import { createClient } from '@/lib/supabase/server';
+import { notFound } from 'next/navigation';
+import ProfileClient from '@/components/profile/ProfileClient';
+
+export default async function UserProfilePage({ params }: { params: { username: string } }) {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  const { data: profile } = await supabase.from('users').select('*').eq('username', params.username).single();
+  if (!profile) notFound();
+  const { data: currentUser } = await supabase.from('users').select('*').eq('id', user!.id).single();
+  const isOwn = user?.id === profile.id;
+  return <ProfileClient profile={profile} currentUser={currentUser} isOwn={isOwn} />;
+}
