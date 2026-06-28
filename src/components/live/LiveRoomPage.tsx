@@ -6,22 +6,7 @@ import Avatar from '@/components/ui/Avatar';
 import { ArrowRight, Mic, Video, Hand, MessageCircle, Users } from 'lucide-react';
 import { formatNumber } from '@/lib/utils';
 
-export default function LiveRoomPage({
-  // Fix 3&4: LiveKit auto-connect
-  const [livekitToken, setLivekitToken] = React.useState<string | null>(null);
-  const [livekitConnected, setLivekitConnected] = React.useState(false);
-  
-  React.useEffect(() => {
-    if (!currentUser) return;
-    fetch('/api/livekit/token', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ streamId: stream.id })
-    }).then(r => r.json()).then(d => {
-      if (d.token) { setLivekitToken(d.token); setLivekitConnected(true); }
-    }).catch(() => {});
-  }, [stream.id, currentUser]);
- stream, currentUser }: { stream: LiveStream; currentUser: User | null }) {
+export default function LiveRoomPage({ stream, currentUser }: { stream: LiveStream; currentUser: User | null }) {
   const [messages, setMessages] = useState<LiveMessage[]>([]);
   const [speakerRequests, setSpeakerRequests] = useState<SpeakerRequest[]>([]);
   const [participants, setParticipants] = useState<any[]>([]);
@@ -40,6 +25,22 @@ export default function LiveRoomPage({
       const { createClient } = await import('@/lib/supabase/client');
       const s = createClient();
       const [msgRes, partRes, reqRes] = await Promise.all([
+
+  // Fix 2 & 3: Auto-connect to /api/livekit/token on mount
+  const [livekitToken, setLivekitToken] = useState<string | null>(null);
+  const [livekitConnected, setLivekitConnected] = useState(false);
+
+  useEffect(() => {
+    if (!currentUser) return;
+    fetch('/api/livekit/token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ streamId: stream.id })
+    }).then(r => r.json()).then(data => {
+      if (data.token) { setLivekitToken(data.token); setLivekitConnected(true); }
+    }).catch(() => {});
+  }, [stream.id, currentUser]);
+
         s.from('live_messages').select('*,users(id,full_name,username,avatar_url)').eq('stream_id',stream.id).order('created_at',{ascending:true}).limit(100),
         s.from('stream_participants').select('*,users(id,full_name,username,avatar_url)').eq('stream_id',stream.id),
         isHost ? s.from('speaker_requests').select('*,users(id,full_name,username,avatar_url)').eq('stream_id',stream.id).eq('status','pending') : Promise.resolve({data:[]}),
