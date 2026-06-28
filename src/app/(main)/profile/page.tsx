@@ -1,1 +1,9 @@
-{"data":"aW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAnQC9saWIvc3VwYWJhc2Uvc2VydmVyJzsNCmltcG9ydCBQcm9maWxlQ2xpZW50IGZyb20gJ0AvY29tcG9uZW50cy9wcm9maWxlL1Byb2ZpbGVDbGllbnQnOw0KDQpleHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiBNeVByb2ZpbGVQYWdlKCkgew0KICBjb25zdCBzdXBhYmFzZSA9IGNyZWF0ZUNsaWVudCgpOw0KICBjb25zdCB7IGRhdGE6IHsgdXNlciB9IH0gPSBhd2FpdCBzdXBhYmFzZS5hdXRoLmdldFVzZXIoKTsNCiAgY29uc3QgeyBkYXRhOiBwcm9maWxlIH0gPSBhd2FpdCBzdXBhYmFzZS5mcm9tKCd1c2VycycpLnNlbGVjdCgnKicpLmVxKCdpZCcsIHVzZXIhLmlkKS5zaW5nbGUoKTsNCiAgcmV0dXJuIDxQcm9maWxlQ2xpZW50IHByb2ZpbGU9e3Byb2ZpbGV9IGN1cnJlbnRVc2VyPXtwcm9maWxlfSBpc093bj17dHJ1ZX0gLz47DQp9DQo="}
+import { createClient } from '@/lib/supabase/server';
+import ProfileClient from '@/components/profile/ProfileClient';
+
+export default async function MyProfilePage() {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  const { data: profile } = await supabase.from('users').select('*').eq('id', user!.id).single();
+  return <ProfileClient profile={profile} currentUser={profile} isOwn={true} />;
+}
