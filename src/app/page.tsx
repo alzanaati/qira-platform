@@ -1,1 +1,8 @@
-{"data":"aW1wb3J0IHsgcmVkaXJlY3QgfSBmcm9tICduZXh0L25hdmlnYXRpb24nOwppbXBvcnQgeyBjcmVhdGVDbGllbnQgfSBmcm9tICdAL2xpYi9zdXBhYmFzZS9zZXJ2ZXInOwpleHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiBIb21lKCkgewogIGNvbnN0IHN1cGFiYXNlID0gY3JlYXRlQ2xpZW50KCk7CiAgY29uc3QgeyBkYXRhOiB7IHVzZXIgfSB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5nZXRVc2VyKCk7CiAgaWYgKHVzZXIpIHJlZGlyZWN0KCcvZmVlZCcpOwogIGVsc2UgcmVkaXJlY3QoJy9sb2dpbicpOwp9Cg=="}
+import { redirect } from 'next/navigation';
+import { createClient } from '@/lib/supabase/server';
+export default async function Home() {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (user) redirect('/feed');
+  else redirect('/login');
+}
