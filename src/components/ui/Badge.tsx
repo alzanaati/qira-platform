@@ -1,1 +1,7 @@
-{"data":"aW1wb3J0IHsgUmVhY3ROb2RlIH0gZnJvbSAncmVhY3QnOw0KaW1wb3J0IHsgY24gfSBmcm9tICdAL2xpYi91dGlscyc7DQppbnRlcmZhY2UgQmFkZ2VQcm9wcyB7IGNoaWxkcmVuOiBSZWFjdE5vZGU7IHZhcmlhbnQ/OiAnZGVmYXVsdCcgfCAnbGl2ZScgfCAndmVyaWZpZWQnIHwgJ3N1Y2Nlc3MnIHwgJ3dhcm5pbmcnOyBjbGFzc05hbWU/OiBzdHJpbmc7IH0NCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEJhZGdlKHsgY2hpbGRyZW4sIHZhcmlhbnQgPSAnZGVmYXVsdCcsIGNsYXNzTmFtZSB9OiBCYWRnZVByb3BzKSB7DQogIGNvbnN0IHZhcmlhbnRzID0geyBkZWZhdWx0OiAnYmctZ3JheS03MDAgdGV4dC1ncmF5LTIwMCcsIGxpdmU6ICdiZy1yZWQtNjAwIHRleHQtd2hpdGUgYW5pbWF0ZS1wdWxzZScsIHZlcmlmaWVkOiAnYmctYmx1ZS02MDAgdGV4dC13aGl0ZScsIHN1Y2Nlc3M6ICdiZy1ncmVlbi02MDAgdGV4dC13aGl0ZScsIHdhcm5pbmc6ICdiZy15ZWxsb3ctNjAwIHRleHQtd2hpdGUnIH07DQogIHJldHVybiA8c3BhbiBjbGFzc05hbWU9e2NuKCdpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgcHgtMiBweS0wLjUgcm91bmRlZC1mdWxsIHRleHQteHMgZm9udC1tZWRpdW0nLCB2YXJpYW50c1t2YXJpYW50XSwgY2xhc3NOYW1lKX0+e2NoaWxkcmVufTwvc3Bhbj47DQp9"}
+import { ReactNode } from 'react';
+import { cn } from '@/lib/utils';
+interface BadgeProps { children: ReactNode; variant?: 'default' | 'live' | 'verified' | 'success' | 'warning'; className?: string; }
+export default function Badge({ children, variant = 'default', className }: BadgeProps) {
+  const variants = { default: 'bg-gray-700 text-gray-200', live: 'bg-red-600 text-white animate-pulse', verified: 'bg-blue-600 text-white', success: 'bg-green-600 text-white', warning: 'bg-yellow-600 text-white' };
+  return <span className={cn('inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium', variants[variant], className)}>{children}</span>;
+}
