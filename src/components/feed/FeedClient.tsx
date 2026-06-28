@@ -1,1 +1,41 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCB9IGZyb20gJ3JlYWN0JzsNCmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gJ25leHQvbmF2aWdhdGlvbic7DQppbXBvcnQgeyBMaXZlU3RyZWFtLCBVc2VyIH0gZnJvbSAnQC90eXBlcyc7DQppbXBvcnQgRmVlZENhcmQgZnJvbSAnLi9GZWVkQ2FyZCc7DQppbXBvcnQgTG9hZGluZ1NwaW5uZXIgZnJvbSAnQC9jb21wb25lbnRzL3VpL0xvYWRpbmdTcGlubmVyJzsNCg0KaW50ZXJmYWNlIFByb3BzIHsgaW5pdGlhbFN0cmVhbXM6IExpdmVTdHJlYW1bXTsgY3VycmVudFVzZXI6IFVzZXIgfCBudWxsOyB9DQoNCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEZlZWRDbGllbnQoeyBpbml0aWFsU3RyZWFtcywgY3VycmVudFVzZXIgfTogUHJvcHMpIHsNCiAgY29uc3QgW3N0cmVhbXMsIHNldFN0cmVhbXNdID0gdXNlU3RhdGUoaW5pdGlhbFN0cmVhbXMpOw0KICBjb25zdCByb3V0ZXIgPSB1c2VSb3V0ZXIoKTsNCg0KICB1c2VFZmZlY3QoKCkgPT4gew0KICAgIGNvbnN0IGludGVydmFsID0gc2V0SW50ZXJ2YWwoYXN5bmMgKCkgPT4gew0KICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goJy9hcGkvc3RyZWFtcycpOw0KICAgICAgY29uc3QgeyBkYXRhIH0gPSBhd2FpdCByZXMuanNvbigpOw0KICAgICAgaWYgKGRhdGEpIHNldFN0cmVhbXMoZGF0YSk7DQogICAgfSwgMTUwMDApOw0KICAgIHJldHVybiAoKSA9PiBjbGVhckludGVydmFsKGludGVydmFsKTsNCiAgfSwgW10pOw0KDQogIGlmIChzdHJlYW1zLmxlbmd0aCA9PT0gMCkgcmV0dXJuICgNCiAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgaC1mdWxsIGdhcC00IHRleHQtWyM0NDRdIj4NCiAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC02eGwiPvCfk6E8L3NwYW4+DQogICAgICA8cCBjbGFzc05hbWU9ImZvbnQtYm9sZCB0ZXh0LXdoaXRlIHRleHQtbGciPtmE2Kcg2KrZiNis2K8g2KjYq9mI2Ksg2YXYqNin2LTYsdipINin2YTYotmGPC9wPg0KICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIj7Yp9io2K/YoyDYqNir2KfZiyDYo9mIINiq2K3ZgtmCINmE2KfYrdmC2KfZizwvcD4NCiAgICAgIDxidXR0b24gb25DbGljaz17KCk9PnJvdXRlci5wdXNoKCcvbGl2ZS9jcmVhdGUnKX0gY2xhc3NOYW1lPSJncmFkaWVudC1wdXJwbGUgdGV4dC13aGl0ZSBmb250LWJvbGQgcHgtNiBweS0zIHJvdW5kZWQtMnhsIG10LTIiPg0KICAgICAgICDYp9io2K/YoyDYqNir2KfZiyDYp9mE2KLZhg0KICAgICAgPC9idXR0b24+DQogICAgPC9kaXY+DQogICk7DQoNCiAgcmV0dXJuICgNCiAgICA8ZGl2IGNsYXNzTmFtZT0iaC1mdWxsIG92ZXJmbG93LXktc2Nyb2xsIHNuYXAteS1tYW5kYXRvcnkiIHN0eWxlPXt7c2Nyb2xsYmFyV2lkdGg6J25vbmUnfX0+DQogICAgICB7c3RyZWFtcy5tYXAoc3RyZWFtID0+ICgNCiAgICAgICAgPEZlZWRDYXJkIGtleT17c3RyZWFtLmlkfSBzdHJlYW09e3N0cmVhbX0gY3VycmVudFVzZXI9e2N1cnJlbnRVc2VyfSBvbk9wZW49eygpPT5yb3V0ZXIucHVzaChgL2xpdmUvJHtzdHJlYW0uaWR9YCl9IC8+DQogICAgICApKX0NCiAgICA8L2Rpdj4NCiAgKTsNCn0NCg=="}
+'use client';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { LiveStream, User } from '@/types';
+import FeedCard from './FeedCard';
+import LoadingSpinner from '@/components/ui/LoadingSpinner';
+
+interface Props { initialStreams: LiveStream[]; currentUser: User | null; }
+
+export default function FeedClient({ initialStreams, currentUser }: Props) {
+  const [streams, setStreams] = useState(initialStreams);
+  const router = useRouter();
+
+  useEffect(() => {
+    const interval = setInterval(async () => {
+      const res = await fetch('/api/streams');
+      const { data } = await res.json();
+      if (data) setStreams(data);
+    }, 15000);
+    return () => clearInterval(interval);
+  }, []);
+
+  if (streams.length === 0) return (
+    <div className="flex flex-col items-center justify-center h-full gap-4 text-[#444]">
+      <span className="text-6xl">ð¡</span>
+      <p className="font-bold text-white text-lg">ÙØ§ ØªÙØ¬Ø¯ Ø¨Ø«ÙØ« ÙØ¨Ø§Ø´Ø±Ø© Ø§ÙØ¢Ù</p>
+      <p className="text-sm">Ø§Ø¨Ø¯Ø£ Ø¨Ø«Ø§Ù Ø£Ù ØªØ­ÙÙ ÙØ§Ø­ÙØ§Ù</p>
+      <button onClick={()=>router.push('/live/create')} className="gradient-purple text-white font-bold px-6 py-3 rounded-2xl mt-2">
+        Ø§Ø¨Ø¯Ø£ Ø¨Ø«Ø§Ù Ø§ÙØ¢Ù
+      </button>
+    </div>
+  );
+
+  return (
+    <div className="h-full overflow-y-scroll snap-y-mandatory" style={{scrollbarWidth:'none'}}>
+      {streams.map(stream => (
+        <FeedCard key={stream.id} stream={stream} currentUser={currentUser} onOpen={()=>router.push(`/live/${stream.id}`)} />
+      ))}
+    </div>
+  );
+}
