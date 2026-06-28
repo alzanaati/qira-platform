@@ -1,1 +1,37 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsNCmltcG9ydCB7IGNyZWF0ZUNsaWVudCB9IGZyb20gJ0AvbGliL3N1cGFiYXNlL2NsaWVudCc7DQppbXBvcnQgeyBMaXZlU3RyZWFtIH0gZnJvbSAnQC90eXBlcyc7DQppbXBvcnQgeyBSYWRpbywgQ2xvY2sgfSBmcm9tICdsdWNpZGUtcmVhY3QnOw0KaW50ZXJmYWNlIFByb2ZpbGVTdHJlYW1zUHJvcHMgeyB1c2VySWQ6IHN0cmluZzsgfQ0KZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gUHJvZmlsZVN0cmVhbXMoeyB1c2VySWQgfTogUHJvZmlsZVN0cmVhbXNQcm9wcykgew0KICBjb25zdCBzdXBhYmFzZSA9IGNyZWF0ZUNsaWVudCgpOw0KICBjb25zdCBbc3RyZWFtcywgc2V0U3RyZWFtc10gPSB1c2VTdGF0ZTxMaXZlU3RyZWFtW10+KFtdKTsNCiAgY29uc3QgW2xvYWRpbmcsIHNldExvYWRpbmddID0gdXNlU3RhdGUodHJ1ZSk7DQogIHVzZUVmZmVjdCgoKSA9PiB7DQogICAgc3VwYWJhc2UuZnJvbSgnbGl2ZV9zdHJlYW1zJykuc2VsZWN0KCcqJykuZXEoJ3VzZXJfaWQnLCB1c2VySWQpLm9yZGVyKCdjcmVhdGVkX2F0JywgeyBhc2NlbmRpbmc6IGZhbHNlIH0pLmxpbWl0KDIwKQ0KICAgICAgLnRoZW4oKHsgZGF0YSB9KSA9PiB7IGlmIChkYXRhKSBzZXRTdHJlYW1zKGRhdGEgYXMgTGl2ZVN0cmVhbVtdKTsgc2V0TG9hZGluZyhmYWxzZSk7IH0pOw0KICB9LCBbdXNlcklkXSk7DQogIGlmIChsb2FkaW5nKSByZXR1cm4gPGRpdiBjbGFzc05hbWU9InAtNCB0ZXh0LWNlbnRlciB0ZXh0LWdyYXktNDAwIGFuaW1hdGUtcHVsc2UiPtis2KfYsdmNINin2YTYqtit2YXZitmELi4uPC9kaXY+Ow0KICBpZiAoc3RyZWFtcy5sZW5ndGggPT09IDApIHJldHVybiA8ZGl2IGNsYXNzTmFtZT0icC04IHRleHQtY2VudGVyIHRleHQtZ3JheS00MDAgdGV4dC1zbSI+2YTYpyDYqtmI2KzYryDYqNir2YjYqyDYs9in2KjZgtipPC9kaXY+Ow0KICByZXR1cm4gKA0KICAgIDxkaXYgY2xhc3NOYW1lPSJkaXZpZGUteSBkaXZpZGUtZ3JheS04MDAiPg0KICAgICAge3N0cmVhbXMubWFwKHMgPT4gKA0KICAgICAgICA8ZGl2IGtleT17cy5pZH0gY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtNCBwLTQgaG92ZXI6YmctZ3JheS04MDAvNTAgdHJhbnNpdGlvbi1jb2xvcnMiPg0KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXsndy0xMiBoLTEyIHJvdW5kZWQteGwgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgJyArIChzLnN0YXR1cyA9PT0gJ2xpdmUnID8gJ2JnLXJlZC05MDAvNTAnIDogJ2JnLWdyYXktODAwJyl9Pg0KICAgICAgICAgICAgPFJhZGlvIHNpemU9ezIwfSBjbGFzc05hbWU9e3Muc3RhdHVzID09PSAnbGl2ZScgPyAndGV4dC1yZWQtNDAwJyA6ICd0ZXh0LWdyYXktNTAwJ30gLz4NCiAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleC0xIG1pbi13LTAiPg0KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIHRleHQtc20gZm9udC1tZWRpdW0gdHJ1bmNhdGUiPntzLnRpdGxlfTwvcD4NCiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBtdC0xIj4NCiAgICAgICAgICAgICAge3Muc3RhdHVzID09PSAnbGl2ZScNCiAgICAgICAgICAgICAgICA/IDxzcGFuIGNsYXNzTmFtZT0idGV4dC14cyBiZy1yZWQtNjAwIHRleHQtd2hpdGUgcHgtMiBweS0wLjUgcm91bmRlZC1mdWxsIGFuaW1hdGUtcHVsc2UiPtmF2KjYp9i02LE8L3NwYW4+DQogICAgICAgICAgICAgICAgOiA8c3BhbiBjbGFzc05hbWU9InRleHQtZ3JheS01MDAgdGV4dC14cyBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMSI+PENsb2NrIHNpemU9ezEwfSAvPntuZXcgRGF0ZShzLmNyZWF0ZWRfYXQpLnRvTG9jYWxlRGF0ZVN0cmluZygnYXItU0EnKX08L3NwYW4+fQ0KICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtZ3JheS01MDAgdGV4dC14cyI+e3Mudmlld2VyX2NvdW50IHx8IDB9INmF2LTYp9mH2K88L3NwYW4+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgPC9kaXY+DQogICAgICApKX0NCiAgICA8L2Rpdj4NCiAgKTsNCn0="}
+'use client';
+import { useEffect, useState } from 'react';
+import { createClient } from '@/lib/supabase/client';
+import { LiveStream } from '@/types';
+import { Radio, Clock } from 'lucide-react';
+interface ProfileStreamsProps { userId: string; }
+export default function ProfileStreams({ userId }: ProfileStreamsProps) {
+  const supabase = createClient();
+  const [streams, setStreams] = useState<LiveStream[]>([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    supabase.from('live_streams').select('*').eq('user_id', userId).order('created_at', { ascending: false }).limit(20)
+      .then(({ data }) => { if (data) setStreams(data as LiveStream[]); setLoading(false); });
+  }, [userId]);
+  if (loading) return <div className="p-4 text-center text-gray-400 animate-pulse">Ø¬Ø§Ø±Ù Ø§ÙØªØ­ÙÙÙ...</div>;
+  if (streams.length === 0) return <div className="p-8 text-center text-gray-400 text-sm">ÙØ§ ØªÙØ¬Ø¯ Ø¨Ø«ÙØ« Ø³Ø§Ø¨ÙØ©</div>;
+  return (
+    <div className="divide-y divide-gray-800">
+      {streams.map(s => (
+        <div key={s.id} className="flex items-center gap-4 p-4 hover:bg-gray-800/50 transition-colors">
+          <div className={'w-12 h-12 rounded-xl flex items-center justify-center ' + (s.status === 'live' ? 'bg-red-900/50' : 'bg-gray-800')}>
+            <Radio size={20} className={s.status === 'live' ? 'text-red-400' : 'text-gray-500'} />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-white text-sm font-medium truncate">{s.title}</p>
+            <div className="flex items-center gap-2 mt-1">
+              {s.status === 'live'
+                ? <span className="text-xs bg-red-600 text-white px-2 py-0.5 rounded-full animate-pulse">ÙØ¨Ø§Ø´Ø±</span>
+                : <span className="text-gray-500 text-xs flex items-center gap-1"><Clock size={10} />{new Date(s.created_at).toLocaleDateString('ar-SA')}</span>}
+              <span className="text-gray-500 text-xs">{s.viewer_count || 0} ÙØ´Ø§ÙØ¯</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
