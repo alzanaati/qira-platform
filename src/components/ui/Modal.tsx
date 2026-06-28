@@ -1,1 +1,27 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgUmVhY3ROb2RlLCB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCc7DQppbXBvcnQgeyBYIH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsNCmltcG9ydCB7IGNuIH0gZnJvbSAnQC9saWIvdXRpbHMnOw0KaW50ZXJmYWNlIE1vZGFsUHJvcHMgeyBvcGVuOiBib29sZWFuOyBvbkNsb3NlOiAoKSA9PiB2b2lkOyB0aXRsZT86IHN0cmluZzsgY2hpbGRyZW46IFJlYWN0Tm9kZTsgY2xhc3NOYW1lPzogc3RyaW5nOyB9DQpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBNb2RhbCh7IG9wZW4sIG9uQ2xvc2UsIHRpdGxlLCBjaGlsZHJlbiwgY2xhc3NOYW1lIH06IE1vZGFsUHJvcHMpIHsNCiAgdXNlRWZmZWN0KCgpID0+IHsNCiAgICBpZiAob3BlbikgZG9jdW1lbnQuYm9keS5zdHlsZS5vdmVyZmxvdyA9ICdoaWRkZW4nOw0KICAgIGVsc2UgZG9jdW1lbnQuYm9keS5zdHlsZS5vdmVyZmxvdyA9ICcnOw0KICAgIHJldHVybiAoKSA9PiB7IGRvY3VtZW50LmJvZHkuc3R5bGUub3ZlcmZsb3cgPSAnJzsgfTsNCiAgfSwgW29wZW5dKTsNCiAgaWYgKCFvcGVuKSByZXR1cm4gbnVsbDsNCiAgcmV0dXJuICgNCiAgICA8ZGl2IGNsYXNzTmFtZT0iZml4ZWQgaW5zZXQtMCB6LTUwIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIj4NCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSBpbnNldC0wIGJnLWJsYWNrLzcwIGJhY2tkcm9wLWJsdXItc20iIG9uQ2xpY2s9e29uQ2xvc2V9IC8+DQogICAgICA8ZGl2IGNsYXNzTmFtZT17Y24oJ3JlbGF0aXZlIGJnLWdyYXktOTAwIGJvcmRlciBib3JkZXItZ3JheS03MDAgcm91bmRlZC0yeGwgc2hhZG93LTJ4bCB3LWZ1bGwgbWF4LXctbWQgbXgtNCBtYXgtaC1bOTB2aF0gb3ZlcmZsb3ctYXV0bycsIGNsYXNzTmFtZSl9Pg0KICAgICAgICB7dGl0bGUgJiYgKA0KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gcC00IGJvcmRlci1iIGJvcmRlci1ncmF5LTcwMCI+DQogICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIGZvbnQtc2VtaWJvbGQiPnt0aXRsZX08L2gyPg0KICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXtvbkNsb3NlfSBjbGFzc05hbWU9InAtMSByb3VuZGVkLWxnIGhvdmVyOmJnLWdyYXktNzAwIHRleHQtZ3JheS00MDAgaG92ZXI6dGV4dC13aGl0ZSB0cmFuc2l0aW9uLWNvbG9ycyI+PFggc2l6ZT17MjB9IC8+PC9idXR0b24+DQogICAgICAgICAgPC9kaXY+DQogICAgICAgICl9DQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJwLTQiPntjaGlsZHJlbn08L2Rpdj4NCiAgICAgIDwvZGl2Pg0KICAgIDwvZGl2Pg0KICApOw0KfQ=="}
+'use client';
+import { ReactNode, useEffect } from 'react';
+import { X } from 'lucide-react';
+import { cn } from '@/lib/utils';
+interface ModalProps { open: boolean; onClose: () => void; title?: string; children: ReactNode; className?: string; }
+export default function Modal({ open, onClose, title, children, className }: ModalProps) {
+  useEffect(() => {
+    if (open) document.body.style.overflow = 'hidden';
+    else document.body.style.overflow = '';
+    return () => { document.body.style.overflow = ''; };
+  }, [open]);
+  if (!open) return null;
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center">
+      <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={onClose} />
+      <div className={cn('relative bg-gray-900 border border-gray-700 rounded-2xl shadow-2xl w-full max-w-md mx-4 max-h-[90vh] overflow-auto', className)}>
+        {title && (
+          <div className="flex items-center justify-between p-4 border-b border-gray-700">
+            <h2 className="text-white font-semibold">{title}</h2>
+            <button onClick={onClose} className="p-1 rounded-lg hover:bg-gray-700 text-gray-400 hover:text-white transition-colors"><X size={20} /></button>
+          </div>
+        )}
+        <div className="p-4">{children}</div>
+      </div>
+    </div>
+  );
+}
