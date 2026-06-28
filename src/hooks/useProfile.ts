@@ -1,1 +1,16 @@
-{"data":"aW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsNCmltcG9ydCB7IGNyZWF0ZUNsaWVudCB9IGZyb20gJ0AvbGliL3N1cGFiYXNlL2NsaWVudCc7DQppbXBvcnQgdHlwZSB7IFVzZXIgfSBmcm9tICdAL3R5cGVzJzsNCmV4cG9ydCBmdW5jdGlvbiB1c2VQcm9maWxlKHVzZXJuYW1lPzogc3RyaW5nKSB7DQogIGNvbnN0IHN1cGFiYXNlID0gY3JlYXRlQ2xpZW50KCk7DQogIGNvbnN0IFtwcm9maWxlLCBzZXRQcm9maWxlXSA9IHVzZVN0YXRlPFVzZXIgfCBudWxsPihudWxsKTsNCiAgY29uc3QgW2xvYWRpbmcsIHNldExvYWRpbmddID0gdXNlU3RhdGUodHJ1ZSk7DQogIGNvbnN0IFtlcnJvciwgc2V0RXJyb3JdID0gdXNlU3RhdGU8c3RyaW5nIHwgbnVsbD4obnVsbCk7DQogIHVzZUVmZmVjdCgoKSA9PiB7DQogICAgaWYgKCF1c2VybmFtZSkgeyBzZXRMb2FkaW5nKGZhbHNlKTsgcmV0dXJuOyB9DQogICAgc2V0TG9hZGluZyh0cnVlKTsNCiAgICBzdXBhYmFzZS5mcm9tKCd1c2VycycpLnNlbGVjdCgnKicpLmVxKCd1c2VybmFtZScsIHVzZXJuYW1lKS5zaW5nbGUoKQ0KICAgICAgLnRoZW4oKHsgZGF0YSwgZXJyb3I6IGVyciB9KSA9PiB7IGlmIChlcnIpIHNldEVycm9yKGVyci5tZXNzYWdlKTsgZWxzZSBzZXRQcm9maWxlKGRhdGEgYXMgVXNlcik7IHNldExvYWRpbmcoZmFsc2UpOyB9KTsNCiAgfSwgW3VzZXJuYW1lXSk7DQogIHJldHVybiB7IHByb2ZpbGUsIGxvYWRpbmcsIGVycm9yIH07DQp9"}
+import { useEffect, useState } from 'react';
+import { createClient } from '@/lib/supabase/client';
+import type { User } from '@/types';
+export function useProfile(username?: string) {
+  const supabase = createClient();
+  const [profile, setProfile] = useState<User | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  useEffect(() => {
+    if (!username) { setLoading(false); return; }
+    setLoading(true);
+    supabase.from('users').select('*').eq('username', username).single()
+      .then(({ data, error: err }) => { if (err) setError(err.message); else setProfile(data as User); setLoading(false); });
+  }, [username]);
+  return { profile, loading, error };
+}
