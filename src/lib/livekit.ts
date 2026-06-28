@@ -1,1 +1,7 @@
-{"data":"aW1wb3J0IHsgQWNjZXNzVG9rZW4gfSBmcm9tICdsaXZla2l0LXNlcnZlci1zZGsnOw0KZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdlbmVyYXRlVG9rZW4ocm9vbU5hbWU6IHN0cmluZywgaWRlbnRpdHk6IHN0cmluZywgbmFtZTogc3RyaW5nLCBjYW5QdWJsaXNoOiBib29sZWFuKTogUHJvbWlzZTxzdHJpbmc+IHsNCiAgY29uc3QgYXQgPSBuZXcgQWNjZXNzVG9rZW4ocHJvY2Vzcy5lbnYuTElWRUtJVF9BUElfS0VZISwgcHJvY2Vzcy5lbnYuTElWRUtJVF9BUElfU0VDUkVUISwgeyBpZGVudGl0eSwgbmFtZSwgdHRsOiAnNGgnIH0pOw0KICBhdC5hZGRHcmFudCh7IHJvb206IHJvb21OYW1lLCByb29tSm9pbjogdHJ1ZSwgY2FuUHVibGlzaCwgY2FuUHVibGlzaERhdGE6IHRydWUsIGNhblN1YnNjcmliZTogdHJ1ZSwgcm9vbUFkbWluOiBjYW5QdWJsaXNoLCByb29tQ3JlYXRlOiBjYW5QdWJsaXNoIH0pOw0KICByZXR1cm4gYXdhaXQgYXQudG9Kd3QoKTsNCn0NCmV4cG9ydCBjb25zdCBnZW5lcmF0ZVJvb21OYW1lID0gKHN0cmVhbUlkOiBzdHJpbmcpID0+IGBpcXJhLSR7c3RyZWFtSWR9YDsNCg=="}
+import { AccessToken } from 'livekit-server-sdk';
+export async function generateToken(roomName: string, identity: string, name: string, canPublish: boolean): Promise<string> {
+  const at = new AccessToken(process.env.LIVEKIT_API_KEY!, process.env.LIVEKIT_API_SECRET!, { identity, name, ttl: '4h' });
+  at.addGrant({ room: roomName, roomJoin: true, canPublish, canPublishData: true, canSubscribe: true, roomAdmin: canPublish, roomCreate: canPublish });
+  return await at.toJwt();
+}
+export const generateRoomName = (streamId: string) => `iqra-${streamId}`;
