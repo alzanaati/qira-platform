@@ -1,1 +1,25 @@
-{"data":"LyoqIEB0eXBlIHtpbXBvcnQoJ25leHQnKS5OZXh0Q29uZmlnfSAqLwpjb25zdCBuZXh0Q29uZmlnID0gewogIGV4cGVyaW1lbnRhbDogeyBzZXJ2ZXJDb21wb25lbnRzRXh0ZXJuYWxQYWNrYWdlczogWydsaXZla2l0LXNlcnZlci1zZGsnXSB9LAogIGltYWdlczogeyByZW1vdGVQYXR0ZXJuczogW3sgcHJvdG9jb2w6J2h0dHBzJywgaG9zdG5hbWU6JyoqJyB9XSB9LAogIGVudjogewogICAgTkVYVF9QVUJMSUNfU1VQQUJBU0VfVVJMOiBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19TVVBBQkFTRV9VUkwsCiAgICBORVhUX1BVQkxJQ19TVVBBQkFTRV9BTk9OX0tFWTogcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfU1VQQUJBU0VfQU5PTl9LRVksCiAgICBORVhUX1BVQkxJQ19MSVZFS0lUX1VSTDogcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfTElWRUtJVF9VUkwsCiAgfSwKfTsKbW9kdWxlLmV4cG9ydHMgPSBuZXh0Q29uZmlnOwo="}
+/** @type {import("next").NextConfig} */
+const nextConfig = {
+  experimental: {
+    serverComponentsExternalPackages: ["@node-rs/argon2", "@node-rs/bcrypt"],
+  },
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          { key: "X-Frame-Options", value: "DENY" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+          {
+            key: "Content-Security-Policy",
+            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https:; font-src 'self'; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.livekit.cloud wss://*.livekit.cloud; media-src 'self' blob:; worker-src 'self' blob:"
+          },
+        ],
+      },
+    ];
+  },
+};
+
+module.exports = nextConfig;
