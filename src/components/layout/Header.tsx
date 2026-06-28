@@ -1,1 +1,27 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAnQC9saWIvc3VwYWJhc2UvY2xpZW50JzsNCmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gJ25leHQvbmF2aWdhdGlvbic7DQppbXBvcnQgeyBVc2VyIH0gZnJvbSAnQC90eXBlcyc7DQppbXBvcnQgeyBMb2dPdXQsIEJlbGwgfSBmcm9tICdsdWNpZGUtcmVhY3QnOw0KDQpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBIZWFkZXIoeyB1c2VyIH06IHsgdXNlcjogVXNlciB8IG51bGwgfSkgew0KICBjb25zdCByb3V0ZXIgPSB1c2VSb3V0ZXIoKTsNCiAgY29uc3Qgc3VwYWJhc2UgPSBjcmVhdGVDbGllbnQoKTsNCiAgY29uc3QgaGFuZGxlTG9nb3V0ID0gYXN5bmMgKCkgPT4gew0KICAgIGF3YWl0IHN1cGFiYXNlLmF1dGguc2lnbk91dCgpOw0KICAgIHJvdXRlci5wdXNoKCcvbG9naW4nKTsgcm91dGVyLnJlZnJlc2goKTsNCiAgfTsNCiAgcmV0dXJuICgNCiAgICA8aGVhZGVyIGNsYXNzTmFtZT0iZml4ZWQgdG9wLTAgbGVmdC0wIHJpZ2h0LTAgaC0xNCBiZy1bIzA4MDgwZl0vOTIgYmFja2Ryb3AtYmx1ci14bCBib3JkZXItYiBib3JkZXItd2hpdGUvWzAuMDZdIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBweC00IHotNTAiPg0KICAgICAgPGJ1dHRvbiBvbkNsaWNrPXsoKT0+cm91dGVyLnB1c2goJy9wcm9maWxlJyl9IGNsYXNzTmFtZT0icC0yIHJvdW5kZWQteGwgYmctd2hpdGUvWzAuMDZdIGhvdmVyOmJnLXdoaXRlLzEwIHRyYW5zaXRpb24tY29sb3JzIj4NCiAgICAgICAgPEJlbGwgc2l6ZT17MjB9IGNsYXNzTmFtZT0idGV4dC1ncmF5LTQwMCIgLz4NCiAgICAgIDwvYnV0dG9uPg0KICAgICAgPGgxIGNsYXNzTmFtZT0idGV4dC0yeGwgZm9udC1ibGFjayB0ZXh0LWdyYWRpZW50Ij7Yp9mC2LHYozwvaDE+DQogICAgICB7dXNlciAmJiAoDQogICAgICAgIDxidXR0b24gb25DbGljaz17aGFuZGxlTG9nb3V0fSBjbGFzc05hbWU9InAtMiByb3VuZGVkLXhsIGJnLXdoaXRlL1swLjA2XSBob3ZlcjpiZy13aGl0ZS8xMCB0cmFuc2l0aW9uLWNvbG9ycyI+DQogICAgICAgICAgPExvZ091dCBzaXplPXsxOH0gY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNDAwIiAvPg0KICAgICAgICA8L2J1dHRvbj4NCiAgICAgICl9DQogICAgPC9oZWFkZXI+DQogICk7DQp9DQo="}
+'use client';
+import { createClient } from '@/lib/supabase/client';
+import { useRouter } from 'next/navigation';
+import { User } from '@/types';
+import { LogOut, Bell } from 'lucide-react';
+
+export default function Header({ user }: { user: User | null }) {
+  const router = useRouter();
+  const supabase = createClient();
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    router.push('/login'); router.refresh();
+  };
+  return (
+    <header className="fixed top-0 left-0 right-0 h-14 bg-[#08080f]/92 backdrop-blur-xl border-b border-white/[0.06] flex items-center justify-between px-4 z-50">
+      <button onClick={()=>router.push('/profile')} className="p-2 rounded-xl bg-white/[0.06] hover:bg-white/10 transition-colors">
+        <Bell size={20} className="text-gray-400" />
+      </button>
+      <h1 className="text-2xl font-black text-gradient">Ø§ÙØ±Ø£</h1>
+      {user && (
+        <button onClick={handleLogout} className="p-2 rounded-xl bg-white/[0.06] hover:bg-white/10 transition-colors">
+          <LogOut size={18} className="text-gray-400" />
+        </button>
+      )}
+    </header>
+  );
+}
