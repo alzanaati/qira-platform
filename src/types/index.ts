@@ -1,1 +1,61 @@
-{"data":"ZXhwb3J0IHR5cGUgVXNlclJvbGUgPSAndXNlcicgfCAndGVhY2hlcicgfCAnYWRtaW4nOw0KZXhwb3J0IHR5cGUgU3RyZWFtU3RhdHVzID0gJ3NjaGVkdWxlZCcgfCAnbGl2ZScgfCAnZW5kZWQnOw0KZXhwb3J0IHR5cGUgU3RyZWFtQ2F0ZWdvcnkgPSAnZWR1Y2F0aW9uYWwnIHwgJ3RyYWluaW5nJyB8ICdkaXNjdXNzaW9uJyB8ICdzb2NpYWwnIHwgJ2J1c2luZXNzJyB8ICdlbnRlcnRhaW5tZW50JzsNCmV4cG9ydCB0eXBlIFBhcnRpY2lwYW50Um9sZSA9ICdob3N0JyB8ICdzcGVha2VyJyB8ICd2aWV3ZXInOw0KZXhwb3J0IHR5cGUgQ2xhcFR5cGUgPSAnYnJvbnplJyB8ICdzaWx2ZXInIHwgJ2dvbGQnIHwgJ2RpYW1vbmQnOw0KZXhwb3J0IHR5cGUgQ29udGVudFR5cGUgPSAnbm9uZScgfCAncGRmJyB8ICdwcHQnIHwgJ2ltYWdlJyB8ICdzY3JlZW4nOw0KZXhwb3J0IHR5cGUgRmlsZVR5cGUgPSAncGRmJyB8ICdwcHQnIHwgJ2ltYWdlJzsNCmV4cG9ydCB0eXBlIFNwZWFrZXJSZXF1ZXN0U3RhdHVzID0gJ3BlbmRpbmcnIHwgJ2FwcHJvdmVkJyB8ICdyZWplY3RlZCc7DQoNCmV4cG9ydCBpbnRlcmZhY2UgVXNlciB7DQogIGlkOiBzdHJpbmc7IGVtYWlsOiBzdHJpbmc7IHVzZXJuYW1lOiBzdHJpbmc7IGZ1bGxfbmFtZTogc3RyaW5nOw0KICBhdmF0YXJfdXJsPzogc3RyaW5nOyBiaW8/OiBzdHJpbmc7IHJvbGU6IFVzZXJSb2xlOyBpc192ZXJpZmllZDogYm9vbGVhbjsNCiAgaXNfYWN0aXZlOiBib29sZWFuOyBjcmVhdGVkX2F0OiBzdHJpbmc7IHVwZGF0ZWRfYXQ6IHN0cmluZzsNCn0NCmV4cG9ydCBpbnRlcmZhY2UgV2FsbGV0IHsNCiAgaWQ6IHN0cmluZzsgdXNlcl9pZDogc3RyaW5nOyBiYWxhbmNlOiBudW1iZXI7IHRvdGFsX2Vhcm5lZDogbnVtYmVyOw0KICB0b3RhbF9zcGVudDogbnVtYmVyOyBjcmVhdGVkX2F0OiBzdHJpbmc7IHVwZGF0ZWRfYXQ6IHN0cmluZzsNCn0NCmV4cG9ydCBpbnRlcmZhY2UgRm9sbG93IHsNCiAgaWQ6IHN0cmluZzsgZm9sbG93ZXJfaWQ6IHN0cmluZzsgZm9sbG93aW5nX2lkOiBzdHJpbmc7IGNyZWF0ZWRfYXQ6IHN0cmluZzsNCn0NCmV4cG9ydCBpbnRlcmZhY2UgTGl2ZVN0cmVhbSB7DQogIGlkOiBzdHJpbmc7IHVzZXJfaWQ6IHN0cmluZzsgdGl0bGU6IHN0cmluZzsgZGVzY3JpcHRpb24/OiBzdHJpbmc7DQogIGNhdGVnb3J5OiBTdHJlYW1DYXRlZ29yeTsgc3RhdHVzOiBTdHJlYW1TdGF0dXM7IHZpZXdlcl9jb3VudDogbnVtYmVyOw0KICBjbGFwX2NvdW50OiBudW1iZXI7IGFsbG93X3NjcmVlbl9zaGFyZTogYm9vbGVhbjsgYWxsb3dfZmlsZV9zaGFyZTogYm9vbGVhbjsNCiAgbGl2ZWtpdF9yb29tX25hbWU/OiBzdHJpbmc7IHN0YXJ0ZWRfYXQ6IHN0cmluZzsgZW5kZWRfYXQ/OiBzdHJpbmc7DQogIGNyZWF0ZWRfYXQ6IHN0cmluZzsgdXNlcnM/OiBVc2VyOw0KfQ0KZXhwb3J0IGludGVyZmFjZSBTdHJlYW1QYXJ0aWNpcGFudCB7DQogIGlkOiBzdHJpbmc7IHN0cmVhbV9pZDogc3RyaW5nOyB1c2VyX2lkOiBzdHJpbmc7IHJvbGU6IFBhcnRpY2lwYW50Um9sZTsNCiAgam9pbmVkX2F0OiBzdHJpbmc7IGxlZnRfYXQ/OiBzdHJpbmc7IHVzZXJzPzogVXNlcjsNCn0NCmV4cG9ydCBpbnRlcmZhY2UgU3BlYWtlclJlcXVlc3Qgew0KICBpZDogc3RyaW5nOyBzdHJlYW1faWQ6IHN0cmluZzsgdXNlcl9pZDogc3RyaW5nOyBzdGF0dXM6IFNwZWFrZXJSZXF1ZXN0U3RhdHVzOw0KICBjcmVhdGVkX2F0OiBzdHJpbmc7IHJlc3BvbmRlZF9hdD86IHN0cmluZzsgdXNlcnM/OiBVc2VyOw0KfQ0KZXhwb3J0IGludGVyZmFjZSBTdHJlYW1GaWxlIHsNCiAgaWQ6IHN0cmluZzsgc3RyZWFtX2lkOiBzdHJpbmc7IHVwbG9hZGVyX2lkOiBzdHJpbmc7IGZpbGVfbmFtZTogc3RyaW5nOw0KICBmaWxlX3VybDogc3RyaW5nOyBmaWxlX3R5cGU6IEZpbGVUeXBlOyBmaWxlX3NpemU6IG51bWJlcjsNCiAgcGFnZV9jb3VudDogbnVtYmVyOyBjcmVhdGVkX2F0OiBzdHJpbmc7DQp9DQpleHBvcnQgaW50ZXJmYWNlIFN0cmVhbUNvbnRlbnRTdGF0ZSB7DQogIHN0cmVhbV9pZDogc3RyaW5nOyBjb250ZW50X3R5cGU6IENvbnRlbnRUeXBlOyBmaWxlX2lkPzogc3RyaW5nOw0KICBjdXJyZW50X3BhZ2U6IG51bWJlcjsgem9vbV9sZXZlbDogbnVtYmVyOyBzY3JlZW5fc2hhcmVfYWN0aXZlOiBib29sZWFuOw0KICBzY3JlZW5fc2hhcmVfdXNlcl9pZD86IHN0cmluZzsgdXBkYXRlZF9hdDogc3RyaW5nOyBzdHJlYW1fZmlsZXM/OiBTdHJlYW1GaWxlOw0KfQ0KZXhwb3J0IGludGVyZmFjZSBMaXZlTWVzc2FnZSB7DQogIGlkOiBzdHJpbmc7IHN0cmVhbV9pZDogc3RyaW5nOyB1c2VyX2lkOiBzdHJpbmc7IGNvbnRlbnQ6IHN0cmluZzsNCiAgbWVzc2FnZV90eXBlOiAndGV4dCcgfCAnc3lzdGVtJyB8ICdjbGFwJzsgY3JlYXRlZF9hdDogc3RyaW5nOyB1c2Vycz86IFVzZXI7DQp9DQpleHBvcnQgaW50ZXJmYWNlIENsYXAgew0KICBpZDogc3RyaW5nOyBzdHJlYW1faWQ6IHN0cmluZzsgc2VuZGVyX2lkOiBzdHJpbmc7IHJlY2VpdmVyX2lkOiBzdHJpbmc7DQogIGNsYXBfdHlwZTogQ2xhcFR5cGU7IGFtb3VudDogbnVtYmVyOyBwbGF0Zm9ybV9jdXQ6IG51bWJlcjsgY3JlYXRvcl9jdXQ6IG51bWJlcjsNCiAgY3JlYXRlZF9hdDogc3RyaW5nOyBzZW5kZXI/OiBVc2VyOyByZWNlaXZlcj86IFVzZXI7IHN0cmVhbT86IExpdmVTdHJlYW07DQp9DQpleHBvcnQgY29uc3QgQ0xBUF9QUklDRVM6IFJlY29yZDxDbGFwVHlwZSwgbnVtYmVyPiA9IHsgYnJvbnplOjEwLCBzaWx2ZXI6MjAsIGdvbGQ6NTAsIGRpYW1vbmQ6MTAwIH07DQpleHBvcnQgY29uc3QgQ0xBUF9FTU9KSVM6IFJlY29yZDxDbGFwVHlwZSwgc3RyaW5nPiA9IHsgYnJvbnplOifwn6WJJywgc2lsdmVyOifwn6WIJywgZ29sZDon8J+lhycsIGRpYW1vbmQ6J/Cfko4nIH07DQpleHBvcnQgY29uc3QgU1RSRUFNX0NBVEVHT1JJRVM6IFJlY29yZDxTdHJlYW1DYXRlZ29yeSwgc3RyaW5nPiA9IHsNCiAgZWR1Y2F0aW9uYWw6J/Cfk5og2KrYudmE2YrZhdmKJywgdHJhaW5pbmc6J/Cfjq8g2KrYr9ix2YrYqNmKJywgZGlzY3Vzc2lvbjon8J+SrCDZhtmC2KfYtNmKJywNCiAgc29jaWFsOifwn4yQINin2KzYqtmF2KfYudmKJywgYnVzaW5lc3M6J/Cfkrwg2KPYudmF2KfZhCcsIGVudGVydGFpbm1lbnQ6J/Cfjq0g2KrYsdmB2YrZh9mKJywNCn07DQo="}
+export type UserRole = 'user' | 'teacher' | 'admin';
+export type StreamStatus = 'scheduled' | 'live' | 'ended';
+export type StreamCategory = 'educational' | 'training' | 'discussion' | 'social' | 'business' | 'entertainment';
+export type ParticipantRole = 'host' | 'speaker' | 'viewer';
+export type ClapType = 'bronze' | 'silver' | 'gold' | 'diamond';
+export type ContentType = 'none' | 'pdf' | 'ppt' | 'image' | 'screen';
+export type FileType = 'pdf' | 'ppt' | 'image';
+export type SpeakerRequestStatus = 'pending' | 'approved' | 'rejected';
+
+export interface User {
+  id: string; email: string; username: string; full_name: string;
+  avatar_url?: string; bio?: string; role: UserRole; is_verified: boolean;
+  is_active: boolean; created_at: string; updated_at: string;
+}
+export interface Wallet {
+  id: string; user_id: string; balance: number; total_earned: number;
+  total_spent: number; created_at: string; updated_at: string;
+}
+export interface Follow {
+  id: string; follower_id: string; following_id: string; created_at: string;
+}
+export interface LiveStream {
+  id: string; user_id: string; title: string; description?: string;
+  category: StreamCategory; status: StreamStatus; viewer_count: number;
+  clap_count: number; allow_screen_share: boolean; allow_file_share: boolean;
+  livekit_room_name?: string; started_at: string; ended_at?: string;
+  created_at: string; users?: User;
+}
+export interface StreamParticipant {
+  id: string; stream_id: string; user_id: string; role: ParticipantRole;
+  joined_at: string; left_at?: string; users?: User;
+}
+export interface SpeakerRequest {
+  id: string; stream_id: string; user_id: string; status: SpeakerRequestStatus;
+  created_at: string; responded_at?: string; users?: User;
+}
+export interface StreamFile {
+  id: string; stream_id: string; uploader_id: string; file_name: string;
+  file_url: string; file_type: FileType; file_size: number;
+  page_count: number; created_at: string;
+}
+export interface StreamContentState {
+  stream_id: string; content_type: ContentType; file_id?: string;
+  current_page: number; zoom_level: number; screen_share_active: boolean;
+  screen_share_user_id?: string; updated_at: string; stream_files?: StreamFile;
+}
+export interface LiveMessage {
+  id: string; stream_id: string; user_id: string; content: string;
+  message_type: 'text' | 'system' | 'clap'; created_at: string; users?: User;
+}
+export interface Clap {
+  id: string; stream_id: string; sender_id: string; receiver_id: string;
+  clap_type: ClapType; amount: number; platform_cut: number; creator_cut: number;
+  created_at: string; sender?: User; receiver?: User; stream?: LiveStream;
+}
+export const CLAP_PRICES: Record<ClapType, number> = { bronze:10, silver:20, gold:50, diamond:100 };
+export const CLAP_EMOJIS: Record<ClapType, string> = { bronze:'ð¥', silver:'ð¥', gold:'ð¥', diamond:'ð' };
+export const STREAM_CATEGORIES: Record<StreamCategory, string> = {
+  educational:'ð ØªØ¹ÙÙÙÙ', training:'ð¯ ØªØ¯Ø±ÙØ¨Ù', discussion:'ð¬ ÙÙØ§Ø´Ù',
+  social:'ð Ø§Ø¬ØªÙØ§Ø¹Ù', business:'ð¼ Ø£Ø¹ÙØ§Ù', entertainment:'ð­ ØªØ±ÙÙÙÙ',
+};
