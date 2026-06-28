@@ -1,1 +1,19 @@
-{"data":"J3VzZSBjbGllbnQnOwppbXBvcnQgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IEJvdHRvbU5hdiBmcm9tICcuL0JvdHRvbU5hdic7CmltcG9ydCBIZWFkZXIgZnJvbSAnLi9IZWFkZXInOwppbXBvcnQgeyBVc2VyIH0gZnJvbSAnQC90eXBlcyc7CgppbnRlcmZhY2UgUHJvcHMgeyBjaGlsZHJlbjogUmVhY3QuUmVhY3ROb2RlOyB1c2VyOiBVc2VyIHwgbnVsbDsgfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gTWFpbkxheW91dENsaWVudCh7IGNoaWxkcmVuLCB1c2VyIH06IFByb3BzKSB7CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGgtc2NyZWVuIHctc2NyZWVuIG92ZXJmbG93LWhpZGRlbiBiZy1bIzA4MDgwZl0iPgogICAgICA8SGVhZGVyIHVzZXI9e3VzZXJ9IC8+CiAgICAgIDxtYWluIGNsYXNzTmFtZT0iZmxleC0xIG92ZXJmbG93LWhpZGRlbiBwdC0xNCBwYi1bNjhweF0iPgogICAgICAgIHtjaGlsZHJlbn0KICAgICAgPC9tYWluPgogICAgICA8Qm90dG9tTmF2IC8+CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+'use client';
+import { useState } from 'react';
+import BottomNav from './BottomNav';
+import Header from './Header';
+import { User } from '@/types';
+
+interface Props { children: React.ReactNode; user: User | null; }
+
+export default function MainLayoutClient({ children, user }: Props) {
+  return (
+    <div className="flex flex-col h-screen w-screen overflow-hidden bg-[#08080f]">
+      <Header user={user} />
+      <main className="flex-1 overflow-hidden pt-14 pb-[68px]">
+        {children}
+      </main>
+      <BottomNav />
+    </div>
+  );
+}
