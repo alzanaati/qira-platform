@@ -1,1 +1,6 @@
-{"data":"J3VzZSBjbGllbnQnOyBpbXBvcnQgeyB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnOyBpbXBvcnQgeyBjcmVhdGVDbGllbnQgfSBmcm9tICdAL2xpYi9zdXBhYmFzZS9jbGllbnQnOyBpbXBvcnQgeyBVc2VyIH0gZnJvbSAnQC90eXBlcyc7DQpleHBvcnQgZnVuY3Rpb24gdXNlQXV0aCgpIHsNCiAgY29uc3QgW3VzZXIsIHNldFVzZXJdID0gdXNlU3RhdGU8VXNlcnxudWxsPihudWxsKTsgY29uc3QgW2xvYWRpbmcsIHNldExvYWRpbmddID0gdXNlU3RhdGUodHJ1ZSk7DQogIHVzZUVmZmVjdCgoKSA9PiB7IGNvbnN0IHMgPSBjcmVhdGVDbGllbnQoKTsgcy5hdXRoLmdldFVzZXIoKS50aGVuKGFzeW5jKHtkYXRhOnt1c2VyfX0pPT57IGlmKHVzZXIpe2NvbnN0e2RhdGF9PWF3YWl0IHMuZnJvbSgndXNlcnMnKS5zZWxlY3QoJyonKS5lcSgnaWQnLHVzZXIuaWQpLnNpbmdsZSgpO3NldFVzZXIoZGF0YSk7fSBzZXRMb2FkaW5nKGZhbHNlKTsgfSk7IH0sIFtdKTsNCiAgcmV0dXJuIHsgdXNlciwgbG9hZGluZyB9Ow0KfQ0K"}
+'use client'; import { useEffect, useState } from 'react'; import { createClient } from '@/lib/supabase/client'; import { User } from '@/types';
+export function useAuth() {
+  const [user, setUser] = useState<User|null>(null); const [loading, setLoading] = useState(true);
+  useEffect(() => { const s = createClient(); s.auth.getUser().then(async({data:{user}})=>{ if(user){const{data}=await s.from('users').select('*').eq('id',user.id).single();setUser(data);} setLoading(false); }); }, []);
+  return { user, loading };
+}
