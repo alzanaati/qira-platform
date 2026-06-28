@@ -1,1 +1,30 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW50ZXJmYWNlIFRyYW5zYWN0aW9uIHsgaWQ6IHN0cmluZzsgY2xhcF90eXBlPzogc3RyaW5nOyBhbW91bnQ6IG51bWJlcjsgY3JlYXRlZF9hdDogc3RyaW5nOyBjbGFwcGVyX2lkOiBzdHJpbmc7IHJlY2lwaWVudF9pZDogc3RyaW5nOyB9DQppbnRlcmZhY2UgVHJhbnNhY3Rpb25MaXN0UHJvcHMgeyB0cmFuc2FjdGlvbnM6IFRyYW5zYWN0aW9uW107IGN1cnJlbnRVc2VySWQ6IHN0cmluZzsgfQ0KY29uc3QgQ0xBUF9MQUJFTFM6IFJlY29yZDxzdHJpbmcsIHN0cmluZz4gPSB7IGJyb256ZTogJ/CfpYkg2KjYsdmI2YbYstmKJywgc2lsdmVyOiAn8J+liCDZgdi22YonLCBnb2xkOiAn8J+lhyDYsNmH2KjZiicsIGRpYW1vbmQ6ICfwn5KOINin2YTZhdin2LMnIH07DQpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBUcmFuc2FjdGlvbkxpc3QoeyB0cmFuc2FjdGlvbnMsIGN1cnJlbnRVc2VySWQgfTogVHJhbnNhY3Rpb25MaXN0UHJvcHMpIHsNCiAgaWYgKHRyYW5zYWN0aW9ucy5sZW5ndGggPT09IDApIHJldHVybiA8ZGl2IGNsYXNzTmFtZT0idGV4dC1jZW50ZXIgdGV4dC1ncmF5LTQwMCBweS0xMiB0ZXh0LXNtIj7ZhNinINiq2YjYrNivINmF2LnYp9mF2YTYp9iqPC9kaXY+Ow0KICByZXR1cm4gKA0KICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTIiPg0KICAgICAge3RyYW5zYWN0aW9ucy5tYXAodCA9PiB7DQogICAgICAgIGNvbnN0IGlzUmVjZWl2ZWQgPSB0LnJlY2lwaWVudF9pZCA9PT0gY3VycmVudFVzZXJJZDsNCiAgICAgICAgcmV0dXJuICgNCiAgICAgICAgICA8ZGl2IGtleT17dC5pZH0gY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gcC00IGJnLWdyYXktODAwIHJvdW5kZWQteGwiPg0KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0zIj4NCiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9eyd3LTEwIGgtMTAgcm91bmRlZC1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyICcgKyAoaXNSZWNlaXZlZCA/ICdiZy1ncmVlbi05MDAvNTAnIDogJ2JnLXJlZC05MDAvNTAnKX0+DQogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LWxnIj57aXNSZWNlaXZlZCA/ICfirIfvuI8nIDogJ+Kshu+4jyd9PC9zcGFuPg0KICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgPGRpdj4NCiAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtd2hpdGUgdGV4dC1zbSBmb250LW1lZGl1bSI+e0NMQVBfTEFCRUxTW3QuY2xhcF90eXBlIHx8ICcnXSB8fCAn2KrYtdmB2YrZgid9PC9wPg0KICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTQwMCB0ZXh0LXhzIj57bmV3IERhdGUodC5jcmVhdGVkX2F0KS50b0xvY2FsZURhdGVTdHJpbmcoJ2FyLVNBJyl9PC9wPg0KICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPXsndGV4dC1zbSBmb250LWJvbGQgJyArIChpc1JlY2VpdmVkID8gJ3RleHQtZ3JlZW4tNDAwJyA6ICd0ZXh0LXJlZC00MDAnKX0+DQogICAgICAgICAgICAgIHtpc1JlY2VpdmVkID8gJysnIDogJy0nfXt0LmFtb3VudH0g2LEu2LMNCiAgICAgICAgICAgIDwvc3Bhbj4NCiAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgKTsNCiAgICAgIH0pfQ0KICAgIDwvZGl2Pg0KICApOw0KfQ=="}
+'use client';
+interface Transaction { id: string; clap_type?: string; amount: number; created_at: string; clapper_id: string; recipient_id: string; }
+interface TransactionListProps { transactions: Transaction[]; currentUserId: string; }
+const CLAP_LABELS: Record<string, string> = { bronze: 'ð¥ Ø¨Ø±ÙÙØ²Ù', silver: 'ð¥ ÙØ¶Ù', gold: 'ð¥ Ø°ÙØ¨Ù', diamond: 'ð Ø§ÙÙØ§Ø³' };
+export default function TransactionList({ transactions, currentUserId }: TransactionListProps) {
+  if (transactions.length === 0) return <div className="text-center text-gray-400 py-12 text-sm">ÙØ§ ØªÙØ¬Ø¯ ÙØ¹Ø§ÙÙØ§Øª</div>;
+  return (
+    <div className="space-y-2">
+      {transactions.map(t => {
+        const isReceived = t.recipient_id === currentUserId;
+        return (
+          <div key={t.id} className="flex items-center justify-between p-4 bg-gray-800 rounded-xl">
+            <div className="flex items-center gap-3">
+              <div className={'w-10 h-10 rounded-full flex items-center justify-center ' + (isReceived ? 'bg-green-900/50' : 'bg-red-900/50')}>
+                <span className="text-lg">{isReceived ? 'â¬ï¸' : 'â¬ï¸'}</span>
+              </div>
+              <div>
+                <p className="text-white text-sm font-medium">{CLAP_LABELS[t.clap_type || ''] || 'ØªØµÙÙÙ'}</p>
+                <p className="text-gray-400 text-xs">{new Date(t.created_at).toLocaleDateString('ar-SA')}</p>
+              </div>
+            </div>
+            <span className={'text-sm font-bold ' + (isReceived ? 'text-green-400' : 'text-red-400')}>
+              {isReceived ? '+' : '-'}{t.amount} Ø±.Ø³
+            </span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
