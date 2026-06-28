@@ -1,1 +1,6 @@
-{"data":"J3VzZSBjbGllbnQnOyBpbXBvcnQgeyB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnOyBpbXBvcnQgeyBXYWxsZXQgfSBmcm9tICdAL3R5cGVzJzsNCmV4cG9ydCBmdW5jdGlvbiB1c2VXYWxsZXQoKSB7DQogIGNvbnN0IFt3YWxsZXQsIHNldFdhbGxldF0gPSB1c2VTdGF0ZTxXYWxsZXR8bnVsbD4obnVsbCk7DQogIHVzZUVmZmVjdCgoKT0+eyBmZXRjaCgnL2FwaS93YWxsZXQnKS50aGVuKHI9PnIuanNvbigpKS50aGVuKCh7ZGF0YX0pPT5zZXRXYWxsZXQoZGF0YSkpOyB9LFtdKTsNCiAgcmV0dXJue3dhbGxldH07DQp9DQo="}
+'use client'; import { useEffect, useState } from 'react'; import { Wallet } from '@/types';
+export function useWallet() {
+  const [wallet, setWallet] = useState<Wallet|null>(null);
+  useEffect(()=>{ fetch('/api/wallet').then(r=>r.json()).then(({data})=>setWallet(data)); },[]);
+  return{wallet};
+}
