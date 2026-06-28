@@ -1,1 +1,88 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VSZWYsIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnOw0KaW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAnQC9saWIvc3VwYWJhc2UvY2xpZW50JzsNCmltcG9ydCB7IENoZXZyb25MZWZ0LCBDaGV2cm9uUmlnaHQsIFpvb21JbiwgWm9vbU91dCwgRmlsZVRleHQgfSBmcm9tICdsdWNpZGUtcmVhY3QnOw0KaW50ZXJmYWNlIENvbnRlbnRWaWV3ZXJQcm9wcyB7DQogIHN0cmVhbUlkOiBzdHJpbmc7DQogIGlzSG9zdDogYm9vbGVhbjsNCiAgY3VycmVudEZpbGU6IHsgaWQ6IHN0cmluZzsgZmlsZV91cmw6IHN0cmluZzsgZmlsZV90eXBlOiBzdHJpbmc7IGZpbGVfbmFtZTogc3RyaW5nIH0gfCBudWxsOw0KfQ0KZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQ29udGVudFZpZXdlcih7IHN0cmVhbUlkLCBpc0hvc3QsIGN1cnJlbnRGaWxlIH06IENvbnRlbnRWaWV3ZXJQcm9wcykgew0KICBjb25zdCBzdXBhYmFzZSA9IGNyZWF0ZUNsaWVudCgpOw0KICBjb25zdCBjYW52YXNSZWYgPSB1c2VSZWY8SFRNTENhbnZhc0VsZW1lbnQ+KG51bGwpOw0KICBjb25zdCBbY3VycmVudFBhZ2UsIHNldEN1cnJlbnRQYWdlXSA9IHVzZVN0YXRlKDEpOw0KICBjb25zdCBbdG90YWxQYWdlcywgc2V0VG90YWxQYWdlc10gPSB1c2VTdGF0ZSgxKTsNCiAgY29uc3QgW3pvb20sIHNldFpvb21dID0gdXNlU3RhdGUoMS4wKTsNCiAgY29uc3QgW3BkZkRvYywgc2V0UGRmRG9jXSA9IHVzZVN0YXRlPGFueT4obnVsbCk7DQogIGNvbnN0IFtsb2FkaW5nLCBzZXRMb2FkaW5nXSA9IHVzZVN0YXRlKGZhbHNlKTsNCiAgY29uc3QgcmVuZGVyVGFza1JlZiA9IHVzZVJlZjxhbnk+KG51bGwpOw0KICB1c2VFZmZlY3QoKCkgPT4gew0KICAgIGlmICghc3RyZWFtSWQpIHJldHVybjsNCiAgICBjb25zdCBjaCA9IHN1cGFiYXNlLmNoYW5uZWwoJ2NzLScgKyBzdHJlYW1JZCkNCiAgICAgIC5vbigncG9zdGdyZXNfY2hhbmdlcycsIHsgZXZlbnQ6ICcqJywgc2NoZW1hOiAncHVibGljJywgdGFibGU6ICdzdHJlYW1fY29udGVudF9zdGF0ZScsIGZpbHRlcjogJ3N0cmVhbV9pZD1lcS4nICsgc3RyZWFtSWQgfSwNCiAgICAgICAgKHBheWxvYWQ6IGFueSkgPT4gew0KICAgICAgICAgIGlmIChwYXlsb2FkLm5ldyAmJiAhaXNIb3N0KSB7DQogICAgICAgICAgICBzZXRDdXJyZW50UGFnZShwYXlsb2FkLm5ldy5jdXJyZW50X3BhZ2UgfHwgMSk7DQogICAgICAgICAgICBzZXRab29tKHBheWxvYWQubmV3Lnpvb21fbGV2ZWwgfHwgMS4wKTsNCiAgICAgICAgICB9DQogICAgICAgIH0pLnN1YnNjcmliZSgpOw0KICAgIHJldHVybiAoKSA9PiB7IHN1cGFiYXNlLnJlbW92ZUNoYW5uZWwoY2gpOyB9Ow0KICB9LCBbc3RyZWFtSWQsIGlzSG9zdF0pOw0KICB1c2VFZmZlY3QoKCkgPT4gew0KICAgIGlmICghY3VycmVudEZpbGUgfHwgY3VycmVudEZpbGUuZmlsZV90eXBlICE9PSAncGRmJykgeyBzZXRQZGZEb2MobnVsbCk7IHJldHVybjsgfQ0KICAgIHNldExvYWRpbmcodHJ1ZSk7DQogICAgaW1wb3J0KCdwZGZqcy1kaXN0JykudGhlbihhc3luYyAobGliOiBhbnkpID0+IHsNCiAgICAgIGxpYi5HbG9iYWxXb3JrZXJPcHRpb25zLndvcmtlclNyYyA9ICcvcGRmLndvcmtlci5taW4uanMnOw0KICAgICAgdHJ5IHsNCiAgICAgICAgY29uc3QgZG9jID0gYXdhaXQgbGliLmdldERvY3VtZW50KGN1cnJlbnRGaWxlLmZpbGVfdXJsKS5wcm9taXNlOw0KICAgICAgICBzZXRQZGZEb2MoZG9jKTsgc2V0VG90YWxQYWdlcyhkb2MubnVtUGFnZXMpOyBzZXRDdXJyZW50UGFnZSgxKTsNCiAgICAgIH0gY2F0Y2ggKGUpIHsgY29uc29sZS5lcnJvcihlKTsgfSBmaW5hbGx5IHsgc2V0TG9hZGluZyhmYWxzZSk7IH0NCiAgICB9KTsNCiAgfSwgW2N1cnJlbnRGaWxlXSk7DQogIHVzZUVmZmVjdCgoKSA9PiB7DQogICAgaWYgKCFwZGZEb2MgfHwgIWNhbnZhc1JlZi5jdXJyZW50KSByZXR1cm47DQogICAgaWYgKHJlbmRlclRhc2tSZWYuY3VycmVudCkgcmVuZGVyVGFza1JlZi5jdXJyZW50LmNhbmNlbCgpOw0KICAgIHBkZkRvYy5nZXRQYWdlKGN1cnJlbnRQYWdlKS50aGVuKChwYWdlOiBhbnkpID0+IHsNCiAgICAgIGNvbnN0IHZwID0gcGFnZS5nZXRWaWV3cG9ydCh7IHNjYWxlOiB6b29tIH0pOw0KICAgICAgY29uc3QgY2FudmFzID0gY2FudmFzUmVmLmN1cnJlbnQhOw0KICAgICAgY2FudmFzLndpZHRoID0gdnAud2lkdGg7IGNhbnZhcy5oZWlnaHQgPSB2cC5oZWlnaHQ7DQogICAgICBjb25zdCB0YXNrID0gcGFnZS5yZW5kZXIoeyBjYW52YXNDb250ZXh0OiBjYW52YXMuZ2V0Q29udGV4dCgnMmQnKSEsIHZpZXdwb3J0OiB2cCB9KTsNCiAgICAgIHJlbmRlclRhc2tSZWYuY3VycmVudCA9IHRhc2s7DQogICAgICB0YXNrLnByb21pc2UuY2F0Y2goKCkgPT4ge30pOw0KICAgIH0pOw0KICB9LCBbcGRmRG9jLCBjdXJyZW50UGFnZSwgem9vbV0pOw0KICBjb25zdCBzeW5jID0gYXN5bmMgKHA6IG51bWJlciwgejogbnVtYmVyKSA9PiB7DQogICAgaWYgKCFpc0hvc3QgfHwgIWN1cnJlbnRGaWxlKSByZXR1cm47DQogICAgYXdhaXQgc3VwYWJhc2UuZnJvbSgnc3RyZWFtX2NvbnRlbnRfc3RhdGUnKS51cHNlcnQoeyBzdHJlYW1faWQ6IHN0cmVhbUlkLCBmaWxlX2lkOiBjdXJyZW50RmlsZS5pZCwgY3VycmVudF9wYWdlOiBwLCB6b29tX2xldmVsOiB6LCBzY3JlZW5fc2hhcmVfYWN0aXZlOiBmYWxzZSwgdXBkYXRlZF9hdDogbmV3IERhdGUoKS50b0lTT1N0cmluZygpIH0sIHsgb25Db25mbGljdDogJ3N0cmVhbV9pZCcgfSk7DQogIH07DQogIGNvbnN0IGdvdG9QYWdlID0gYXN5bmMgKHA6IG51bWJlcikgPT4geyBjb25zdCBucCA9IE1hdGgubWF4KDEsIE1hdGgubWluKHAsIHRvdGFsUGFnZXMpKTsgc2V0Q3VycmVudFBhZ2UobnApOyBhd2FpdCBzeW5jKG5wLCB6b29tKTsgfTsNCiAgY29uc3QgY2hnWm9vbSA9IGFzeW5jIChkOiBudW1iZXIpID0+IHsgY29uc3QgeiA9IE1hdGgubWF4KDAuNSwgTWF0aC5taW4oMy4wLCB6b29tICsgZCkpOyBzZXRab29tKHopOyBhd2FpdCBzeW5jKGN1cnJlbnRQYWdlLCB6KTsgfTsNCiAgaWYgKCFjdXJyZW50RmlsZSkgcmV0dXJuICgNCiAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgaC1mdWxsIGJnLWdyYXktOTAwIHRleHQtZ3JheS00MDAiPg0KICAgICAgPGRpdiBjbGFzc05hbWU9InRleHQtY2VudGVyIj48RmlsZVRleHQgc2l6ZT17NDh9IGNsYXNzTmFtZT0ibXgtYXV0byBtYi0zIG9wYWNpdHktNTAiIC8+PHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIj7ZhNinINmK2YjYrNivINmF2K3YqtmI2Yk8L3A+e2lzSG9zdCAmJiA8cCBjbGFzc05hbWU9InRleHQteHMgbXQtMSBvcGFjaXR5LTYwIj7Yp9ix2YHYuSDZhdmE2YHYp9mLPC9wPn08L2Rpdj4NCiAgICA8L2Rpdj4NCiAgKTsNCiAgcmV0dXJuICgNCiAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBoLWZ1bGwgYmctZ3JheS05MDAiPg0KICAgICAge2lzSG9zdCAmJiAoDQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gcC0yIGJnLWdyYXktODAwIGJvcmRlci1iIGJvcmRlci1ncmF5LTcwMCI+DQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIj4NCiAgICAgICAgICAgIDxidXR0b24gb25DbGljaz17KCkgPT4gZ290b1BhZ2UoY3VycmVudFBhZ2UgLSAxKX0gZGlzYWJsZWQ9e2N1cnJlbnRQYWdlIDw9IDF9IGNsYXNzTmFtZT0icC0xIHJvdW5kZWQgaG92ZXI6YmctZ3JheS03MDAgZGlzYWJsZWQ6b3BhY2l0eS0zMCB0ZXh0LXdoaXRlIj48Q2hldnJvblJpZ2h0IHNpemU9ezE2fSAvPjwvYnV0dG9uPg0KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIHRleHQteHMiPntjdXJyZW50UGFnZX0ve3RvdGFsUGFnZXN9PC9zcGFuPg0KICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXsoKSA9PiBnb3RvUGFnZShjdXJyZW50UGFnZSArIDEpfSBkaXNhYmxlZD17Y3VycmVudFBhZ2UgPj0gdG90YWxQYWdlc30gY2xhc3NOYW1lPSJwLTEgcm91bmRlZCBob3ZlcjpiZy1ncmF5LTcwMCBkaXNhYmxlZDpvcGFjaXR5LTMwIHRleHQtd2hpdGUiPjxDaGV2cm9uTGVmdCBzaXplPXsxNn0gLz48L2J1dHRvbj4NCiAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIiPg0KICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXsoKSA9PiBjaGdab29tKC0wLjEpfSBjbGFzc05hbWU9InAtMSByb3VuZGVkIGhvdmVyOmJnLWdyYXktNzAwIHRleHQtd2hpdGUiPjxab29tT3V0IHNpemU9ezE2fSAvPjwvYnV0dG9uPg0KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIHRleHQteHMiPntNYXRoLnJvdW5kKHpvb20qMTAwKX0lPC9zcGFuPg0KICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXsoKSA9PiBjaGdab29tKDAuMSl9IGNsYXNzTmFtZT0icC0xIHJvdW5kZWQgaG92ZXI6YmctZ3JheS03MDAgdGV4dC13aGl0ZSI+PFpvb21JbiBzaXplPXsxNn0gLz48L2J1dHRvbj4NCiAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtZ3JheS00MDAgdGV4dC14cyB0cnVuY2F0ZSBtYXgtdy1bOHJlbV0iPntjdXJyZW50RmlsZS5maWxlX25hbWV9PC9zcGFuPg0KICAgICAgICA8L2Rpdj4NCiAgICAgICl9DQogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleC0xIG92ZXJmbG93LWF1dG8gZmxleCBpdGVtcy1zdGFydCBqdXN0aWZ5LWNlbnRlciBwLTIiPg0KICAgICAgICB7bG9hZGluZyA/IDxkaXYgY2xhc3NOYW1lPSJhbmltYXRlLXNwaW4gcm91bmRlZC1mdWxsIGgtOCB3LTggYm9yZGVyLWItMiBib3JkZXItYmx1ZS01MDAgbS1hdXRvIiAvPiA6IDxjYW52YXMgcmVmPXtjYW52YXNSZWZ9IGNsYXNzTmFtZT0ic2hhZG93LTJ4bCBtYXgtdy1mdWxsIiAvPn0NCiAgICAgIDwvZGl2Pg0KICAgICAgeyFpc0hvc3QgJiYgPGRpdiBjbGFzc05hbWU9InAtMiBiZy1ncmF5LTgwMCB0ZXh0LWNlbnRlciB0ZXh0LWdyYXktNDAwIHRleHQteHMiPntjdXJyZW50RmlsZS5maWxlX25hbWV9IOKAlCDYtdmB2K3YqSB7Y3VycmVudFBhZ2V9L3t0b3RhbFBhZ2VzfTwvZGl2Pn0NCiAgICA8L2Rpdj4NCiAgKTsNCn0NCg=="}
+'use client';
+import { useEffect, useRef, useState } from 'react';
+import { createClient } from '@/lib/supabase/client';
+import { ChevronLeft, ChevronRight, ZoomIn, ZoomOut, FileText } from 'lucide-react';
+interface ContentViewerProps {
+  streamId: string;
+  isHost: boolean;
+  currentFile: { id: string; file_url: string; file_type: string; file_name: string } | null;
+}
+export default function ContentViewer({ streamId, isHost, currentFile }: ContentViewerProps) {
+  const supabase = createClient();
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const [zoom, setZoom] = useState(1.0);
+  const [pdfDoc, setPdfDoc] = useState<any>(null);
+  const [loading, setLoading] = useState(false);
+  const renderTaskRef = useRef<any>(null);
+  useEffect(() => {
+    if (!streamId) return;
+    const ch = supabase.channel('cs-' + streamId)
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'stream_content_state', filter: 'stream_id=eq.' + streamId },
+        (payload: any) => {
+          if (payload.new && !isHost) {
+            setCurrentPage(payload.new.current_page || 1);
+            setZoom(payload.new.zoom_level || 1.0);
+          }
+        }).subscribe();
+    return () => { supabase.removeChannel(ch); };
+  }, [streamId, isHost]);
+  useEffect(() => {
+    if (!currentFile || currentFile.file_type !== 'pdf') { setPdfDoc(null); return; }
+    setLoading(true);
+    import('pdfjs-dist').then(async (lib: any) => {
+      lib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js';
+      try {
+        const doc = await lib.getDocument(currentFile.file_url).promise;
+        setPdfDoc(doc); setTotalPages(doc.numPages); setCurrentPage(1);
+      } catch (e) { console.error(e); } finally { setLoading(false); }
+    });
+  }, [currentFile]);
+  useEffect(() => {
+    if (!pdfDoc || !canvasRef.current) return;
+    if (renderTaskRef.current) renderTaskRef.current.cancel();
+    pdfDoc.getPage(currentPage).then((page: any) => {
+      const vp = page.getViewport({ scale: zoom });
+      const canvas = canvasRef.current!;
+      canvas.width = vp.width; canvas.height = vp.height;
+      const task = page.render({ canvasContext: canvas.getContext('2d')!, viewport: vp });
+      renderTaskRef.current = task;
+      task.promise.catch(() => {});
+    });
+  }, [pdfDoc, currentPage, zoom]);
+  const sync = async (p: number, z: number) => {
+    if (!isHost || !currentFile) return;
+    await supabase.from('stream_content_state').upsert({ stream_id: streamId, file_id: currentFile.id, current_page: p, zoom_level: z, screen_share_active: false, updated_at: new Date().toISOString() }, { onConflict: 'stream_id' });
+  };
+  const gotoPage = async (p: number) => { const np = Math.max(1, Math.min(p, totalPages)); setCurrentPage(np); await sync(np, zoom); };
+  const chgZoom = async (d: number) => { const z = Math.max(0.5, Math.min(3.0, zoom + d)); setZoom(z); await sync(currentPage, z); };
+  if (!currentFile) return (
+    <div className="flex items-center justify-center h-full bg-gray-900 text-gray-400">
+      <div className="text-center"><FileText size={48} className="mx-auto mb-3 opacity-50" /><p className="text-sm">ÙØ§ ÙÙØ¬Ø¯ ÙØ­ØªÙÙ</p>{isHost && <p className="text-xs mt-1 opacity-60">Ø§Ø±ÙØ¹ ÙÙÙØ§Ù</p>}</div>
+    </div>
+  );
+  return (
+    <div className="flex flex-col h-full bg-gray-900">
+      {isHost && (
+        <div className="flex items-center justify-between p-2 bg-gray-800 border-b border-gray-700">
+          <div className="flex items-center gap-2">
+            <button onClick={() => gotoPage(currentPage - 1)} disabled={currentPage <= 1} className="p-1 rounded hover:bg-gray-700 disabled:opacity-30 text-white"><ChevronRight size={16} /></button>
+            <span className="text-white text-xs">{currentPage}/{totalPages}</span>
+            <button onClick={() => gotoPage(currentPage + 1)} disabled={currentPage >= totalPages} className="p-1 rounded hover:bg-gray-700 disabled:opacity-30 text-white"><ChevronLeft size={16} /></button>
+          </div>
+          <div className="flex items-center gap-2">
+            <button onClick={() => chgZoom(-0.1)} className="p-1 rounded hover:bg-gray-700 text-white"><ZoomOut size={16} /></button>
+            <span className="text-white text-xs">{Math.round(zoom*100)}%</span>
+            <button onClick={() => chgZoom(0.1)} className="p-1 rounded hover:bg-gray-700 text-white"><ZoomIn size={16} /></button>
+          </div>
+          <span className="text-gray-400 text-xs truncate max-w-[8rem]">{currentFile.file_name}</span>
+        </div>
+      )}
+      <div className="flex-1 overflow-auto flex items-start justify-center p-2">
+        {loading ? <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 m-auto" /> : <canvas ref={canvasRef} className="shadow-2xl max-w-full" />}
+      </div>
+      {!isHost && <div className="p-2 bg-gray-800 text-center text-gray-400 text-xs">{currentFile.file_name} â ØµÙØ­Ø© {currentPage}/{totalPages}</div>}
+    </div>
+  );
+}
