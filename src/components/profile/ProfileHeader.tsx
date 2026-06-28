@@ -1,1 +1,35 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgVXNlciB9IGZyb20gJ0AvdHlwZXMnOw0KaW1wb3J0IEF2YXRhciBmcm9tICdAL2NvbXBvbmVudHMvdWkvQXZhdGFyJzsNCmludGVyZmFjZSBQcm9maWxlSGVhZGVyUHJvcHMgeyB1c2VyOiBVc2VyOyBzdHJlYW1Db3VudDogbnVtYmVyOyBmb2xsb3dlckNvdW50OiBudW1iZXI7IGZvbGxvd2luZ0NvdW50OiBudW1iZXI7IGlzT3duUHJvZmlsZTogYm9vbGVhbjsgaXNGb2xsb3dpbmc6IGJvb2xlYW47IG9uRm9sbG93OiAoKSA9PiB2b2lkOyB9DQpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBQcm9maWxlSGVhZGVyKHsgdXNlciwgc3RyZWFtQ291bnQsIGZvbGxvd2VyQ291bnQsIGZvbGxvd2luZ0NvdW50LCBpc093blByb2ZpbGUsIGlzRm9sbG93aW5nLCBvbkZvbGxvdyB9OiBQcm9maWxlSGVhZGVyUHJvcHMpIHsNCiAgcmV0dXJuICgNCiAgICA8ZGl2IGNsYXNzTmFtZT0iYmctZ3JheS05MDAgYm9yZGVyLWIgYm9yZGVyLWdyYXktODAwIHAtNiI+DQogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1zdGFydCBnYXAtNCI+DQogICAgICAgIDxBdmF0YXIgdXNlcj17dXNlcn0gc2l6ZT0ibGciIC8+DQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4LTEgbWluLXctMCI+DQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIG1iLTEiPg0KICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT0idGV4dC13aGl0ZSBmb250LWJvbGQgdGV4dC14bCB0cnVuY2F0ZSI+e3VzZXIuZnVsbF9uYW1lIHx8IHVzZXIudXNlcm5hbWV9PC9oMT4NCiAgICAgICAgICAgIHt1c2VyLmlzX3ZlcmlmaWVkICYmIDxzcGFuIGNsYXNzTmFtZT0idGV4dC14cyBiZy1ibHVlLTYwMCB0ZXh0LXdoaXRlIHB4LTIgcHktMC41IHJvdW5kZWQtZnVsbCI+4pyTINmF2YjYq9mR2YI8L3NwYW4+fQ0KICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTQwMCB0ZXh0LXNtIj5Ae3VzZXIudXNlcm5hbWV9PC9wPg0KICAgICAgICAgIHt1c2VyLmJpbyAmJiA8cCBjbGFzc05hbWU9InRleHQtZ3JheS0zMDAgdGV4dC1zbSBtdC0yIj57dXNlci5iaW99PC9wPn0NCiAgICAgICAgPC9kaXY+DQogICAgICAgIHshaXNPd25Qcm9maWxlICYmICgNCiAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9e29uRm9sbG93fQ0KICAgICAgICAgICAgY2xhc3NOYW1lPXsncHgtNiBweS0yIHJvdW5kZWQtZnVsbCB0ZXh0LXNtIGZvbnQtbWVkaXVtIHRyYW5zaXRpb24tYWxsICcgKyAoaXNGb2xsb3dpbmcgPyAnYmctZ3JheS03MDAgaG92ZXI6YmctcmVkLTkwMC81MCB0ZXh0LXdoaXRlJyA6ICdiZy1ibHVlLTYwMCBob3ZlcjpiZy1ibHVlLTcwMCB0ZXh0LXdoaXRlJyl9Pg0KICAgICAgICAgICAge2lzRm9sbG93aW5nID8gJ9il2YTYutin2KEg2KfZhNmF2KrYp9io2LnYqScgOiAn2YXYqtin2KjYudipJ30NCiAgICAgICAgICA8L2J1dHRvbj4NCiAgICAgICAgKX0NCiAgICAgIDwvZGl2Pg0KICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZ2FwLTYgbXQtNCBwdC00IGJvcmRlci10IGJvcmRlci1ncmF5LTgwMCI+DQogICAgICAgIHtbWyfYqNirJywgc3RyZWFtQ291bnRdLCBbJ9mF2KrYp9io2ZDYuScsIGZvbGxvd2VyQ291bnRdLCBbJ9mF2KrYp9io2Y7YuScsIGZvbGxvd2luZ0NvdW50XV0ubWFwKChbbGFiZWwsIGNvdW50XSkgPT4gKA0KICAgICAgICAgIDxkaXYga2V5PXtTdHJpbmcobGFiZWwpfSBjbGFzc05hbWU9InRleHQtY2VudGVyIj4NCiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIGZvbnQtYm9sZCB0ZXh0LWxnIj57Y291bnR9PC9kaXY+DQogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idGV4dC1ncmF5LTQwMCB0ZXh0LXhzIj57bGFiZWx9PC9kaXY+DQogICAgICAgICAgPC9kaXY+DQogICAgICAgICkpfQ0KICAgICAgPC9kaXY+DQogICAgPC9kaXY+DQogICk7DQp9"}
+'use client';
+import { User } from '@/types';
+import Avatar from '@/components/ui/Avatar';
+interface ProfileHeaderProps { user: User; streamCount: number; followerCount: number; followingCount: number; isOwnProfile: boolean; isFollowing: boolean; onFollow: () => void; }
+export default function ProfileHeader({ user, streamCount, followerCount, followingCount, isOwnProfile, isFollowing, onFollow }: ProfileHeaderProps) {
+  return (
+    <div className="bg-gray-900 border-b border-gray-800 p-6">
+      <div className="flex items-start gap-4">
+        <Avatar user={user} size="lg" />
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 mb-1">
+            <h1 className="text-white font-bold text-xl truncate">{user.full_name || user.username}</h1>
+            {user.is_verified && <span className="text-xs bg-blue-600 text-white px-2 py-0.5 rounded-full">â ÙÙØ«ÙÙ</span>}
+          </div>
+          <p className="text-gray-400 text-sm">@{user.username}</p>
+          {user.bio && <p className="text-gray-300 text-sm mt-2">{user.bio}</p>}
+        </div>
+        {!isOwnProfile && (
+          <button onClick={onFollow}
+            className={'px-6 py-2 rounded-full text-sm font-medium transition-all ' + (isFollowing ? 'bg-gray-700 hover:bg-red-900/50 text-white' : 'bg-blue-600 hover:bg-blue-700 text-white')}>
+            {isFollowing ? 'Ø¥ÙØºØ§Ø¡ Ø§ÙÙØªØ§Ø¨Ø¹Ø©' : 'ÙØªØ§Ø¨Ø¹Ø©'}
+          </button>
+        )}
+      </div>
+      <div className="flex gap-6 mt-4 pt-4 border-t border-gray-800">
+        {[['Ø¨Ø«', streamCount], ['ÙØªØ§Ø¨ÙØ¹', followerCount], ['ÙØªØ§Ø¨ÙØ¹', followingCount]].map(([label, count]) => (
+          <div key={String(label)} className="text-center">
+            <div className="text-white font-bold text-lg">{count}</div>
+            <div className="text-gray-400 text-xs">{label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
