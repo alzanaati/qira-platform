@@ -1,1 +1,13 @@
-{"data":"aW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAnQC9saWIvc3VwYWJhc2Uvc2VydmVyJzsNCmltcG9ydCBFeHBsb3JlQ2xpZW50IGZyb20gJ0AvY29tcG9uZW50cy9mZWVkL0V4cGxvcmVDbGllbnQnOw0KDQpleHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiBFeHBsb3JlUGFnZSgpIHsNCiAgY29uc3Qgc3VwYWJhc2UgPSBjcmVhdGVDbGllbnQoKTsNCiAgY29uc3QgeyBkYXRhOiBzdHJlYW1zIH0gPSBhd2FpdCBzdXBhYmFzZQ0KICAgIC5mcm9tKCdsaXZlX3N0cmVhbXMnKQ0KICAgIC5zZWxlY3QoJyosIHVzZXJzKGlkLGZ1bGxfbmFtZSx1c2VybmFtZSxhdmF0YXJfdXJsLGlzX3ZlcmlmaWVkKScpDQogICAgLmVxKCdzdGF0dXMnLCAnbGl2ZScpDQogICAgLm9yZGVyKCd2aWV3ZXJfY291bnQnLCB7IGFzY2VuZGluZzogZmFsc2UgfSkNCiAgICAubGltaXQoNTApOw0KICByZXR1cm4gPEV4cGxvcmVDbGllbnQgaW5pdGlhbFN0cmVhbXM9e3N0cmVhbXMgfHwgW119IC8+Ow0KfQ0K"}
+import { createClient } from '@/lib/supabase/server';
+import ExploreClient from '@/components/feed/ExploreClient';
+
+export default async function ExplorePage() {
+  const supabase = createClient();
+  const { data: streams } = await supabase
+    .from('live_streams')
+    .select('*, users(id,full_name,username,avatar_url,is_verified)')
+    .eq('status', 'live')
+    .order('viewer_count', { ascending: false })
+    .limit(50);
+  return <ExploreClient initialStreams={streams || []} />;
+}
