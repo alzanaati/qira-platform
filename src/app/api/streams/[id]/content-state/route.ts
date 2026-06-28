@@ -1,1 +1,16 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsNCmltcG9ydCB7IGNyZWF0ZUNsaWVudCB9IGZyb20gJ0AvbGliL3N1cGFiYXNlL3NlcnZlcic7DQpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKF86IE5leHRSZXF1ZXN0LCB7IHBhcmFtcyB9OiB7IHBhcmFtczogeyBpZDogc3RyaW5nIH0gfSkgew0KICBjb25zdCBzdXBhYmFzZSA9IGNyZWF0ZUNsaWVudCgpOw0KICBjb25zdCB7IGRhdGEgfSA9IGF3YWl0IHN1cGFiYXNlLmZyb20oJ3N0cmVhbV9jb250ZW50X3N0YXRlJykuc2VsZWN0KCcqLCBzdHJlYW1fZmlsZXMoKiknKS5lcSgnc3RyZWFtX2lkJyxwYXJhbXMuaWQpLnNpbmdsZSgpOw0KICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBkYXRhIH0pOw0KfQ0KZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBBVENIKHJlcXVlc3Q6IE5leHRSZXF1ZXN0LCB7IHBhcmFtcyB9OiB7IHBhcmFtczogeyBpZDogc3RyaW5nIH0gfSkgew0KICBjb25zdCBzdXBhYmFzZSA9IGNyZWF0ZUNsaWVudCgpOw0KICBjb25zdCB7IGRhdGE6IHsgdXNlciB9IH0gPSBhd2FpdCBzdXBhYmFzZS5hdXRoLmdldFVzZXIoKTsNCiAgaWYgKCF1c2VyKSByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ1VuYXV0aG9yaXplZCcgfSwgeyBzdGF0dXM6IDQwMSB9KTsNCiAgY29uc3QgYm9keSA9IGF3YWl0IHJlcXVlc3QuanNvbigpOw0KICBjb25zdCB7IGRhdGEsIGVycm9yIH0gPSBhd2FpdCBzdXBhYmFzZS5mcm9tKCdzdHJlYW1fY29udGVudF9zdGF0ZScpLnVwZGF0ZSh7IC4uLmJvZHksIHVwZGF0ZWRfYXQ6bmV3IERhdGUoKS50b0lTT1N0cmluZygpIH0pLmVxKCdzdHJlYW1faWQnLHBhcmFtcy5pZCkuc2VsZWN0KCkuc2luZ2xlKCk7DQogIGlmIChlcnJvcikgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6IGVycm9yLm1lc3NhZ2UgfSwgeyBzdGF0dXM6IDUwMCB9KTsNCiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZGF0YSB9KTsNCn0NCg=="}
+import { NextRequest, NextResponse } from 'next/server';
+import { createClient } from '@/lib/supabase/server';
+export async function GET(_: NextRequest, { params }: { params: { id: string } }) {
+  const supabase = createClient();
+  const { data } = await supabase.from('stream_content_state').select('*, stream_files(*)').eq('stream_id',params.id).single();
+  return NextResponse.json({ data });
+}
+export async function PATCH(request: NextRequest, { params }: { params: { id: string } }) {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  const body = await request.json();
+  const { data, error } = await supabase.from('stream_content_state').update({ ...body, updated_at:new Date().toISOString() }).eq('stream_id',params.id).select().single();
+  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  return NextResponse.json({ data });
+}
