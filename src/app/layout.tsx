@@ -1,1 +1,10 @@
-{"data":"aW1wb3J0IHR5cGUgeyBNZXRhZGF0YSB9IGZyb20gJ25leHQnOwppbXBvcnQgJy4vZ2xvYmFscy5jc3MnOwpleHBvcnQgY29uc3QgbWV0YWRhdGE6IE1ldGFkYXRhID0geyB0aXRsZTogJ9in2YLYsdijIC0g2YXZhti12Kkg2KfZhNmF2LnYsdmB2Kkg2KfZhNi52LHYqNmK2KknLCBkZXNjcmlwdGlvbjogJ9mF2YbYtdipINmF2LnYsdmB2YrYqSDZiNiq2LnZhNmK2YXZitipINmI2KfYrNiq2YXYp9i52YrYqSDYudix2KjZitipJyB9OwpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBSb290TGF5b3V0KHsgY2hpbGRyZW4gfTogeyBjaGlsZHJlbjogUmVhY3QuUmVhY3ROb2RlIH0pIHsKICByZXR1cm4gKAogICAgPGh0bWwgbGFuZz0iYXIiIGRpcj0icnRsIj4KICAgICAgPGJvZHkgY2xhc3NOYW1lPSJmb250LWNhaXJvIj57Y2hpbGRyZW59PC9ib2R5PgogICAgPC9odG1sPgogICk7Cn0K"}
+import type { Metadata } from 'next';
+import './globals.css';
+export const metadata: Metadata = { title: 'Ø§ÙØ±Ø£ - ÙÙØµØ© Ø§ÙÙØ¹Ø±ÙØ© Ø§ÙØ¹Ø±Ø¨ÙØ©', description: 'ÙÙØµØ© ÙØ¹Ø±ÙÙØ© ÙØªØ¹ÙÙÙÙØ© ÙØ§Ø¬ØªÙØ§Ø¹ÙØ© Ø¹Ø±Ø¨ÙØ©' };
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="ar" dir="rtl">
+      <body className="font-cairo">{children}</body>
+    </html>
+  );
+}
