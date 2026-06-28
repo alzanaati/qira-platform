@@ -1,1 +1,5 @@
-{"data":"J3VzZSBjbGllbnQnOyBpbXBvcnQgeyBDTEFQX1BSSUNFUywgQ2xhcFR5cGUgfSBmcm9tICdAL3R5cGVzJzsNCmV4cG9ydCBmdW5jdGlvbiB1c2VDbGFwKHN0cmVhbUlkOiBzdHJpbmcsIHJlY2VpdmVySWQ6IHN0cmluZykgew0KICBjb25zdCBzZW5kPWFzeW5jKGNsYXBUeXBlOkNsYXBUeXBlKT0+e2NvbnN0IHI9YXdhaXQgZmV0Y2goJy9hcGkvY2xhcHMnLHttZXRob2Q6J1BPU1QnLGhlYWRlcnM6eydDb250ZW50LVR5cGUnOidhcHBsaWNhdGlvbi9qc29uJ30sYm9keTpKU09OLnN0cmluZ2lmeSh7c3RyZWFtSWQscmVjZWl2ZXJJZCxjbGFwVHlwZX0pfSk7cmV0dXJuIHIuanNvbigpO307DQogIHJldHVybiB7c2VuZH07DQp9DQo="}
+'use client'; import { CLAP_PRICES, ClapType } from '@/types';
+export function useClap(streamId: string, receiverId: string) {
+  const send=async(clapType:ClapType)=>{const r=await fetch('/api/claps',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({streamId,receiverId,clapType})});return r.json();};
+  return {send};
+}
