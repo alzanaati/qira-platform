@@ -1,1 +1,51 @@
-{"data":"J3VzZSBjbGllbnQnOwppbXBvcnQgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAnQC9saWIvc3VwYWJhc2UvY2xpZW50JzsKaW1wb3J0IHsgdXNlUm91dGVyIH0gZnJvbSAnbmV4dC9uYXZpZ2F0aW9uJzsKaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIExvZ2luRm9ybSgpIHsKICBjb25zdCBbZW1haWwsIHNldEVtYWlsXSA9IHVzZVN0YXRlKCcnKTsKICBjb25zdCBbcGFzc3dvcmQsIHNldFBhc3N3b3JkXSA9IHVzZVN0YXRlKCcnKTsKICBjb25zdCBbbG9hZGluZywgc2V0TG9hZGluZ10gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2Vycm9yLCBzZXRFcnJvcl0gPSB1c2VTdGF0ZSgnJyk7CiAgY29uc3Qgcm91dGVyID0gdXNlUm91dGVyKCk7CiAgY29uc3Qgc3VwYWJhc2UgPSBjcmVhdGVDbGllbnQoKTsKCiAgY29uc3QgaGFuZGxlU3VibWl0ID0gYXN5bmMgKGU6IFJlYWN0LkZvcm1FdmVudCkgPT4gewogICAgZS5wcmV2ZW50RGVmYXVsdCgpOwogICAgc2V0TG9hZGluZyh0cnVlKTsgc2V0RXJyb3IoJycpOwogICAgY29uc3QgeyBlcnJvciB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5zaWduSW5XaXRoUGFzc3dvcmQoeyBlbWFpbCwgcGFzc3dvcmQgfSk7CiAgICBpZiAoZXJyb3IpIHsgc2V0RXJyb3IoZXJyb3IubWVzc2FnZSk7IHNldExvYWRpbmcoZmFsc2UpOyByZXR1cm47IH0KICAgIHJvdXRlci5wdXNoKCcvZmVlZCcpOwogICAgcm91dGVyLnJlZnJlc2goKTsKICB9OwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9InctZnVsbCBtYXgtdy1tZCBiZy13aGl0ZS9bMC4wNF0gYm9yZGVyIGJvcmRlci13aGl0ZS9bMC4wOF0gcm91bmRlZC0zeGwgcC04Ij4KICAgICAgPGgxIGNsYXNzTmFtZT0idGV4dC0zeGwgZm9udC1ibGFjayB0ZXh0LWNlbnRlciB0ZXh0LWdyYWRpZW50IG1iLTEiPtin2YLYsdijPC9oMT4KICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LWNlbnRlciB0ZXh0LVsjNjY2XSB0ZXh0LXNtIG1iLTYiPtmF2YbYtdipINin2YTZhdi52LHZgdipINin2YTYudix2KjZitipPC9wPgogICAgICB7ZXJyb3IgJiYgPGRpdiBjbGFzc05hbWU9ImJnLXJlZC01MDAvMTAgYm9yZGVyIGJvcmRlci1yZWQtNTAwLzMwIHJvdW5kZWQteGwgcC0zIG1iLTQgdGV4dC1yZWQtNDAwIHRleHQtc20iPntlcnJvcn08L2Rpdj59CiAgICAgIDxmb3JtIG9uU3VibWl0PXtoYW5kbGVTdWJtaXR9IGNsYXNzTmFtZT0ic3BhY2UteS00Ij4KICAgICAgICA8ZGl2PgogICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0iYmxvY2sgdGV4dC14cyBmb250LXNlbWlib2xkIHRleHQtWyM3NzddIG1iLTIiPtin2YTYqNix2YrYryDYp9mE2KXZhNmD2KrYsdmI2YbZijwvbGFiZWw+CiAgICAgICAgICA8aW5wdXQgdHlwZT0iZW1haWwiIHZhbHVlPXtlbWFpbH0gb25DaGFuZ2U9e2U9PnNldEVtYWlsKGUudGFyZ2V0LnZhbHVlKX0gcGxhY2Vob2xkZXI9ImVtYWlsQGV4YW1wbGUuY29tIiByZXF1aXJlZAogICAgICAgICAgICBjbGFzc05hbWU9InctZnVsbCBiZy13aGl0ZS9bMC4wNl0gYm9yZGVyIGJvcmRlci13aGl0ZS9bMC4xXSByb3VuZGVkLXhsIHB4LTQgcHktMyB0ZXh0LXdoaXRlIHRleHQtc20gb3V0bGluZS1ub25lIGZvY3VzOmJvcmRlci1wdXJwbGUtNTAwIHRyYW5zaXRpb24tY29sb3JzIiAvPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXY+CiAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJibG9jayB0ZXh0LXhzIGZvbnQtc2VtaWJvbGQgdGV4dC1bIzc3N10gbWItMiI+2YPZhNmF2Kkg2KfZhNmF2LHZiNixPC9sYWJlbD4KICAgICAgICAgIDxpbnB1dCB0eXBlPSJwYXNzd29yZCIgdmFsdWU9e3Bhc3N3b3JkfSBvbkNoYW5nZT17ZT0+c2V0UGFzc3dvcmQoZS50YXJnZXQudmFsdWUpfSBwbGFjZWhvbGRlcj0i4oCi4oCi4oCi4oCi4oCi4oCi4oCi4oCiIiByZXF1aXJlZCBtaW5MZW5ndGg9ezZ9CiAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIGJnLXdoaXRlL1swLjA2XSBib3JkZXIgYm9yZGVyLXdoaXRlL1swLjFdIHJvdW5kZWQteGwgcHgtNCBweS0zIHRleHQtd2hpdGUgdGV4dC1zbSBvdXRsaW5lLW5vbmUgZm9jdXM6Ym9yZGVyLXB1cnBsZS01MDAgdHJhbnNpdGlvbi1jb2xvcnMiIC8+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGJ1dHRvbiB0eXBlPSJzdWJtaXQiIGRpc2FibGVkPXtsb2FkaW5nfQogICAgICAgICAgY2xhc3NOYW1lPSJ3LWZ1bGwgZ3JhZGllbnQtcHVycGxlIHRleHQtd2hpdGUgZm9udC1ib2xkIHB5LTMgcm91bmRlZC14bCBtdC0yIGRpc2FibGVkOm9wYWNpdHktNTAgdHJhbnNpdGlvbi1vcGFjaXR5Ij4KICAgICAgICAgIHtsb2FkaW5nID8gJ9is2KfYsdmKINin2YTYr9iu2YjZhC4uLicgOiAn2K/YrtmI2YQnfQogICAgICAgIDwvYnV0dG9uPgogICAgICA8L2Zvcm0+CiAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1jZW50ZXIgdGV4dC1zbSB0ZXh0LVsjNjY2XSBtdC00Ij4KICAgICAgICDZhNmK2LMg2YTYr9mK2YMg2K3Ys9in2KjYn3snICd9CiAgICAgICAgPExpbmsgaHJlZj0iL3JlZ2lzdGVyIiBjbGFzc05hbWU9InRleHQtcHVycGxlLTQwMCBob3Zlcjp0ZXh0LXB1cnBsZS0zMDAiPtil2YbYtNin2KEg2K3Ys9in2Kg8L0xpbms+CiAgICAgIDwvcD4KICAgIDwvZGl2PgogICk7Cn0K"}
+'use client';
+import { useState } from 'react';
+import { createClient } from '@/lib/supabase/client';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+
+export default function LoginForm() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const router = useRouter();
+  const supabase = createClient();
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true); setError('');
+    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    if (error) { setError(error.message); setLoading(false); return; }
+    router.push('/feed');
+    router.refresh();
+  };
+
+  return (
+    <div className="w-full max-w-md bg-white/[0.04] border border-white/[0.08] rounded-3xl p-8">
+      <h1 className="text-3xl font-black text-center text-gradient mb-1">Ø§ÙØ±Ø£</h1>
+      <p className="text-center text-[#666] text-sm mb-6">ÙÙØµØ© Ø§ÙÙØ¹Ø±ÙØ© Ø§ÙØ¹Ø±Ø¨ÙØ©</p>
+      {error && <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-3 mb-4 text-red-400 text-sm">{error}</div>}
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <div>
+          <label className="block text-xs font-semibold text-[#777] mb-2">Ø§ÙØ¨Ø±ÙØ¯ Ø§ÙØ¥ÙÙØªØ±ÙÙÙ</label>
+          <input type="email" value={email} onChange={e=>setEmail(e.target.value)} placeholder="email@example.com" required
+            className="w-full bg-white/[0.06] border border-white/[0.1] rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-purple-500 transition-colors" />
+        </div>
+        <div>
+          <label className="block text-xs font-semibold text-[#777] mb-2">ÙÙÙØ© Ø§ÙÙØ±ÙØ±</label>
+          <input type="password" value={password} onChange={e=>setPassword(e.target.value)} placeholder="â¢â¢â¢â¢â¢â¢â¢â¢" required minLength={6}
+            className="w-full bg-white/[0.06] border border-white/[0.1] rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-purple-500 transition-colors" />
+        </div>
+        <button type="submit" disabled={loading}
+          className="w-full gradient-purple text-white font-bold py-3 rounded-xl mt-2 disabled:opacity-50 transition-opacity">
+          {loading ? 'Ø¬Ø§Ø±Ù Ø§ÙØ¯Ø®ÙÙ...' : 'Ø¯Ø®ÙÙ'}
+        </button>
+      </form>
+      <p className="text-center text-sm text-[#666] mt-4">
+        ÙÙØ³ ÙØ¯ÙÙ Ø­Ø³Ø§Ø¨Ø{' '}
+        <Link href="/register" className="text-purple-400 hover:text-purple-300">Ø¥ÙØ´Ø§Ø¡ Ø­Ø³Ø§Ø¨</Link>
+      </p>
+    </div>
+  );
+}
