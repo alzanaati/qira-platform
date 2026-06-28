@@ -1,1 +1,15 @@
-{"data":"aW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAnQC9saWIvc3VwYWJhc2Uvc2VydmVyJzsNCmltcG9ydCBGZWVkQ2xpZW50IGZyb20gJ0AvY29tcG9uZW50cy9mZWVkL0ZlZWRDbGllbnQnOw0KDQpleHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiBGZWVkUGFnZSgpIHsNCiAgY29uc3Qgc3VwYWJhc2UgPSBjcmVhdGVDbGllbnQoKTsNCiAgY29uc3QgeyBkYXRhOiB7IHVzZXIgfSB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5nZXRVc2VyKCk7DQogIGNvbnN0IHsgZGF0YTogc3RyZWFtcyB9ID0gYXdhaXQgc3VwYWJhc2UNCiAgICAuZnJvbSgnbGl2ZV9zdHJlYW1zJykNCiAgICAuc2VsZWN0KCcqLCB1c2VycyhpZCxmdWxsX25hbWUsdXNlcm5hbWUsYXZhdGFyX3VybCxpc192ZXJpZmllZCxyb2xlKScpDQogICAgLmVxKCdzdGF0dXMnLCAnbGl2ZScpDQogICAgLm9yZGVyKCdzdGFydGVkX2F0JywgeyBhc2NlbmRpbmc6IGZhbHNlIH0pDQogICAgLmxpbWl0KDIwKTsNCiAgY29uc3QgeyBkYXRhOiBwcm9maWxlIH0gPSBhd2FpdCBzdXBhYmFzZS5mcm9tKCd1c2VycycpLnNlbGVjdCgnKicpLmVxKCdpZCcsIHVzZXIhLmlkKS5zaW5nbGUoKTsNCiAgcmV0dXJuIDxGZWVkQ2xpZW50IGluaXRpYWxTdHJlYW1zPXtzdHJlYW1zIHx8IFtdfSBjdXJyZW50VXNlcj17cHJvZmlsZX0gLz47DQp9DQo="}
+import { createClient } from '@/lib/supabase/server';
+import FeedClient from '@/components/feed/FeedClient';
+
+export default async function FeedPage() {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  const { data: streams } = await supabase
+    .from('live_streams')
+    .select('*, users(id,full_name,username,avatar_url,is_verified,role)')
+    .eq('status', 'live')
+    .order('started_at', { ascending: false })
+    .limit(20);
+  const { data: profile } = await supabase.from('users').select('*').eq('id', user!.id).single();
+  return <FeedClient initialStreams={streams || []} currentUser={profile} />;
+}
