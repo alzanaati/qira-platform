@@ -1,1 +1,47 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7DQppbXBvcnQgeyBjcmVhdGVDbGllbnQgfSBmcm9tICdAL2xpYi9zdXBhYmFzZS9jbGllbnQnOw0KaW50ZXJmYWNlIENsYXBCdXR0b25Qcm9wcyB7DQogIHN0cmVhbUlkOiBzdHJpbmc7DQogIGhvc3RJZDogc3RyaW5nOw0KICBjbGFwVHlwZTogJ2Jyb256ZScgfCAnc2lsdmVyJyB8ICdnb2xkJyB8ICdkaWFtb25kJzsNCiAgcHJpY2U6IG51bWJlcjsNCiAgZW1vamk6IHN0cmluZzsNCiAgb25DbGFwOiAoKSA9PiB2b2lkOw0KfQ0KZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQ2xhcEJ1dHRvbih7IHN0cmVhbUlkLCBob3N0SWQsIGNsYXBUeXBlLCBwcmljZSwgZW1vamksIG9uQ2xhcCB9OiBDbGFwQnV0dG9uUHJvcHMpIHsNCiAgY29uc3Qgc3VwYWJhc2UgPSBjcmVhdGVDbGllbnQoKTsNCiAgY29uc3QgW2xvYWRpbmcsIHNldExvYWRpbmddID0gdXNlU3RhdGUoZmFsc2UpOw0KICBjb25zdCBbc3VjY2Vzcywgc2V0U3VjY2Vzc10gPSB1c2VTdGF0ZShmYWxzZSk7DQogIGNvbnN0IGhhbmRsZUNsYXAgPSBhc3luYyAoKSA9PiB7DQogICAgaWYgKGxvYWRpbmcpIHJldHVybjsNCiAgICBzZXRMb2FkaW5nKHRydWUpOw0KICAgIHRyeSB7DQogICAgICBjb25zdCB7IGRhdGE6IHsgdXNlciB9IH0gPSBhd2FpdCBzdXBhYmFzZS5hdXRoLmdldFVzZXIoKTsNCiAgICAgIGlmICghdXNlcikgcmV0dXJuOw0KICAgICAgY29uc3QgeyBkYXRhOiB3YWxsZXQgfSA9IGF3YWl0IHN1cGFiYXNlLmZyb20oJ3dhbGxldHMnKS5zZWxlY3QoJ2JhbGFuY2UnKS5lcSgndXNlcl9pZCcsIHVzZXIuaWQpLnNpbmdsZSgpOw0KICAgICAgaWYgKCF3YWxsZXQgfHwgd2FsbGV0LmJhbGFuY2UgPCBwcmljZSkgeyBhbGVydCgn2LHYtdmK2K/ZgyDYutmK2LEg2YPYp9mB2Y0nKTsgcmV0dXJuOyB9DQogICAgICBjb25zdCB7IGVycm9yIH0gPSBhd2FpdCBzdXBhYmFzZS5mcm9tKCdjbGFwcycpLmluc2VydCh7DQogICAgICAgIHN0cmVhbV9pZDogc3RyZWFtSWQsDQogICAgICAgIGNsYXBwZXJfaWQ6IHVzZXIuaWQsDQogICAgICAgIHJlY2lwaWVudF9pZDogaG9zdElkLA0KICAgICAgICBjbGFwX3R5cGU6IGNsYXBUeXBlLA0KICAgICAgICBhbW91bnQ6IHByaWNlLA0KICAgICAgfSk7DQogICAgICBpZiAoIWVycm9yKSB7DQogICAgICAgIHNldFN1Y2Nlc3ModHJ1ZSk7DQogICAgICAgIG9uQ2xhcCgpOw0KICAgICAgICBzZXRUaW1lb3V0KCgpID0+IHNldFN1Y2Nlc3MoZmFsc2UpLCAxMDAwKTsNCiAgICAgIH0NCiAgICB9IGNhdGNoIChlKSB7IGNvbnNvbGUuZXJyb3IoZSk7IH0NCiAgICBmaW5hbGx5IHsgc2V0TG9hZGluZyhmYWxzZSk7IH0NCiAgfTsNCiAgcmV0dXJuICgNCiAgICA8YnV0dG9uIG9uQ2xpY2s9e2hhbmRsZUNsYXB9IGRpc2FibGVkPXtsb2FkaW5nfQ0KICAgICAgY2xhc3NOYW1lPXtgZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIgZ2FwLTEgcC0zIHJvdW5kZWQtMnhsIGJvcmRlciB0cmFuc2l0aW9uLWFsbCBkaXNhYmxlZDpvcGFjaXR5LTUwDQogICAgICAgICR7c3VjY2VzcyA/ICdiZy15ZWxsb3ctNTAwLzIwIGJvcmRlci15ZWxsb3ctNDAwIHNjYWxlLTExMCcgOiAnYmctZ3JheS04MDAvODAgYm9yZGVyLWdyYXktNjAwIGhvdmVyOmJvcmRlci15ZWxsb3ctNDAwIGhvdmVyOmJnLXllbGxvdy01MDAvMTAgYWN0aXZlOnNjYWxlLTk1J31gfT4NCiAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC0yeGwiPntlbW9qaX08L3NwYW4+DQogICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtd2hpdGUgdGV4dC14cyBmb250LW1lZGl1bSI+e3ByaWNlfSDYsS7Yszwvc3Bhbj4NCiAgICA8L2J1dHRvbj4NCiAgKTsNCn0NCg=="}
+'use client';
+import { useState } from 'react';
+import { createClient } from '@/lib/supabase/client';
+interface ClapButtonProps {
+  streamId: string;
+  hostId: string;
+  clapType: 'bronze' | 'silver' | 'gold' | 'diamond';
+  price: number;
+  emoji: string;
+  onClap: () => void;
+}
+export default function ClapButton({ streamId, hostId, clapType, price, emoji, onClap }: ClapButtonProps) {
+  const supabase = createClient();
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const handleClap = async () => {
+    if (loading) return;
+    setLoading(true);
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) return;
+      const { data: wallet } = await supabase.from('wallets').select('balance').eq('user_id', user.id).single();
+      if (!wallet || wallet.balance < price) { alert('Ø±ØµÙØ¯Ù ØºÙØ± ÙØ§ÙÙ'); return; }
+      const { error } = await supabase.from('claps').insert({
+        stream_id: streamId,
+        clapper_id: user.id,
+        recipient_id: hostId,
+        clap_type: clapType,
+        amount: price,
+      });
+      if (!error) {
+        setSuccess(true);
+        onClap();
+        setTimeout(() => setSuccess(false), 1000);
+      }
+    } catch (e) { console.error(e); }
+    finally { setLoading(false); }
+  };
+  return (
+    <button onClick={handleClap} disabled={loading}
+      className={`flex flex-col items-center gap-1 p-3 rounded-2xl border transition-all disabled:opacity-50
+        ${success ? 'bg-yellow-500/20 border-yellow-400 scale-110' : 'bg-gray-800/80 border-gray-600 hover:border-yellow-400 hover:bg-yellow-500/10 active:scale-95'}`}>
+      <span className="text-2xl">{emoji}</span>
+      <span className="text-white text-xs font-medium">{price} Ø±.Ø³</span>
+    </button>
+  );
+}
