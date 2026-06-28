@@ -1,1 +1,17 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsNCmltcG9ydCB7IGNyZWF0ZUNsaWVudCB9IGZyb20gJ0AvbGliL3N1cGFiYXNlL3NlcnZlcic7DQpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKF86IE5leHRSZXF1ZXN0LCB7IHBhcmFtcyB9OiB7IHBhcmFtczogeyBpZDogc3RyaW5nIH0gfSkgew0KICBjb25zdCBzdXBhYmFzZSA9IGNyZWF0ZUNsaWVudCgpOw0KICBjb25zdCB7IGRhdGEgfSA9IGF3YWl0IHN1cGFiYXNlLmZyb20oJ3N0cmVhbV9maWxlcycpLnNlbGVjdCgnKicpLmVxKCdzdHJlYW1faWQnLHBhcmFtcy5pZCkub3JkZXIoJ2NyZWF0ZWRfYXQnLHthc2NlbmRpbmc6ZmFsc2V9KTsNCiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZGF0YTogZGF0YSB8fCBbXSB9KTsNCn0NCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBQT1NUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0LCB7IHBhcmFtcyB9OiB7IHBhcmFtczogeyBpZDogc3RyaW5nIH0gfSkgew0KICBjb25zdCBzdXBhYmFzZSA9IGNyZWF0ZUNsaWVudCgpOw0KICBjb25zdCB7IGRhdGE6IHsgdXNlciB9IH0gPSBhd2FpdCBzdXBhYmFzZS5hdXRoLmdldFVzZXIoKTsNCiAgaWYgKCF1c2VyKSByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogJ1VuYXV0aG9yaXplZCcgfSwgeyBzdGF0dXM6IDQwMSB9KTsNCiAgY29uc3QgYm9keSA9IGF3YWl0IHJlcXVlc3QuanNvbigpOw0KICBjb25zdCB7IGRhdGEsIGVycm9yIH0gPSBhd2FpdCBzdXBhYmFzZS5mcm9tKCdzdHJlYW1fZmlsZXMnKS5pbnNlcnQoeyBzdHJlYW1faWQ6cGFyYW1zLmlkLCB1cGxvYWRlcl9pZDp1c2VyLmlkLCAuLi5ib2R5IH0pLnNlbGVjdCgpLnNpbmdsZSgpOw0KICBpZiAoZXJyb3IpIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiBlcnJvci5tZXNzYWdlIH0sIHsgc3RhdHVzOiA1MDAgfSk7DQogIGF3YWl0IHN1cGFiYXNlLmZyb20oJ3N0cmVhbV9jb250ZW50X3N0YXRlJykudXBzZXJ0KHsgc3RyZWFtX2lkOnBhcmFtcy5pZCwgY29udGVudF90eXBlOmJvZHkuZmlsZV90eXBlLCBmaWxlX2lkOmRhdGEuaWQsIGN1cnJlbnRfcGFnZTowLCB6b29tX2xldmVsOjEsIHNjcmVlbl9zaGFyZV9hY3RpdmU6ZmFsc2UsIHVwZGF0ZWRfYXQ6bmV3IERhdGUoKS50b0lTT1N0cmluZygpIH0pOw0KICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBkYXRhIH0pOw0KfQ0K"}
+import { NextRequest, NextResponse } from 'next/server';
+import { createClient } from '@/lib/supabase/server';
+export async function GET(_: NextRequest, { params }: { params: { id: string } }) {
+  const supabase = createClient();
+  const { data } = await supabase.from('stream_files').select('*').eq('stream_id',params.id).order('created_at',{ascending:false});
+  return NextResponse.json({ data: data || [] });
+}
+export async function POST(request: NextRequest, { params }: { params: { id: string } }) {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  const body = await request.json();
+  const { data, error } = await supabase.from('stream_files').insert({ stream_id:params.id, uploader_id:user.id, ...body }).select().single();
+  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  await supabase.from('stream_content_state').upsert({ stream_id:params.id, content_type:body.file_type, file_id:data.id, current_page:0, zoom_level:1, screen_share_active:false, updated_at:new Date().toISOString() });
+  return NextResponse.json({ data });
+}
