@@ -1,1 +1,12 @@
-{"data":"aW1wb3J0IHsgSW5wdXRIVE1MQXR0cmlidXRlcywgZm9yd2FyZFJlZiB9IGZyb20gJ3JlYWN0JzsNCmltcG9ydCB7IGNuIH0gZnJvbSAnQC9saWIvdXRpbHMnOw0KaW50ZXJmYWNlIElucHV0UHJvcHMgZXh0ZW5kcyBJbnB1dEhUTUxBdHRyaWJ1dGVzPEhUTUxJbnB1dEVsZW1lbnQ+IHsgbGFiZWw/OiBzdHJpbmc7IGVycm9yPzogc3RyaW5nOyB9DQpjb25zdCBJbnB1dCA9IGZvcndhcmRSZWY8SFRNTElucHV0RWxlbWVudCwgSW5wdXRQcm9wcz4oKHsgbGFiZWwsIGVycm9yLCBjbGFzc05hbWUsIC4uLnByb3BzIH0sIHJlZikgPT4gKA0KICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBnYXAtMSI+DQogICAge2xhYmVsICYmIDxsYWJlbCBjbGFzc05hbWU9InRleHQtc20gdGV4dC1ncmF5LTMwMCI+e2xhYmVsfTwvbGFiZWw+fQ0KICAgIDxpbnB1dCByZWY9e3JlZn0gY2xhc3NOYW1lPXtjbignYmctZ3JheS04MDAgYm9yZGVyIHRleHQtd2hpdGUgcm91bmRlZC14bCBweC00IHB5LTIuNSB0ZXh0LXNtIG91dGxpbmUtbm9uZSB0cmFuc2l0aW9uLWNvbG9ycyBwbGFjZWhvbGRlcjp0ZXh0LWdyYXktNTAwJywgZXJyb3IgPyAnYm9yZGVyLXJlZC01MDAgZm9jdXM6Ym9yZGVyLXJlZC00MDAnIDogJ2JvcmRlci1ncmF5LTYwMCBmb2N1czpib3JkZXItYmx1ZS01MDAnLCBjbGFzc05hbWUpfSB7Li4ucHJvcHN9IC8+DQogICAge2Vycm9yICYmIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1yZWQtNDAwIHRleHQteHMiPntlcnJvcn08L3NwYW4+fQ0KICA8L2Rpdj4NCikpOw0KSW5wdXQuZGlzcGxheU5hbWUgPSAnSW5wdXQnOw0KZXhwb3J0IGRlZmF1bHQgSW5wdXQ7"}
+import { InputHTMLAttributes, forwardRef } from 'react';
+import { cn } from '@/lib/utils';
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> { label?: string; error?: string; }
+const Input = forwardRef<HTMLInputElement, InputProps>(({ label, error, className, ...props }, ref) => (
+  <div className="flex flex-col gap-1">
+    {label && <label className="text-sm text-gray-300">{label}</label>}
+    <input ref={ref} className={cn('bg-gray-800 border text-white rounded-xl px-4 py-2.5 text-sm outline-none transition-colors placeholder:text-gray-500', error ? 'border-red-500 focus:border-red-400' : 'border-gray-600 focus:border-blue-500', className)} {...props} />
+    {error && <span className="text-red-400 text-xs">{error}</span>}
+  </div>
+));
+Input.displayName = 'Input';
+export default Input;
