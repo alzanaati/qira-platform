@@ -1,1 +1,11 @@
-{"data":"aW1wb3J0IHsgcmVkaXJlY3QgfSBmcm9tICduZXh0L25hdmlnYXRpb24nOw0KaW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAnQC9saWIvc3VwYWJhc2Uvc2VydmVyJzsNCmltcG9ydCBNYWluTGF5b3V0Q2xpZW50IGZyb20gJ0AvY29tcG9uZW50cy9sYXlvdXQvTWFpbkxheW91dENsaWVudCc7DQoNCmV4cG9ydCBkZWZhdWx0IGFzeW5jIGZ1bmN0aW9uIE1haW5MYXlvdXQoeyBjaGlsZHJlbiB9OiB7IGNoaWxkcmVuOiBSZWFjdC5SZWFjdE5vZGUgfSkgew0KICBjb25zdCBzdXBhYmFzZSA9IGNyZWF0ZUNsaWVudCgpOw0KICBjb25zdCB7IGRhdGE6IHsgdXNlciB9IH0gPSBhd2FpdCBzdXBhYmFzZS5hdXRoLmdldFVzZXIoKTsNCiAgaWYgKCF1c2VyKSByZWRpcmVjdCgnL2xvZ2luJyk7DQogIGNvbnN0IHsgZGF0YTogcHJvZmlsZSB9ID0gYXdhaXQgc3VwYWJhc2UuZnJvbSgndXNlcnMnKS5zZWxlY3QoJyonKS5lcSgnaWQnLCB1c2VyLmlkKS5zaW5nbGUoKTsNCiAgcmV0dXJuIDxNYWluTGF5b3V0Q2xpZW50IHVzZXI9e3Byb2ZpbGV9PntjaGlsZHJlbn08L01haW5MYXlvdXRDbGllbnQ+Ow0KfQ0K"}
+import { redirect } from 'next/navigation';
+import { createClient } from '@/lib/supabase/server';
+import MainLayoutClient from '@/components/layout/MainLayoutClient';
+
+export default async function MainLayout({ children }: { children: React.ReactNode }) {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) redirect('/login');
+  const { data: profile } = await supabase.from('users').select('*').eq('id', user.id).single();
+  return <MainLayoutClient user={profile}>{children}</MainLayoutClient>;
+}
