@@ -1,1 +1,31 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsNCmltcG9ydCB7IHVzZVBhdGhuYW1lIH0gZnJvbSAnbmV4dC9uYXZpZ2F0aW9uJzsNCmltcG9ydCB7IEhvbWUsIENvbXBhc3MsIFJhZGlvLCBVc2VyLCBXYWxsZXQgfSBmcm9tICdsdWNpZGUtcmVhY3QnOw0KaW1wb3J0IHsgY24gfSBmcm9tICdAL2xpYi91dGlscyc7DQpjb25zdCBOQVYgPSBbDQogIHsgaHJlZjogJy9mZWVkJywgaWNvbjogSG9tZSwgbGFiZWw6ICfYp9mE2LHYptmK2LPZitipJyB9LA0KICB7IGhyZWY6ICcvZXhwbG9yZScsIGljb246IENvbXBhc3MsIGxhYmVsOiAn2KfYs9iq2YPYtNin2YEnIH0sDQogIHsgaHJlZjogJy9saXZlL2NyZWF0ZScsIGljb246IFJhZGlvLCBsYWJlbDogJ9io2Ksg2YXYqNin2LTYsScgfSwNCiAgeyBocmVmOiAnL3Byb2ZpbGUnLCBpY29uOiBVc2VyLCBsYWJlbDogJ9mF2YTZgdmKJyB9LA0KICB7IGhyZWY6ICcvd2FsbGV0JywgaWNvbjogV2FsbGV0LCBsYWJlbDogJ9in2YTZhdit2YHYuNipJyB9LA0KXTsNCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFNpZGViYXIoKSB7DQogIGNvbnN0IHBhdGhuYW1lID0gdXNlUGF0aG5hbWUoKTsNCiAgcmV0dXJuICgNCiAgICA8YXNpZGUgY2xhc3NOYW1lPSJoaWRkZW4gbWQ6ZmxleCBmbGV4LWNvbCB3LTY0IGJnLWdyYXktOTAwIGJvcmRlci1yIGJvcmRlci1ncmF5LTgwMCBwLTQgZ2FwLTIiPg0KICAgICAgPGRpdiBjbGFzc05hbWU9Im1iLTYgcHgtMiI+PGgxIGNsYXNzTmFtZT0idGV4dC0yeGwgZm9udC1ib2xkIHRleHQtd2hpdGUiPtin2YLYsdijPC9oMT48cCBjbGFzc05hbWU9InRleHQtZ3JheS01MDAgdGV4dC14cyI+2YXZhti12Kkg2YXYudix2YHZitipINi52LHYqNmK2Kk8L3A+PC9kaXY+DQogICAgICB7TkFWLm1hcChpdGVtID0+IHsNCiAgICAgICAgY29uc3QgYWN0aXZlID0gcGF0aG5hbWUgPT09IGl0ZW0uaHJlZiB8fCBwYXRobmFtZS5zdGFydHNXaXRoKGl0ZW0uaHJlZiArICcvJyk7DQogICAgICAgIHJldHVybiAoDQogICAgICAgICAgPExpbmsga2V5PXtpdGVtLmhyZWZ9IGhyZWY9e2l0ZW0uaHJlZn0NCiAgICAgICAgICAgIGNsYXNzTmFtZT17Y24oJ2ZsZXggaXRlbXMtY2VudGVyIGdhcC0zIHB4LTQgcHktMyByb3VuZGVkLXhsIHRyYW5zaXRpb24tY29sb3JzIHRleHQtc20gZm9udC1tZWRpdW0nLA0KICAgICAgICAgICAgICBhY3RpdmUgPyAnYmctYmx1ZS02MDAgdGV4dC13aGl0ZScgOiAndGV4dC1ncmF5LTQwMCBob3ZlcjpiZy1ncmF5LTgwMCBob3Zlcjp0ZXh0LXdoaXRlJyl9Pg0KICAgICAgICAgICAgPGl0ZW0uaWNvbiBzaXplPXsyMH0gLz4NCiAgICAgICAgICAgIDxzcGFuPntpdGVtLmxhYmVsfTwvc3Bhbj4NCiAgICAgICAgICA8L0xpbms+DQogICAgICAgICk7DQogICAgICB9KX0NCiAgICA8L2FzaWRlPg0KICApOw0KfQ=="}
+'use client';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { Home, Compass, Radio, User, Wallet } from 'lucide-react';
+import { cn } from '@/lib/utils';
+const NAV = [
+  { href: '/feed', icon: Home, label: 'Ø§ÙØ±Ø¦ÙØ³ÙØ©' },
+  { href: '/explore', icon: Compass, label: 'Ø§Ø³ØªÙØ´Ø§Ù' },
+  { href: '/live/create', icon: Radio, label: 'Ø¨Ø« ÙØ¨Ø§Ø´Ø±' },
+  { href: '/profile', icon: User, label: 'ÙÙÙÙ' },
+  { href: '/wallet', icon: Wallet, label: 'Ø§ÙÙØ­ÙØ¸Ø©' },
+];
+export default function Sidebar() {
+  const pathname = usePathname();
+  return (
+    <aside className="hidden md:flex flex-col w-64 bg-gray-900 border-r border-gray-800 p-4 gap-2">
+      <div className="mb-6 px-2"><h1 className="text-2xl font-bold text-white">Ø§ÙØ±Ø£</h1><p className="text-gray-500 text-xs">ÙÙØµØ© ÙØ¹Ø±ÙÙØ© Ø¹Ø±Ø¨ÙØ©</p></div>
+      {NAV.map(item => {
+        const active = pathname === item.href || pathname.startsWith(item.href + '/');
+        return (
+          <Link key={item.href} href={item.href}
+            className={cn('flex items-center gap-3 px-4 py-3 rounded-xl transition-colors text-sm font-medium',
+              active ? 'bg-blue-600 text-white' : 'text-gray-400 hover:bg-gray-800 hover:text-white')}>
+            <item.icon size={20} />
+            <span>{item.label}</span>
+          </Link>
+        );
+      })}
+    </aside>
+  );
+}
