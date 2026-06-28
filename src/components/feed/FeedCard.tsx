@@ -1,1 +1,58 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7DQppbXBvcnQgeyBMaXZlU3RyZWFtLCBVc2VyLCBTVFJFQU1fQ0FURUdPUklFUyB9IGZyb20gJ0AvdHlwZXMnOw0KaW1wb3J0IEF2YXRhciBmcm9tICdAL2NvbXBvbmVudHMvdWkvQXZhdGFyJzsNCmltcG9ydCB7IEhlYXJ0LCBTaGFyZTIsIFBsYXkgfSBmcm9tICdsdWNpZGUtcmVhY3QnOw0KaW1wb3J0IHsgZm9ybWF0TnVtYmVyIH0gZnJvbSAnQC9saWIvdXRpbHMnOw0KDQppbnRlcmZhY2UgUHJvcHMgeyBzdHJlYW06IExpdmVTdHJlYW07IGN1cnJlbnRVc2VyOiBVc2VyIHwgbnVsbDsgb25PcGVuOiAoKSA9PiB2b2lkOyB9DQoNCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEZlZWRDYXJkKHsgc3RyZWFtLCBjdXJyZW50VXNlciwgb25PcGVuIH06IFByb3BzKSB7DQogIGNvbnN0IFtsaWtlZCwgc2V0TGlrZWRdID0gdXNlU3RhdGUoZmFsc2UpOw0KICBjb25zdCBbZm9sbG93aW5nLCBzZXRGb2xsb3dpbmddID0gdXNlU3RhdGUoZmFsc2UpOw0KICBjb25zdCBjYXRFbW9qaSA9IE9iamVjdC5lbnRyaWVzKFNUUkVBTV9DQVRFR09SSUVTKS5maW5kKChba10pID0+IGsgPT09IHN0cmVhbS5jYXRlZ29yeSk/LlsxXT8uc3BsaXQoJyAnKVswXSB8fCAn8J+ToSc7DQoNCiAgY29uc3QgaGFuZGxlRm9sbG93ID0gYXN5bmMgKCkgPT4gew0KICAgIGlmICghY3VycmVudFVzZXIgfHwgZm9sbG93aW5nKSByZXR1cm47DQogICAgc2V0Rm9sbG93aW5nKHRydWUpOw0KICAgIGF3YWl0IGZldGNoKCcvYXBpL2ZvbGxvdycsIHsgbWV0aG9kOidQT1NUJywgaGVhZGVyczp7J0NvbnRlbnQtVHlwZSc6J2FwcGxpY2F0aW9uL2pzb24nfSwgYm9keTpKU09OLnN0cmluZ2lmeSh7dGFyZ2V0SWQ6c3RyZWFtLnVzZXJfaWR9KSB9KTsNCiAgfTsNCg0KICByZXR1cm4gKA0KICAgIDxkaXYgY2xhc3NOYW1lPSJzbmFwLXN0YXJ0IHNuYXAtYWx3YXlzIHJlbGF0aXZlIGgtZnVsbCBmbGV4IGZsZXgtY29sIG92ZXJmbG93LWhpZGRlbiIgc3R5bGU9e3toZWlnaHQ6J2NhbGMoMTAwdmggLSAxMjhweCknfX0+DQogICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgaW5zZXQtMCBiZy1ncmFkaWVudC10by1iciBmcm9tLVsjMGQwZDIwXSB0by1bIzE4MGQyZV0iIC8+DQogICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUgZmxleC0xIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIG92ZXJmbG93LWhpZGRlbiI+DQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0ZXh0LWNlbnRlciI+PHNwYW4gc3R5bGU9e3tmb250U2l6ZTo4MH19PntjYXRFbW9qaX08L3NwYW4+PHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIHRleHQtWyM1NTVdIG10LTIiPtio2Ksg2YXYqNin2LTYsSDCtyB7c3RyZWFtLmNhdGVnb3J5fTwvcD48L2Rpdj4NCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIHRvcC0zIHJpZ2h0LTMiPg0KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEuNSBiZy1yZWQtNTAwIHRleHQtd2hpdGUgdGV4dC14cyBmb250LWJvbGQgcHgtMi41IHB5LTEgcm91bmRlZC1sZyI+DQogICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InctMS41IGgtMS41IGJnLXdoaXRlIHJvdW5kZWQtZnVsbCBhbmltYXRlLXB1bHNlLWxpdmUiIC8+2YXYqNin2LTYsQ0KICAgICAgICAgIDwvc3Bhbj4NCiAgICAgICAgPC9kaXY+DQogICAgICA8L2Rpdj4NCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSBib3R0b20tMCBsZWZ0LTAgcmlnaHQtMCBwLTQiIHN0eWxlPXt7YmFja2dyb3VuZDonbGluZWFyLWdyYWRpZW50KHRyYW5zcGFyZW50LHJnYmEoMCwwLDAsMC45KSknfX0+DQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyBtYi0yIj4NCiAgICAgICAgICA8QXZhdGFyIHVzZXI9e3N0cmVhbS51c2Vyc30gc2l6ZT0ibWQiIC8+DQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXgtMSBtaW4tdy0wIj4NCiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMS41Ij48c3BhbiBjbGFzc05hbWU9ImZvbnQtYm9sZCB0ZXh0LXNtIHRydW5jYXRlIj57c3RyZWFtLnVzZXJzPy5mdWxsX25hbWV9PC9zcGFuPntzdHJlYW0udXNlcnM/LmlzX3ZlcmlmaWVkJiY8c3BhbiBjbGFzc05hbWU9InRleHQtcHVycGxlLTQwMCB0ZXh0LXhzIj7inJM8L3NwYW4+fTwvZGl2Pg0KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRleHQteHMgdGV4dC1bIzY2Nl0iPkB7c3RyZWFtLnVzZXJzPy51c2VybmFtZX08L2Rpdj4NCiAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9e2hhbmRsZUZvbGxvd30gZGlzYWJsZWQ9e2ZvbGxvd2luZ30gY2xhc3NOYW1lPSJ0ZXh0LXhzIGZvbnQtYm9sZCBweC0zIHB5LTEuNSByb3VuZGVkLXhsIGJvcmRlciBib3JkZXItcHVycGxlLTUwMCB0ZXh0LXB1cnBsZS00MDAgaG92ZXI6YmctcHVycGxlLTUwMC8xMCB0cmFuc2l0aW9uLWNvbG9ycyBkaXNhYmxlZDpvcGFjaXR5LTUwIj4NCiAgICAgICAgICAgIHtmb2xsb3dpbmc/J9mF2KrYp9io2Y7YuSc6J9mF2KrYp9io2LnYqSd9DQogICAgICAgICAgPC9idXR0b24+DQogICAgICAgIDwvZGl2Pg0KICAgICAgICA8cCBjbGFzc05hbWU9ImZvbnQtYm9sZCBtYi0yIHRydW5jYXRlIj57c3RyZWFtLnRpdGxlfTwvcD4NCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC00IHRleHQteHMgdGV4dC1bIzY2Nl0iPg0KICAgICAgICAgIDxzcGFuPvCfkYEge2Zvcm1hdE51bWJlcihzdHJlYW0udmlld2VyX2NvdW50KX0g2YXYtNin2YfYrzwvc3Bhbj4NCiAgICAgICAgICA8c3Bhbj7wn5GPIHtmb3JtYXROdW1iZXIoc3RyZWFtLmNsYXBfY291bnQpfSDYqti12YHZitmCPC9zcGFuPg0KICAgICAgICA8L2Rpdj4NCiAgICAgIDwvZGl2Pg0KICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIHJpZ2h0LTMgYm90dG9tLTMyIGZsZXggZmxleC1jb2wgZ2FwLTQgaXRlbXMtY2VudGVyIj4NCiAgICAgICAge1t7aWNvbjo8UGxheSBzaXplPXsyMn0vPixsYWJlbDon2KfZhti22YUnLGFjdGlvbjpvbk9wZW59LHtpY29uOjxIZWFydCBzaXplPXsyMn0gZmlsbD17bGlrZWQ/JyNlZjQ0NDQnOidub25lJ30gc3Ryb2tlPXtsaWtlZD8nI2VmNDQ0NCc6J3doaXRlJ30vPixsYWJlbDonJyxhY3Rpb246KCk9PnNldExpa2VkKGw9PiFsKX0se2ljb246PFNoYXJlMiBzaXplPXsyMn0vPixsYWJlbDonJyxhY3Rpb246KCk9Pnt9fV0ubWFwKChidG4saSkgPT4gKA0KICAgICAgICAgIDxidXR0b24ga2V5PXtpfSBvbkNsaWNrPXtidG4uYWN0aW9ufSBjbGFzc05hbWU9ImZsZXggZmxleC1jb2wgaXRlbXMtY2VudGVyIGdhcC0xIGJnLWJsYWNrLzUwIGJvcmRlciBib3JkZXItd2hpdGUvMTAgdGV4dC13aGl0ZSBiYWNrZHJvcC1ibHVyLWxnIHAtMi41IHJvdW5kZWQtZnVsbCBmb250LWNhaXJvIHRleHQteHMiPg0KICAgICAgICAgICAge2J0bi5pY29ufXtidG4ubGFiZWwmJjxzcGFuPntidG4ubGFiZWx9PC9zcGFuPn0NCiAgICAgICAgICA8L2J1dHRvbj4NCiAgICAgICAgKSl9DQogICAgICA8L2Rpdj4NCiAgICA8L2Rpdj4NCiAgKTsNCn0NCg=="}
+'use client';
+import { useState } from 'react';
+import { LiveStream, User, STREAM_CATEGORIES } from '@/types';
+import Avatar from '@/components/ui/Avatar';
+import { Heart, Share2, Play } from 'lucide-react';
+import { formatNumber } from '@/lib/utils';
+
+interface Props { stream: LiveStream; currentUser: User | null; onOpen: () => void; }
+
+export default function FeedCard({ stream, currentUser, onOpen }: Props) {
+  const [liked, setLiked] = useState(false);
+  const [following, setFollowing] = useState(false);
+  const catEmoji = Object.entries(STREAM_CATEGORIES).find(([k]) => k === stream.category)?.[1]?.split(' ')[0] || 'ð¡';
+
+  const handleFollow = async () => {
+    if (!currentUser || following) return;
+    setFollowing(true);
+    await fetch('/api/follow', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({targetId:stream.user_id}) });
+  };
+
+  return (
+    <div className="snap-start snap-always relative h-full flex flex-col overflow-hidden" style={{height:'calc(100vh - 128px)'}}>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0d0d20] to-[#180d2e]" />
+      <div className="relative flex-1 flex items-center justify-center overflow-hidden">
+        <div className="text-center"><span style={{fontSize:80}}>{catEmoji}</span><p className="text-sm text-[#555] mt-2">Ø¨Ø« ÙØ¨Ø§Ø´Ø± Â· {stream.category}</p></div>
+        <div className="absolute top-3 right-3">
+          <span className="flex items-center gap-1.5 bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded-lg">
+            <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse-live" />ÙØ¨Ø§Ø´Ø±
+          </span>
+        </div>
+      </div>
+      <div className="absolute bottom-0 left-0 right-0 p-4" style={{background:'linear-gradient(transparent,rgba(0,0,0,0.9))'}}>
+        <div className="flex items-center gap-3 mb-2">
+          <Avatar user={stream.users} size="md" />
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-1.5"><span className="font-bold text-sm truncate">{stream.users?.full_name}</span>{stream.users?.is_verified&&<span className="text-purple-400 text-xs">â</span>}</div>
+            <div className="text-xs text-[#666]">@{stream.users?.username}</div>
+          </div>
+          <button onClick={handleFollow} disabled={following} className="text-xs font-bold px-3 py-1.5 rounded-xl border border-purple-500 text-purple-400 hover:bg-purple-500/10 transition-colors disabled:opacity-50">
+            {following?'ÙØªØ§Ø¨ÙØ¹':'ÙØªØ§Ø¨Ø¹Ø©'}
+          </button>
+        </div>
+        <p className="font-bold mb-2 truncate">{stream.title}</p>
+        <div className="flex items-center gap-4 text-xs text-[#666]">
+          <span>ð {formatNumber(stream.viewer_count)} ÙØ´Ø§ÙØ¯</span>
+          <span>ð {formatNumber(stream.clap_count)} ØªØµÙÙÙ</span>
+        </div>
+      </div>
+      <div className="absolute right-3 bottom-32 flex flex-col gap-4 items-center">
+        {[{icon:<Play size={22}/>,label:'Ø§ÙØ¶Ù',action:onOpen},{icon:<Heart size={22} fill={liked?'#ef4444':'none'} stroke={liked?'#ef4444':'white'}/>,label:'',action:()=>setLiked(l=>!l)},{icon:<Share2 size={22}/>,label:'',action:()=>{}}].map((btn,i) => (
+          <button key={i} onClick={btn.action} className="flex flex-col items-center gap-1 bg-black/50 border border-white/10 text-white backdrop-blur-lg p-2.5 rounded-full font-cairo text-xs">
+            {btn.icon}{btn.label&&<span>{btn.label}</span>}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
