@@ -1,1 +1,19 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsNCmltcG9ydCB7IGNyZWF0ZUNsaWVudCB9IGZyb20gJ0AvbGliL3N1cGFiYXNlL3NlcnZlcic7DQpleHBvcnQgYXN5bmMgZnVuY3Rpb24gUE9TVChfOiBOZXh0UmVxdWVzdCwgeyBwYXJhbXMgfTogeyBwYXJhbXM6IHsgaWQ6IHN0cmluZyB9IH0pIHsNCiAgY29uc3Qgc3VwYWJhc2UgPSBjcmVhdGVDbGllbnQoKTsNCiAgY29uc3QgeyBkYXRhOiB7IHVzZXIgfSB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5nZXRVc2VyKCk7DQogIGlmICghdXNlcikgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdVbmF1dGhvcml6ZWQnIH0sIHsgc3RhdHVzOiA0MDEgfSk7DQogIGNvbnN0IHsgZGF0YSwgZXJyb3IgfSA9IGF3YWl0IHN1cGFiYXNlLmZyb20oJ3NwZWFrZXJfcmVxdWVzdHMnKS5pbnNlcnQoeyBzdHJlYW1faWQ6cGFyYW1zLmlkLCB1c2VyX2lkOnVzZXIuaWQsIHN0YXR1czoncGVuZGluZycsIGNyZWF0ZWRfYXQ6bmV3IERhdGUoKS50b0lTT1N0cmluZygpIH0pLnNlbGVjdCgpLnNpbmdsZSgpOw0KICBpZiAoZXJyb3IpIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiBlcnJvci5tZXNzYWdlIH0sIHsgc3RhdHVzOiA1MDAgfSk7DQogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGRhdGEgfSk7DQp9DQpleHBvcnQgYXN5bmMgZnVuY3Rpb24gUEFUQ0gocmVxdWVzdDogTmV4dFJlcXVlc3QsIHsgcGFyYW1zIH06IHsgcGFyYW1zOiB7IGlkOiBzdHJpbmcgfSB9KSB7DQogIGNvbnN0IHN1cGFiYXNlID0gY3JlYXRlQ2xpZW50KCk7DQogIGNvbnN0IHsgZGF0YTogeyB1c2VyIH0gfSA9IGF3YWl0IHN1cGFiYXNlLmF1dGguZ2V0VXNlcigpOw0KICBpZiAoIXVzZXIpIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnVW5hdXRob3JpemVkJyB9LCB7IHN0YXR1czogNDAxIH0pOw0KICBjb25zdCB7IHJlcXVlc3RJZCwgc3RhdHVzLCB1c2VySWQgfSA9IGF3YWl0IHJlcXVlc3QuanNvbigpOw0KICBhd2FpdCBzdXBhYmFzZS5mcm9tKCdzcGVha2VyX3JlcXVlc3RzJykudXBkYXRlKHsgc3RhdHVzLCByZXNwb25kZWRfYXQ6bmV3IERhdGUoKS50b0lTT1N0cmluZygpIH0pLmVxKCdpZCcscmVxdWVzdElkKTsNCiAgaWYgKHN0YXR1cyA9PT0gJ2FwcHJvdmVkJykgYXdhaXQgc3VwYWJhc2UuZnJvbSgnc3RyZWFtX3BhcnRpY2lwYW50cycpLnVwZGF0ZSh7IHJvbGU6J3NwZWFrZXInIH0pLmVxKCdzdHJlYW1faWQnLHBhcmFtcy5pZCkuZXEoJ3VzZXJfaWQnLHVzZXJJZCk7DQogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IHN1Y2Nlc3M6IHRydWUgfSk7DQp9DQo="}
+import { NextRequest, NextResponse } from 'next/server';
+import { createClient } from '@/lib/supabase/server';
+export async function POST(_: NextRequest, { params }: { params: { id: string } }) {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  const { data, error } = await supabase.from('speaker_requests').insert({ stream_id:params.id, user_id:user.id, status:'pending', created_at:new Date().toISOString() }).select().single();
+  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  return NextResponse.json({ data });
+}
+export async function PATCH(request: NextRequest, { params }: { params: { id: string } }) {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  const { requestId, status, userId } = await request.json();
+  await supabase.from('speaker_requests').update({ status, responded_at:new Date().toISOString() }).eq('id',requestId);
+  if (status === 'approved') await supabase.from('stream_participants').update({ role:'speaker' }).eq('stream_id',params.id).eq('user_id',userId);
+  return NextResponse.json({ success: true });
+}
