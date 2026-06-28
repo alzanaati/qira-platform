@@ -1,1 +1,4 @@
-{"data":"aW1wb3J0IHsgY24gfSBmcm9tICdAL2xpYi91dGlscyc7DQpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBMb2FkaW5nU3Bpbm5lcih7IHNpemU9MzIsIGNsYXNzTmFtZSB9OiB7IHNpemU/OiBudW1iZXI7IGNsYXNzTmFtZT86IHN0cmluZyB9KSB7DQogIHJldHVybiA8ZGl2IGNsYXNzTmFtZT17Y24oJ2JvcmRlci0yIGJvcmRlci1wdXJwbGUtNTAwLzIwIGJvcmRlci10LXB1cnBsZS01MDAgcm91bmRlZC1mdWxsIGFuaW1hdGUtc3Bpbi1zbG93JywgY2xhc3NOYW1lKX0gc3R5bGU9e3t3aWR0aDpzaXplLGhlaWdodDpzaXplfX0gLz47DQp9DQo="}
+import { cn } from '@/lib/utils';
+export default function LoadingSpinner({ size=32, className }: { size?: number; className?: string }) {
+  return <div className={cn('border-2 border-purple-500/20 border-t-purple-500 rounded-full animate-spin-slow', className)} style={{width:size,height:size}} />;
+}
