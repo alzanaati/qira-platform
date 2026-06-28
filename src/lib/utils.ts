@@ -1,1 +1,20 @@
-{"data":"aW1wb3J0IHsgdHlwZSBDbGFzc1ZhbHVlLCBjbHN4IH0gZnJvbSAnY2xzeCc7DQppbXBvcnQgeyB0d01lcmdlIH0gZnJvbSAndGFpbHdpbmQtbWVyZ2UnOw0KZXhwb3J0IGNvbnN0IGNuID0gKC4uLmlucHV0czogQ2xhc3NWYWx1ZVtdKSA9PiB0d01lcmdlKGNsc3goaW5wdXRzKSk7DQpleHBvcnQgY29uc3QgZm9ybWF0TnVtYmVyID0gKG46IG51bWJlcikgPT4gbiA+PSAxMDAwMDAwID8gKG4vMTAwMDAwMCkudG9GaXhlZCgxKSsn2YUnIDogbiA+PSAxMDAwID8gKG4vMTAwMCkudG9GaXhlZCgxKSsn2YMnIDogbi50b1N0cmluZygpOw0KZXhwb3J0IGNvbnN0IGZvcm1hdERhdGUgPSAoZDogc3RyaW5nKSA9PiBuZXcgRGF0ZShkKS50b0xvY2FsZURhdGVTdHJpbmcoJ2FyLVNBJywgeyB5ZWFyOidudW1lcmljJywgbW9udGg6J3Nob3J0JywgZGF5OidudW1lcmljJyB9KTsNCmV4cG9ydCBjb25zdCBmb3JtYXRDdXJyZW5jeSA9IChuOiBudW1iZXIpID0+IG4udG9GaXhlZCgyKSArICcg2LEu2LMnOw0KDQoNCmV4cG9ydCBmdW5jdGlvbiBmb3JtYXREaXN0YW5jZVRvTm93KGRhdGU6IERhdGUpOiBzdHJpbmcgew0KICBjb25zdCBub3cgPSBuZXcgRGF0ZSgpOw0KICBjb25zdCBkaWZmID0gbm93LmdldFRpbWUoKSAtIGRhdGUuZ2V0VGltZSgpOw0KICBjb25zdCBzZWNvbmRzID0gTWF0aC5mbG9vcihkaWZmIC8gMTAwMCk7DQogIGNvbnN0IG1pbnV0ZXMgPSBNYXRoLmZsb29yKHNlY29uZHMgLyA2MCk7DQogIGNvbnN0IGhvdXJzID0gTWF0aC5mbG9vcihtaW51dGVzIC8gNjApOw0KICBjb25zdCBkYXlzID0gTWF0aC5mbG9vcihob3VycyAvIDI0KTsNCiAgaWYgKGRheXMgPiAwKSByZXR1cm4gYNmF2YbYsCAke2RheXN9INmK2YjZhWA7DQogIGlmIChob3VycyA+IDApIHJldHVybiBg2YXZhtiwICR7aG91cnN9INiz2KfYudipYDsNCiAgaWYgKG1pbnV0ZXMgPiAwKSByZXR1cm4gYNmF2YbYsCAke21pbnV0ZXN9INiv2YLZitmC2KlgOw0KICByZXR1cm4gJ9in2YTYotmGJzsNCn0="}
+import { type ClassValue, clsx } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+export const cn = (...inputs: ClassValue[]) => twMerge(clsx(inputs));
+export const formatNumber = (n: number) => n >= 1000000 ? (n/1000000).toFixed(1)+'Ù' : n >= 1000 ? (n/1000).toFixed(1)+'Ù' : n.toString();
+export const formatDate = (d: string) => new Date(d).toLocaleDateString('ar-SA', { year:'numeric', month:'short', day:'numeric' });
+export const formatCurrency = (n: number) => n.toFixed(2) + ' Ø±.Ø³';
+
+
+export function formatDistanceToNow(date: Date): string {
+  const now = new Date();
+  const diff = now.getTime() - date.getTime();
+  const seconds = Math.floor(diff / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+  const days = Math.floor(hours / 24);
+  if (days > 0) return `ÙÙØ° ${days} ÙÙÙ`;
+  if (hours > 0) return `ÙÙØ° ${hours} Ø³Ø§Ø¹Ø©`;
+  if (minutes > 0) return `ÙÙØ° ${minutes} Ø¯ÙÙÙØ©`;
+  return 'Ø§ÙØ¢Ù';
+}
