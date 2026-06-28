@@ -1,1 +1,60 @@
-{"data":"J3VzZSBjbGllbnQnOwppbXBvcnQgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgdXNlUm91dGVyIH0gZnJvbSAnbmV4dC9uYXZpZ2F0aW9uJzsKaW1wb3J0IHsgTGl2ZVN0cmVhbSwgU1RSRUFNX0NBVEVHT1JJRVMgfSBmcm9tICdAL3R5cGVzJzsKaW1wb3J0IEF2YXRhciBmcm9tICdAL2NvbXBvbmVudHMvdWkvQXZhdGFyJzsKaW1wb3J0IHsgU2VhcmNoIH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKaW1wb3J0IHsgZm9ybWF0TnVtYmVyIH0gZnJvbSAnQC9saWIvdXRpbHMnOwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gRXhwbG9yZUNsaWVudCh7IGluaXRpYWxTdHJlYW1zIH06IHsgaW5pdGlhbFN0cmVhbXM6IExpdmVTdHJlYW1bXSB9KSB7CiAgY29uc3QgW3N0cmVhbXMsIHNldFN0cmVhbXNdID0gdXNlU3RhdGUoaW5pdGlhbFN0cmVhbXMpOwogIGNvbnN0IFtzZWFyY2gsIHNldFNlYXJjaF0gPSB1c2VTdGF0ZSgnJyk7CiAgY29uc3QgW2NhdGVnb3J5LCBzZXRDYXRlZ29yeV0gPSB1c2VTdGF0ZSgnYWxsJyk7CiAgY29uc3Qgcm91dGVyID0gdXNlUm91dGVyKCk7CgogIGNvbnN0IGhhbmRsZUNhdGVnb3J5ID0gYXN5bmMgKGNhdDogc3RyaW5nKSA9PiB7CiAgICBzZXRDYXRlZ29yeShjYXQpOwogICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goYC9hcGkvc3RyZWFtcyR7Y2F0IT09J2FsbCc/YD9jYXRlZ29yeT0ke2NhdH1gOicnfSAgYCk7CiAgICBjb25zdCB7IGRhdGEgfSA9IGF3YWl0IHJlcy5qc29uKCk7CiAgICBpZiAoZGF0YSkgc2V0U3RyZWFtcyhkYXRhKTsKICB9OwoKICBjb25zdCBmaWx0ZXJlZCA9IHN0cmVhbXMuZmlsdGVyKHMgPT4gIXNlYXJjaCB8fCBzLnRpdGxlPy5pbmNsdWRlcyhzZWFyY2gpIHx8IHMudXNlcnM/LmZ1bGxfbmFtZT8uaW5jbHVkZXMoc2VhcmNoKSk7CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iaC1mdWxsIG92ZXJmbG93LXktYXV0byI+CiAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtYmFzZSBmb250LWJvbGQgdGV4dC1bI2RkZF0gcHgtNCBweS0zIj7Yp9iz2KrZg9i02YEg2KfZhNio2KvZiNirPC9oMj4KICAgICAgPGRpdiBjbGFzc05hbWU9InJlbGF0aXZlIG14LTQgbWItMyI+CiAgICAgICAgPGlucHV0IHZhbHVlPXtzZWFyY2h9IG9uQ2hhbmdlPXtlPT5zZXRTZWFyY2goZS50YXJnZXQudmFsdWUpfSBwbGFjZWhvbGRlcj0i2KfYqNit2Ksg2LnZhiDYqNirLi4uIiBjbGFzc05hbWU9InctZnVsbCBiZy13aGl0ZS9bMC4wNl0gYm9yZGVyIGJvcmRlci13aGl0ZS9bMC4xXSByb3VuZGVkLXhsIHB4LTQgcHktMi41IHRleHQtd2hpdGUgdGV4dC1zbSBvdXRsaW5lLW5vbmUgZm9jdXM6Ym9yZGVyLXB1cnBsZS01MDAgcHItMTAgdHJhbnNpdGlvbi1jb2xvcnMiIC8+CiAgICAgICAgPFNlYXJjaCBzaXplPXsxN30gY2xhc3NOYW1lPSJhYnNvbHV0ZSByaWdodC0zIHRvcC0xLzIgLXRyYW5zbGF0ZS15LTEvMiB0ZXh0LVsjNTU1XSIgLz4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGdhcC0yIG92ZXJmbG93LXgtYXV0byBweC00IHBiLTMiIHN0eWxlPXt7c2Nyb2xsYmFyV2lkdGg6J25vbmUnfX0+CiAgICAgICAge1tbJ2FsbCcsJ9in2YTZg9mEJ10sLi4uT2JqZWN0LmVudHJpZXMoU1RSRUFNX0NBVEVHT1JJRVMpXS5tYXAoKFtrLHZdKSA9PiAoCiAgICAgICAgICA8YnV0dG9uIGtleT17a30gb25DbGljaz17KCk9PmhhbmRsZUNhdGVnb3J5KGspfSBjbGFzc05hbWU9e2B3aGl0ZXNwYWNlLW5vd3JhcCBweC00IHB5LTEuNSByb3VuZGVkLTJ4bCB0ZXh0LXhzIGZvbnQtc2VtaWJvbGQgYm9yZGVyIHRyYW5zaXRpb24tYWxsICR7Y2F0ZWdvcnk9PT1rPydib3JkZXItcHVycGxlLTUwMCBiZy1wdXJwbGUtNTAwLzE1IHRleHQtcHVycGxlLTQwMCc6J2JvcmRlci13aGl0ZS8xMCBiZy13aGl0ZS9bMC4wNF0gdGV4dC1bIzg4OF0nfWB9Pnt2fTwvYnV0dG9uPgogICAgICAgICkpfQogICAgICA8L2Rpdj4KICAgICAge2ZpbHRlcmVkLmxlbmd0aCA9PT0gMCA/ICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIgZ2FwLTMgcHktMTAgdGV4dC1bIzQ0NF0iPjxzcGFuIGNsYXNzTmFtZT0idGV4dC01eGwiPvCflI08L3NwYW4+PHA+2YTYpyDYqtmI2KzYryDZhtiq2KfYptisPC9wPjwvZGl2PgogICAgICApIDogKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJncmlkIGdyaWQtY29scy0yIGdhcC0yLjUgcHgtNCBwYi00Ij4KICAgICAgICAgIHtmaWx0ZXJlZC5tYXAoc3RyZWFtID0+ICgKICAgICAgICAgICAgPGRpdiBrZXk9e3N0cmVhbS5pZH0gb25DbGljaz17KCk9PnJvdXRlci5wdXNoKGAvbGl2ZS8ke3N0cmVhbS5pZH1gKX0gY2xhc3NOYW1lPSJiZy13aGl0ZS9bMC4wNF0gYm9yZGVyIGJvcmRlci13aGl0ZS9bMC4wOF0gcm91bmRlZC0yeGwgb3ZlcmZsb3ctaGlkZGVuIGN1cnNvci1wb2ludGVyIGhvdmVyOmJvcmRlci1wdXJwbGUtNTAwLzMwIHRyYW5zaXRpb24tYWxsIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaC0yOCBiZy1ncmFkaWVudC10by1iciBmcm9tLVsjMWEwZDJlXSB0by1bIzBkMWEyZV0gZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcmVsYXRpdmUiPgogICAgICAgICAgICAgICAgPHNwYW4gc3R5bGU9e3tmb250U2l6ZTozNn19PntPYmplY3QuZW50cmllcyhTVFJFQU1fQ0FURUdPUklFUykuZmluZCgoW2tdKT0+az09PXN0cmVhbS5jYXRlZ29yeSk/LlsxXT8uc3BsaXQoJyAnKVswXXx8J/Cfk6EnfTwvc3Bhbj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSB0b3AtMiByaWdodC0yIj48c3BhbiBjbGFzc05hbWU9InRleHQtWzEwcHhdIGZvbnQtYm9sZCBiZy1yZWQtNTAwIHRleHQtd2hpdGUgcHgtMiBweS0wLjUgcm91bmRlZC1sZyBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMSI+PHNwYW4gY2xhc3NOYW1lPSJ3LTEuNSBoLTEuNSBiZy13aGl0ZSByb3VuZGVkLWZ1bGwiLz7Zhdio2KfYtNixPC9zcGFuPjwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJwLTIuNSI+CiAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQteHMgZm9udC1ib2xkIHRydW5jYXRlIG1iLTEiPntzdHJlYW0udGl0bGV9PC9wPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0xLjUiPgogICAgICAgICAgICAgICAgICA8QXZhdGFyIHVzZXI9e3N0cmVhbS51c2Vyc30gc2l6ZT0ic20iIC8+CiAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1bMTBweF0gdGV4dC1bIzY2Nl0gdHJ1bmNhdGUiPntzdHJlYW0udXNlcnM/LmZ1bGxfbmFtZX08L3NwYW4+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1bMTBweF0gdGV4dC1bIzU1NV0gbXQtMSI+8J+RgSB7Zm9ybWF0TnVtYmVyKHN0cmVhbS52aWV3ZXJfY291bnQpfTwvcD4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApKX0KICAgICAgICA8L2Rpdj4KICAgICAgKX0KICAgIDwvZGl2PgogICk7Cn0K"}
+'use client';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { LiveStream, STREAM_CATEGORIES } from '@/types';
+import Avatar from '@/components/ui/Avatar';
+import { Search } from 'lucide-react';
+import { formatNumber } from '@/lib/utils';
+
+export default function ExploreClient({ initialStreams }: { initialStreams: LiveStream[] }) {
+  const [streams, setStreams] = useState(initialStreams);
+  const [search, setSearch] = useState('');
+  const [category, setCategory] = useState('all');
+  const router = useRouter();
+
+  const handleCategory = async (cat: string) => {
+    setCategory(cat);
+    const res = await fetch(`/api/streams${cat!=='all'?`?category=${cat}`:''}  `);
+    const { data } = await res.json();
+    if (data) setStreams(data);
+  };
+
+  const filtered = streams.filter(s => !search || s.title?.includes(search) || s.users?.full_name?.includes(search));
+
+  return (
+    <div className="h-full overflow-y-auto">
+      <h2 className="text-base font-bold text-[#ddd] px-4 py-3">Ø§Ø³ØªÙØ´Ù Ø§ÙØ¨Ø«ÙØ«</h2>
+      <div className="relative mx-4 mb-3">
+        <input value={search} onChange={e=>setSearch(e.target.value)} placeholder="Ø§Ø¨Ø­Ø« Ø¹Ù Ø¨Ø«..." className="w-full bg-white/[0.06] border border-white/[0.1] rounded-xl px-4 py-2.5 text-white text-sm outline-none focus:border-purple-500 pr-10 transition-colors" />
+        <Search size={17} className="absolute right-3 top-1/2 -translate-y-1/2 text-[#555]" />
+      </div>
+      <div className="flex gap-2 overflow-x-auto px-4 pb-3" style={{scrollbarWidth:'none'}}>
+        {[['all','Ø§ÙÙÙ'],...Object.entries(STREAM_CATEGORIES)].map(([k,v]) => (
+          <button key={k} onClick={()=>handleCategory(k)} className={`whitespace-nowrap px-4 py-1.5 rounded-2xl text-xs font-semibold border transition-all ${category===k?'border-purple-500 bg-purple-500/15 text-purple-400':'border-white/10 bg-white/[0.04] text-[#888]'}`}>{v}</button>
+        ))}
+      </div>
+      {filtered.length === 0 ? (
+        <div className="flex flex-col items-center gap-3 py-10 text-[#444]"><span className="text-5xl">ð</span><p>ÙØ§ ØªÙØ¬Ø¯ ÙØªØ§Ø¦Ø¬</p></div>
+      ) : (
+        <div className="grid grid-cols-2 gap-2.5 px-4 pb-4">
+          {filtered.map(stream => (
+            <div key={stream.id} onClick={()=>router.push(`/live/${stream.id}`)} className="bg-white/[0.04] border border-white/[0.08] rounded-2xl overflow-hidden cursor-pointer hover:border-purple-500/30 transition-all">
+              <div className="h-28 bg-gradient-to-br from-[#1a0d2e] to-[#0d1a2e] flex items-center justify-center relative">
+                <span style={{fontSize:36}}>{Object.entries(STREAM_CATEGORIES).find(([k])=>k===stream.category)?.[1]?.split(' ')[0]||'ð¡'}</span>
+                <div className="absolute top-2 right-2"><span className="text-[10px] font-bold bg-red-500 text-white px-2 py-0.5 rounded-lg flex items-center gap-1"><span className="w-1.5 h-1.5 bg-white rounded-full"/>ÙØ¨Ø§Ø´Ø±</span></div>
+              </div>
+              <div className="p-2.5">
+                <p className="text-xs font-bold truncate mb-1">{stream.title}</p>
+                <div className="flex items-center gap-1.5">
+                  <Avatar user={stream.users} size="sm" />
+                  <span className="text-[10px] text-[#666] truncate">{stream.users?.full_name}</span>
+                </div>
+                <p className="text-[10px] text-[#555] mt-1">ð {formatNumber(stream.viewer_count)}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
