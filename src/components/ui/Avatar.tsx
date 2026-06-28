@@ -1,1 +1,14 @@
-{"data":"aW1wb3J0IHsgVXNlciB9IGZyb20gJ0AvdHlwZXMnOw0KaW1wb3J0IEltYWdlIGZyb20gJ25leHQvaW1hZ2UnOw0KaW1wb3J0IHsgY24gfSBmcm9tICdAL2xpYi91dGlscyc7DQppbnRlcmZhY2UgUHJvcHMgeyB1c2VyPzogVXNlciB8IG51bGw7IHNpemU/OiAnc20nfCdtZCd8J2xnJ3wneGwnOyBjbGFzc05hbWU/OiBzdHJpbmc7IH0NCmNvbnN0IHNpemVzID0geyBzbTp7dzozMixmOjEzfSwgbWQ6e3c6NDAsZjoxNn0sIGxnOnt3OjcyLGY6Mjh9LCB4bDp7dzo5NixmOjM2fSB9Ow0KZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQXZhdGFyKHsgdXNlciwgc2l6ZT0nbWQnLCBjbGFzc05hbWUgfTogUHJvcHMpIHsNCiAgY29uc3QgeyB3LCBmIH0gPSBzaXplc1tzaXplXTsNCiAgY29uc3QgbGV0dGVyID0gdXNlcj8uZnVsbF9uYW1lPy5bMF0gfHwgdXNlcj8udXNlcm5hbWU/LlswXSB8fCAn2J8nOw0KICByZXR1cm4gKA0KICAgIDxkaXYgY2xhc3NOYW1lPXtjbigncm91bmRlZC1mdWxsIG92ZXJmbG93LWhpZGRlbiBmbGV4LXNocmluay0wIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGZvbnQtYm9sZCBiZy1ncmFkaWVudC10by1iciBmcm9tLXB1cnBsZS01MDAgdG8taW5kaWdvLTUwMCcsIGNsYXNzTmFtZSl9IHN0eWxlPXt7d2lkdGg6dyxoZWlnaHQ6dyxmb250U2l6ZTpmfX0+DQogICAgICB7dXNlcj8uYXZhdGFyX3VybCA/IDxJbWFnZSBzcmM9e3VzZXIuYXZhdGFyX3VybH0gYWx0PXt1c2VyLmZ1bGxfbmFtZX0gd2lkdGg9e3d9IGhlaWdodD17d30gY2xhc3NOYW1lPSJvYmplY3QtY292ZXIgdy1mdWxsIGgtZnVsbCIgLz4gOiA8c3BhbiBjbGFzc05hbWU9InRleHQtd2hpdGUiPntsZXR0ZXJ9PC9zcGFuPn0NCiAgICA8L2Rpdj4NCiAgKTsNCn0NCg=="}
+import { User } from '@/types';
+import Image from 'next/image';
+import { cn } from '@/lib/utils';
+interface Props { user?: User | null; size?: 'sm'|'md'|'lg'|'xl'; className?: string; }
+const sizes = { sm:{w:32,f:13}, md:{w:40,f:16}, lg:{w:72,f:28}, xl:{w:96,f:36} };
+export default function Avatar({ user, size='md', className }: Props) {
+  const { w, f } = sizes[size];
+  const letter = user?.full_name?.[0] || user?.username?.[0] || 'Ø';
+  return (
+    <div className={cn('rounded-full overflow-hidden flex-shrink-0 flex items-center justify-center font-bold bg-gradient-to-br from-purple-500 to-indigo-500', className)} style={{width:w,height:w,fontSize:f}}>
+      {user?.avatar_url ? <Image src={user.avatar_url} alt={user.full_name} width={w} height={w} className="object-cover w-full h-full" /> : <span className="text-white">{letter}</span>}
+    </div>
+  );
+}
