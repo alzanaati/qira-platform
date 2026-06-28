@@ -1,1 +1,2 @@
-{"data":"aW1wb3J0IExvZ2luRm9ybSBmcm9tICcuL0xvZ2luRm9ybSc7DQpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBMb2dpblBhZ2UoKSB7IHJldHVybiA8TG9naW5Gb3JtIC8+OyB9DQo="}
+import LoginForm from './LoginForm';
+export default function LoginPage() { return <LoginForm />; }
