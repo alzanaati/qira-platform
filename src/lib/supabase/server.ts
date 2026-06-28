@@ -1,1 +1,26 @@
-{"data":"aW1wb3J0IHsgY3JlYXRlU2VydmVyQ2xpZW50IH0gZnJvbSAnQHN1cGFiYXNlL3Nzcic7DQppbXBvcnQgeyBjb29raWVzIH0gZnJvbSAnbmV4dC9oZWFkZXJzJzsNCmV4cG9ydCBmdW5jdGlvbiBjcmVhdGVDbGllbnQoKSB7DQogIGNvbnN0IGNvb2tpZVN0b3JlID0gY29va2llcygpOw0KICByZXR1cm4gY3JlYXRlU2VydmVyQ2xpZW50KA0KICAgIHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1NVUEFCQVNFX1VSTCEsDQogICAgcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfU1VQQUJBU0VfQU5PTl9LRVkhLA0KICAgIHsgY29va2llczogew0KICAgICAgZ2V0KG5hbWU6IHN0cmluZykgeyByZXR1cm4gY29va2llU3RvcmUuZ2V0KG5hbWUpPy52YWx1ZTsgfSwNCiAgICAgIHNldChuYW1lOiBzdHJpbmcsIHZhbHVlOiBzdHJpbmcsIG9wdGlvbnM6IGFueSkgeyB0cnkgeyBjb29raWVTdG9yZS5zZXQoeyBuYW1lLCB2YWx1ZSwgLi4ub3B0aW9ucyB9KTsgfSBjYXRjaCB7fSB9LA0KICAgICAgcmVtb3ZlKG5hbWU6IHN0cmluZywgb3B0aW9uczogYW55KSB7IHRyeSB7IGNvb2tpZVN0b3JlLnNldCh7IG5hbWUsIHZhbHVlOiAnJywgLi4ub3B0aW9ucyB9KTsgfSBjYXRjaCB7fSB9LA0KICAgIH19DQogICk7DQp9DQpleHBvcnQgZnVuY3Rpb24gY3JlYXRlQWRtaW5DbGllbnQoKSB7DQogIGNvbnN0IGNvb2tpZVN0b3JlID0gY29va2llcygpOw0KICByZXR1cm4gY3JlYXRlU2VydmVyQ2xpZW50KA0KICAgIHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1NVUEFCQVNFX1VSTCEsDQogICAgcHJvY2Vzcy5lbnYuU1VQQUJBU0VfU0VSVklDRV9ST0xFX0tFWSEsDQogICAgeyBjb29raWVzOiB7DQogICAgICBnZXQobmFtZTogc3RyaW5nKSB7IHJldHVybiBjb29raWVTdG9yZS5nZXQobmFtZSk/LnZhbHVlOyB9LA0KICAgICAgc2V0KG5hbWU6IHN0cmluZywgdmFsdWU6IHN0cmluZywgb3B0aW9uczogYW55KSB7IHRyeSB7IGNvb2tpZVN0b3JlLnNldCh7IG5hbWUsIHZhbHVlLCAuLi5vcHRpb25zIH0pOyB9IGNhdGNoIHt9IH0sDQogICAgICByZW1vdmUobmFtZTogc3RyaW5nLCBvcHRpb25zOiBhbnkpIHsgdHJ5IHsgY29va2llU3RvcmUuc2V0KHsgbmFtZSwgdmFsdWU6ICcnLCAuLi5vcHRpb25zIH0pOyB9IGNhdGNoIHt9IH0sDQogICAgfX0NCiAgKTsNCn0NCg=="}
+import { createServerClient } from '@supabase/ssr';
+import { cookies } from 'next/headers';
+export function createClient() {
+  const cookieStore = cookies();
+  return createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    { cookies: {
+      get(name: string) { return cookieStore.get(name)?.value; },
+      set(name: string, value: string, options: any) { try { cookieStore.set({ name, value, ...options }); } catch {} },
+      remove(name: string, options: any) { try { cookieStore.set({ name, value: '', ...options }); } catch {} },
+    }}
+  );
+}
+export function createAdminClient() {
+  const cookieStore = cookies();
+  return createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!,
+    { cookies: {
+      get(name: string) { return cookieStore.get(name)?.value; },
+      set(name: string, value: string, options: any) { try { cookieStore.set({ name, value, ...options }); } catch {} },
+      remove(name: string, options: any) { try { cookieStore.set({ name, value: '', ...options }); } catch {} },
+    }}
+  );
+}
