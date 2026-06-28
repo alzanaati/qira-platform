@@ -1,1 +1,16 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsNCmltcG9ydCB7IGNyZWF0ZUNsaWVudCB9IGZyb20gJ0AvbGliL3N1cGFiYXNlL3NlcnZlcic7DQppbXBvcnQgeyBDTEFQX1BSSUNFUyB9IGZyb20gJ0AvdHlwZXMnOw0KZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxdWVzdDogTmV4dFJlcXVlc3QpIHsNCiAgY29uc3Qgc3VwYWJhc2UgPSBjcmVhdGVDbGllbnQoKTsNCiAgY29uc3QgeyBkYXRhOiB7IHVzZXIgfSB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5nZXRVc2VyKCk7DQogIGlmICghdXNlcikgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdVbmF1dGhvcml6ZWQnIH0sIHsgc3RhdHVzOiA0MDEgfSk7DQogIGNvbnN0IHsgc3RyZWFtSWQsIHJlY2VpdmVySWQsIGNsYXBUeXBlIH0gPSBhd2FpdCByZXF1ZXN0Lmpzb24oKTsNCiAgY29uc3QgYW1vdW50ID0gQ0xBUF9QUklDRVNbY2xhcFR5cGUgYXMga2V5b2YgdHlwZW9mIENMQVBfUFJJQ0VTXTsNCiAgaWYgKCFhbW91bnQpIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGVycm9yOiAnSW52YWxpZCBjbGFwIHR5cGUnIH0sIHsgc3RhdHVzOiA0MDAgfSk7DQogIGNvbnN0IHsgZGF0YTogd2FsbGV0IH0gPSBhd2FpdCBzdXBhYmFzZS5mcm9tKCd3YWxsZXRzJykuc2VsZWN0KCdiYWxhbmNlJykuZXEoJ3VzZXJfaWQnLHVzZXIuaWQpLnNpbmdsZSgpOw0KICBpZiAoIXdhbGxldCB8fCB3YWxsZXQuYmFsYW5jZSA8IGFtb3VudCkgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICfYsdi12YrYr9mDINi62YrYsSDZg9in2YHZjScgfSwgeyBzdGF0dXM6IDQwMCB9KTsNCiAgY29uc3QgeyBkYXRhLCBlcnJvciB9ID0gYXdhaXQgc3VwYWJhc2UuZnJvbSgnY2xhcHMnKS5pbnNlcnQoeyBzdHJlYW1faWQ6c3RyZWFtSWQsIHNlbmRlcl9pZDp1c2VyLmlkLCByZWNlaXZlcl9pZDpyZWNlaXZlcklkLCBjbGFwX3R5cGU6Y2xhcFR5cGUsIGFtb3VudCB9KS5zZWxlY3QoKS5zaW5nbGUoKTsNCiAgaWYgKGVycm9yKSByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBlcnJvcjogZXJyb3IubWVzc2FnZSB9LCB7IHN0YXR1czogNTAwIH0pOw0KICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBkYXRhIH0pOw0KfQ0K"}
+import { NextRequest, NextResponse } from 'next/server';
+import { createClient } from '@/lib/supabase/server';
+import { CLAP_PRICES } from '@/types';
+export async function POST(request: NextRequest) {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  const { streamId, receiverId, clapType } = await request.json();
+  const amount = CLAP_PRICES[clapType as keyof typeof CLAP_PRICES];
+  if (!amount) return NextResponse.json({ error: 'Invalid clap type' }, { status: 400 });
+  const { data: wallet } = await supabase.from('wallets').select('balance').eq('user_id',user.id).single();
+  if (!wallet || wallet.balance < amount) return NextResponse.json({ error: 'Ø±ØµÙØ¯Ù ØºÙØ± ÙØ§ÙÙ' }, { status: 400 });
+  const { data, error } = await supabase.from('claps').insert({ stream_id:streamId, sender_id:user.id, receiver_id:receiverId, clap_type:clapType, amount }).select().single();
+  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  return NextResponse.json({ data });
+}
