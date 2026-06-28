@@ -1,1 +1,7 @@
-{"data":"J3VzZSBjbGllbnQnOyBpbXBvcnQgeyB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnOyBpbXBvcnQgeyBMaXZlU3RyZWFtIH0gZnJvbSAnQC90eXBlcyc7DQpleHBvcnQgZnVuY3Rpb24gdXNlRmVlZCgpIHsNCiAgY29uc3QgW3N0cmVhbXMsIHNldFN0cmVhbXNdID0gdXNlU3RhdGU8TGl2ZVN0cmVhbVtdPihbXSk7DQogIGNvbnN0IFtsb2FkaW5nLCBzZXRMb2FkaW5nXSA9IHVzZVN0YXRlKHRydWUpOw0KICB1c2VFZmZlY3QoKCk9PnsgY29uc3QgbG9hZD1hc3luYygpPT57Y29uc3Qgcj1hd2FpdCBmZXRjaCgnL2FwaS9zdHJlYW1zJyk7Y29uc3R7ZGF0YX09YXdhaXQgci5qc29uKCk7c2V0U3RyZWFtcyhkYXRhfHxbXSk7c2V0TG9hZGluZyhmYWxzZSk7fTtsb2FkKCk7Y29uc3QgaT1zZXRJbnRlcnZhbChsb2FkLDE1MDAwKTtyZXR1cm4oKT0+Y2xlYXJJbnRlcnZhbChpKTsgfSxbXSk7DQogIHJldHVybiB7c3RyZWFtcyxsb2FkaW5nfTsNCn0NCg=="}
+'use client'; import { useEffect, useState } from 'react'; import { LiveStream } from '@/types';
+export function useFeed() {
+  const [streams, setStreams] = useState<LiveStream[]>([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(()=>{ const load=async()=>{const r=await fetch('/api/streams');const{data}=await r.json();setStreams(data||[]);setLoading(false);};load();const i=setInterval(load,15000);return()=>clearInterval(i); },[]);
+  return {streams,loading};
+}
