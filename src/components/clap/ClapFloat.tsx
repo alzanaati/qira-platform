@@ -1,1 +1,34 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsNCmludGVyZmFjZSBGbG9hdEl0ZW0geyBpZDogc3RyaW5nOyBlbW9qaTogc3RyaW5nOyB4OiBudW1iZXI7IH0NCmludGVyZmFjZSBDbGFwRmxvYXRQcm9wcyB7IGNsYXBUeXBlPzogc3RyaW5nOyB0cmlnZ2VyOiBudW1iZXI7IH0NCmNvbnN0IENMQVBfRU1PSklTOiBSZWNvcmQ8c3RyaW5nLCBzdHJpbmc+ID0geyBicm9uemU6ICfwn6WJJywgc2lsdmVyOiAn8J+liCcsIGdvbGQ6ICfwn6WHJywgZGlhbW9uZDogJ/Cfko4nIH07DQpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBDbGFwRmxvYXQoeyBjbGFwVHlwZSA9ICdicm9uemUnLCB0cmlnZ2VyIH06IENsYXBGbG9hdFByb3BzKSB7DQogIGNvbnN0IFtpdGVtcywgc2V0SXRlbXNdID0gdXNlU3RhdGU8RmxvYXRJdGVtW10+KFtdKTsNCiAgdXNlRWZmZWN0KCgpID0+IHsNCiAgICBpZiAodHJpZ2dlciA9PT0gMCkgcmV0dXJuOw0KICAgIGNvbnN0IGlkID0gRGF0ZS5ub3coKS50b1N0cmluZygpOw0KICAgIGNvbnN0IHggPSAyMCArIE1hdGgucmFuZG9tKCkgKiA2MDsNCiAgICBzZXRJdGVtcyhwcmV2ID0+IFsuLi5wcmV2LCB7IGlkLCBlbW9qaTogQ0xBUF9FTU9KSVNbY2xhcFR5cGVdIHx8ICfwn5GPJywgeCB9XSk7DQogICAgY29uc3QgdCA9IHNldFRpbWVvdXQoKCkgPT4gc2V0SXRlbXMocHJldiA9PiBwcmV2LmZpbHRlcihpID0+IGkuaWQgIT09IGlkKSksIDI1MDApOw0KICAgIHJldHVybiAoKSA9PiBjbGVhclRpbWVvdXQodCk7DQogIH0sIFt0cmlnZ2VyXSk7DQogIHJldHVybiAoDQogICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LTAgcG9pbnRlci1ldmVudHMtbm9uZSBvdmVyZmxvdy1oaWRkZW4iPg0KICAgICAge2l0ZW1zLm1hcChpdGVtID0+ICgNCiAgICAgICAgPGRpdiBrZXk9e2l0ZW0uaWR9IHN0eWxlPXt7IGxlZnQ6IGAke2l0ZW0ueH0lYCwgYm90dG9tOiAnMTAlJyB9fQ0KICAgICAgICAgIGNsYXNzTmFtZT0iYWJzb2x1dGUgdGV4dC00eGwgYW5pbWF0ZS1mbG9hdC11cCBzZWxlY3Qtbm9uZSI+DQogICAgICAgICAge2l0ZW0uZW1vaml9DQogICAgICAgIDwvZGl2Pg0KICAgICAgKSl9DQogICAgICA8c3R5bGU+e2ANCiAgICAgICAgQGtleWZyYW1lcyBmbG9hdFVwIHsNCiAgICAgICAgICAwJSB7IHRyYW5zZm9ybTogdHJhbnNsYXRlWSgwKSBzY2FsZSgxKTsgb3BhY2l0eTogMTsgfQ0KICAgICAgICAgIDgwJSB7IHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtMjAwcHgpIHNjYWxlKDEuMyk7IG9wYWNpdHk6IDAuODsgfQ0KICAgICAgICAgIDEwMCUgeyB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTI4MHB4KSBzY2FsZSgwLjUpOyBvcGFjaXR5OiAwOyB9DQogICAgICAgIH0NCiAgICAgICAgLmFuaW1hdGUtZmxvYXQtdXAgeyBhbmltYXRpb246IGZsb2F0VXAgMi41cyBlYXNlLW91dCBmb3J3YXJkczsgfQ0KICAgICAgYH08L3N0eWxlPg0KICAgIDwvZGl2Pg0KICApOw0KfQ0K"}
+'use client';
+import { useEffect, useState } from 'react';
+interface FloatItem { id: string; emoji: string; x: number; }
+interface ClapFloatProps { clapType?: string; trigger: number; }
+const CLAP_EMOJIS: Record<string, string> = { bronze: 'ð¥', silver: 'ð¥', gold: 'ð¥', diamond: 'ð' };
+export default function ClapFloat({ clapType = 'bronze', trigger }: ClapFloatProps) {
+  const [items, setItems] = useState<FloatItem[]>([]);
+  useEffect(() => {
+    if (trigger === 0) return;
+    const id = Date.now().toString();
+    const x = 20 + Math.random() * 60;
+    setItems(prev => [...prev, { id, emoji: CLAP_EMOJIS[clapType] || 'ð', x }]);
+    const t = setTimeout(() => setItems(prev => prev.filter(i => i.id !== id)), 2500);
+    return () => clearTimeout(t);
+  }, [trigger]);
+  return (
+    <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      {items.map(item => (
+        <div key={item.id} style={{ left: `${item.x}%`, bottom: '10%' }}
+          className="absolute text-4xl animate-float-up select-none">
+          {item.emoji}
+        </div>
+      ))}
+      <style>{`
+        @keyframes floatUp {
+          0% { transform: translateY(0) scale(1); opacity: 1; }
+          80% { transform: translateY(-200px) scale(1.3); opacity: 0.8; }
+          100% { transform: translateY(-280px) scale(0.5); opacity: 0; }
+        }
+        .animate-float-up { animation: floatUp 2.5s ease-out forwards; }
+      `}</style>
+    </div>
+  );
+}
