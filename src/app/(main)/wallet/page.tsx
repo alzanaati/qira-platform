@@ -1,1 +1,13 @@
-{"data":"aW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAnQC9saWIvc3VwYWJhc2Uvc2VydmVyJzsNCmltcG9ydCBXYWxsZXRDbGllbnQgZnJvbSAnQC9jb21wb25lbnRzL3dhbGxldC9XYWxsZXRDbGllbnQnOw0KDQpleHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiBXYWxsZXRQYWdlKCkgew0KICBjb25zdCBzdXBhYmFzZSA9IGNyZWF0ZUNsaWVudCgpOw0KICBjb25zdCB7IGRhdGE6IHsgdXNlciB9IH0gPSBhd2FpdCBzdXBhYmFzZS5hdXRoLmdldFVzZXIoKTsNCiAgY29uc3QgW3dhbGxldFJlcywgY2xhcHNFYXJuZWRSZXMsIGNsYXBzU3BlbnRSZXNdID0gYXdhaXQgUHJvbWlzZS5hbGwoWw0KICAgIHN1cGFiYXNlLmZyb20oJ3dhbGxldHMnKS5zZWxlY3QoJyonKS5lcSgndXNlcl9pZCcsIHVzZXIhLmlkKS5zaW5nbGUoKSwNCiAgICBzdXBhYmFzZS5mcm9tKCdjbGFwcycpLnNlbGVjdCgnKiwgc2VuZGVyOnNlbmRlcl9pZChmdWxsX25hbWUsdXNlcm5hbWUsYXZhdGFyX3VybCksIHN0cmVhbTpzdHJlYW1faWQodGl0bGUpJykuZXEoJ3JlY2VpdmVyX2lkJywgdXNlciEuaWQpLm9yZGVyKCdjcmVhdGVkX2F0JywgeyBhc2NlbmRpbmc6IGZhbHNlIH0pLmxpbWl0KDUwKSwNCiAgICBzdXBhYmFzZS5mcm9tKCdjbGFwcycpLnNlbGVjdCgnKiwgcmVjZWl2ZXI6cmVjZWl2ZXJfaWQoZnVsbF9uYW1lLHVzZXJuYW1lLGF2YXRhcl91cmwpLCBzdHJlYW06c3RyZWFtX2lkKHRpdGxlKScpLmVxKCdzZW5kZXJfaWQnLCB1c2VyIS5pZCkub3JkZXIoJ2NyZWF0ZWRfYXQnLCB7IGFzY2VuZGluZzogZmFsc2UgfSkubGltaXQoNTApLA0KICBdKTsNCiAgcmV0dXJuIDxXYWxsZXRDbGllbnQgd2FsbGV0PXt3YWxsZXRSZXMuZGF0YX0gZWFybmVkPXtjbGFwc0Vhcm5lZFJlcy5kYXRhIHx8IFtdfSBzcGVudD17Y2xhcHNTcGVudFJlcy5kYXRhIHx8IFtdfSAvPjsNCn0NCg=="}
+import { createClient } from '@/lib/supabase/server';
+import WalletClient from '@/components/wallet/WalletClient';
+
+export default async function WalletPage() {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  const [walletRes, clapsEarnedRes, clapsSpentRes] = await Promise.all([
+    supabase.from('wallets').select('*').eq('user_id', user!.id).single(),
+    supabase.from('claps').select('*, sender:sender_id(full_name,username,avatar_url), stream:stream_id(title)').eq('receiver_id', user!.id).order('created_at', { ascending: false }).limit(50),
+    supabase.from('claps').select('*, receiver:receiver_id(full_name,username,avatar_url), stream:stream_id(title)').eq('sender_id', user!.id).order('created_at', { ascending: false }).limit(50),
+  ]);
+  return <WalletClient wallet={walletRes.data} earned={clapsEarnedRes.data || []} spent={clapsSpentRes.data || []} />;
+}
