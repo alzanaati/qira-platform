@@ -7,21 +7,14 @@ import { ArrowRight, Mic, Video, Hand, MessageCircle, Users } from 'lucide-react
 import { formatNumber } from '@/lib/utils';
 
 export default function LiveRoomPage({ stream, currentUser }: { stream: LiveStream; currentUser: User | null }) {
-  // Fix 2 & 3: Auto-connect to /api/livekit/token on mount
+  // Fix 2 & 3: Auto-fetch /api/livekit/token on mount
   const [livekitToken, setLivekitToken] = useState<string | null>(null);
   const [livekitConnected, setLivekitConnected] = useState(false);
-
   useEffect(() => {
     if (!currentUser) return;
-    fetch('/api/livekit/token', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ streamId: stream.id })
-    }).then(r => r.json()).then(data => {
-      if (data.token) { setLivekitToken(data.token); setLivekitConnected(true); }
-    }).catch(() => {});
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [stream.id]);
+    fetch('/api/livekit/token', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ streamId: stream.id }) })
+      .then(r => r.json()).then(data => { if (data.token) { setLivekitToken(data.token); setLivekitConnected(true); } }).catch(() => {});
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const [messages, setMessages] = useState<LiveMessage[]>([]);
   const [speakerRequests, setSpeakerRequests] = useState<SpeakerRequest[]>([]);
