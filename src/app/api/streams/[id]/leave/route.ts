@@ -1,1 +1,11 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJzsNCmltcG9ydCB7IGNyZWF0ZUNsaWVudCB9IGZyb20gJ0AvbGliL3N1cGFiYXNlL3NlcnZlcic7DQpleHBvcnQgYXN5bmMgZnVuY3Rpb24gUE9TVChfOiBOZXh0UmVxdWVzdCwgeyBwYXJhbXMgfTogeyBwYXJhbXM6IHsgaWQ6IHN0cmluZyB9IH0pIHsNCiAgY29uc3Qgc3VwYWJhc2UgPSBjcmVhdGVDbGllbnQoKTsNCiAgY29uc3QgeyBkYXRhOiB7IHVzZXIgfSB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5nZXRVc2VyKCk7DQogIGlmICghdXNlcikgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdVbmF1dGhvcml6ZWQnIH0sIHsgc3RhdHVzOiA0MDEgfSk7DQogIGF3YWl0IHN1cGFiYXNlLmZyb20oJ3N0cmVhbV9wYXJ0aWNpcGFudHMnKS5kZWxldGUoKS5lcSgnc3RyZWFtX2lkJyxwYXJhbXMuaWQpLmVxKCd1c2VyX2lkJyx1c2VyLmlkKTsNCiAgY29uc3QgeyBjb3VudCB9ID0gYXdhaXQgc3VwYWJhc2UuZnJvbSgnc3RyZWFtX3BhcnRpY2lwYW50cycpLnNlbGVjdCgnKicse2NvdW50OidleGFjdCcsaGVhZDp0cnVlfSkuZXEoJ3N0cmVhbV9pZCcscGFyYW1zLmlkKTsNCiAgYXdhaXQgc3VwYWJhc2UuZnJvbSgnbGl2ZV9zdHJlYW1zJykudXBkYXRlKHsgdmlld2VyX2NvdW50OiBNYXRoLm1heCgwLCBjb3VudCB8fCAwKSB9KS5lcSgnaWQnLHBhcmFtcy5pZCk7DQogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IHN1Y2Nlc3M6IHRydWUgfSk7DQp9DQo="}
+import { NextRequest, NextResponse } from 'next/server';
+import { createClient } from '@/lib/supabase/server';
+export async function POST(_: NextRequest, { params }: { params: { id: string } }) {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  await supabase.from('stream_participants').delete().eq('stream_id',params.id).eq('user_id',user.id);
+  const { count } = await supabase.from('stream_participants').select('*',{count:'exact',head:true}).eq('stream_id',params.id);
+  await supabase.from('live_streams').update({ viewer_count: Math.max(0, count || 0) }).eq('id',params.id);
+  return NextResponse.json({ success: true });
+}
