@@ -1,1 +1,31 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgdXNlUGF0aG5hbWUsIHVzZVJvdXRlciB9IGZyb20gJ25leHQvbmF2aWdhdGlvbic7DQppbXBvcnQgeyBIb21lLCBTZWFyY2gsIFBsdXMsIFdhbGxldCwgVXNlciB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7DQppbXBvcnQgeyBjbiB9IGZyb20gJ0AvbGliL3V0aWxzJzsNCg0KY29uc3QgaXRlbXMgPSBbDQogIHsgcGF0aDonL2ZlZWQnLCBpY29uOkhvbWUsIGxhYmVsOifYp9mE2LHYptmK2LPZitipJyB9LA0KICB7IHBhdGg6Jy9leHBsb3JlJywgaWNvbjpTZWFyY2gsIGxhYmVsOifYp9iz2KrZg9i02YEnIH0sDQogIHsgcGF0aDonL2xpdmUvY3JlYXRlJywgaWNvbjpQbHVzLCBsYWJlbDon2KjYqycsIGlzQ3JlYXRlOnRydWUgfSwNCiAgeyBwYXRoOicvd2FsbGV0JywgaWNvbjpXYWxsZXQsIGxhYmVsOifYp9mE2YXYrdmB2LjYqScgfSwNCiAgeyBwYXRoOicvcHJvZmlsZScsIGljb246VXNlciwgbGFiZWw6J9it2LPYp9io2YonIH0sDQpdOw0KDQpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBCb3R0b21OYXYoKSB7DQogIGNvbnN0IHBhdGhuYW1lID0gdXNlUGF0aG5hbWUoKTsNCiAgY29uc3Qgcm91dGVyID0gdXNlUm91dGVyKCk7DQogIHJldHVybiAoDQogICAgPG5hdiBjbGFzc05hbWU9ImZpeGVkIGJvdHRvbS0wIGxlZnQtMCByaWdodC0wIGgtWzY4cHhdIGJnLVsjMDgwODBmXS85NSBiYWNrZHJvcC1ibHVyLXhsIGJvcmRlci10IGJvcmRlci13aGl0ZS9bMC4wNl0gZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1hcm91bmQgei01MCI+DQogICAgICB7aXRlbXMubWFwKCh7IHBhdGgsIGljb246SWNvbiwgbGFiZWwsIGlzQ3JlYXRlIH0pID0+IHsNCiAgICAgICAgY29uc3QgYWN0aXZlID0gcGF0aG5hbWUgPT09IHBhdGggfHwgcGF0aG5hbWUuc3RhcnRzV2l0aChwYXRoICsgJy8nKTsNCiAgICAgICAgcmV0dXJuICgNCiAgICAgICAgICA8YnV0dG9uIGtleT17cGF0aH0gb25DbGljaz17KCk9PnJvdXRlci5wdXNoKHBhdGgpfQ0KICAgICAgICAgICAgY2xhc3NOYW1lPXtjbignZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIgZ2FwLTEgcHgtMyBweS0yIHJvdW5kZWQtMnhsIHRyYW5zaXRpb24tYWxsJywgaXNDcmVhdGUgPyAnYmctZ3JhZGllbnQtdG8tYnIgZnJvbS1wdXJwbGUtNTAwIHRvLWluZGlnby01MDAgc2hhZG93LWxnIHNoYWRvdy1wdXJwbGUtNTAwLzQwIHB5LTMgcHgtNCcgOiBhY3RpdmUgPyAndGV4dC1wdXJwbGUtNDAwJyA6ICd0ZXh0LVsjNTU1XScpfT4NCiAgICAgICAgICAgIDxJY29uIHNpemU9ezIyfSAvPg0KICAgICAgICAgICAgeyFpc0NyZWF0ZSAmJiA8c3BhbiBjbGFzc05hbWU9InRleHQtWzEwcHhdIGZvbnQtc2VtaWJvbGQiPntsYWJlbH08L3NwYW4+fQ0KICAgICAgICAgIDwvYnV0dG9uPg0KICAgICAgICApOw0KICAgICAgfSl9DQogICAgPC9uYXY+DQogICk7DQp9DQo="}
+'use client';
+import { usePathname, useRouter } from 'next/navigation';
+import { Home, Search, Plus, Wallet, User } from 'lucide-react';
+import { cn } from '@/lib/utils';
+
+const items = [
+  { path:'/feed', icon:Home, label:'Ø§ÙØ±Ø¦ÙØ³ÙØ©' },
+  { path:'/explore', icon:Search, label:'Ø§Ø³ØªÙØ´Ù' },
+  { path:'/live/create', icon:Plus, label:'Ø¨Ø«', isCreate:true },
+  { path:'/wallet', icon:Wallet, label:'Ø§ÙÙØ­ÙØ¸Ø©' },
+  { path:'/profile', icon:User, label:'Ø­Ø³Ø§Ø¨Ù' },
+];
+
+export default function BottomNav() {
+  const pathname = usePathname();
+  const router = useRouter();
+  return (
+    <nav className="fixed bottom-0 left-0 right-0 h-[68px] bg-[#08080f]/95 backdrop-blur-xl border-t border-white/[0.06] flex items-center justify-around z-50">
+      {items.map(({ path, icon:Icon, label, isCreate }) => {
+        const active = pathname === path || pathname.startsWith(path + '/');
+        return (
+          <button key={path} onClick={()=>router.push(path)}
+            className={cn('flex flex-col items-center gap-1 px-3 py-2 rounded-2xl transition-all', isCreate ? 'bg-gradient-to-br from-purple-500 to-indigo-500 shadow-lg shadow-purple-500/40 py-3 px-4' : active ? 'text-purple-400' : 'text-[#555]')}>
+            <Icon size={22} />
+            {!isCreate && <span className="text-[10px] font-semibold">{label}</span>}
+          </button>
+        );
+      })}
+    </nav>
+  );
+}
