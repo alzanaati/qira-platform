@@ -1,1 +1,7 @@
-{"data":"ZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQXV0aExheW91dCh7IGNoaWxkcmVuIH06IHsgY2hpbGRyZW46IFJlYWN0LlJlYWN0Tm9kZSB9KSB7DQogIHJldHVybiAoDQogICAgPGRpdiBjbGFzc05hbWU9Im1pbi1oLXNjcmVlbiBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBiZy1bIzA4MDgwZl0gYmctW3JhZGlhbC1ncmFkaWVudChlbGxpcHNlX2F0XzUwJV8tMTAlLHJnYmEoMTY4LDg1LDI0NywwLjIpLHRyYW5zcGFyZW50XzYwJSldIHAtNCI+DQogICAgICB7Y2hpbGRyZW59DQogICAgPC9kaXY+DQogICk7DQp9DQo="}
+export default function AuthLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-[#08080f] bg-[radial-gradient(ellipse_at_50%_-10%,rgba(168,85,247,0.2),transparent_60%)] p-4">
+      {children}
+    </div>
+  );
+}
