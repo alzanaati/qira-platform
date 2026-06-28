@@ -1,1 +1,28 @@
-{"data":"aW1wb3J0IHR5cGUgeyBDb25maWcgfSBmcm9tICd0YWlsd2luZGNzcyc7CmNvbnN0IGNvbmZpZzogQ29uZmlnID0gewogIGNvbnRlbnQ6IFsnLi9zcmMvKiovKi57anMsdHMsanN4LHRzeCxtZHh9J10sCiAgdGhlbWU6IHsKICAgIGV4dGVuZDogewogICAgICBmb250RmFtaWx5OiB7IGNhaXJvOiBbJ0NhaXJvJywgJ3NhbnMtc2VyaWYnXSB9LAogICAgICBjb2xvcnM6IHsKICAgICAgICBwcmltYXJ5OiB7IERFRkFVTFQ6JyNhODU1ZjcnLCBkYXJrOicjN2UyMmNlJywgbGlnaHQ6JyNkOGI0ZmUnIH0sCiAgICAgICAgc2Vjb25kYXJ5OiAnIzYzNjZmMScsCiAgICAgICAgZGFyazogeyBERUZBVUxUOicjMDgwODBmJywgY2FyZDoncmdiYSgyNTUsMjU1LDI1NSwwLjA0KScsIGJvcmRlcjoncmdiYSgyNTUsMjU1LDI1NSwwLjA4KScgfSwKICAgICAgfSwKICAgICAgYW5pbWF0aW9uOiB7CiAgICAgICAgJ2Zsb2F0LXVwJzogJ2Zsb2F0VXAgMi41cyBlYXNlLW91dCBmb3J3YXJkcycsCiAgICAgICAgJ3B1bHNlLWxpdmUnOiAncHVsc2UgMS4ycyBpbmZpbml0ZScsCiAgICAgICAgJ3NsaWRlLXVwJzogJ3NsaWRlVXAgMC4zcyBlYXNlJywKICAgICAgICAnZmFkZS1pbic6ICdmYWRlSW4gMC4ycyBlYXNlJywKICAgICAgICAnc3Bpbi1zbG93JzogJ3NwaW4gMC44cyBsaW5lYXIgaW5maW5pdGUnLAogICAgICB9LAogICAgICBrZXlmcmFtZXM6IHsKICAgICAgICBmbG9hdFVwOiB7ICcwJSc6IHtvcGFjaXR5OicxJyx0cmFuc2Zvcm06J3RyYW5zbGF0ZVkoMCkgc2NhbGUoMS4yKSd9LCAnMTAwJSc6IHtvcGFjaXR5OicwJyx0cmFuc2Zvcm06J3RyYW5zbGF0ZVkoLTE4MHB4KSBzY2FsZSgwLjQpJ30gfSwKICAgICAgICBzbGlkZVVwOiB7IGZyb206IHt0cmFuc2Zvcm06J3RyYW5zbGF0ZVkoMTAwJSknLG9wYWNpdHk6JzAnfSwgdG86IHt0cmFuc2Zvcm06J3RyYW5zbGF0ZVkoMCknLG9wYWNpdHk6JzEnfSB9LAogICAgICAgIGZhZGVJbjogeyBmcm9tOiB7b3BhY2l0eTonMCd9LCB0bzoge29wYWNpdHk6JzEnfSB9LAogICAgICB9LAogICAgfSwKICB9LAogIHBsdWdpbnM6IFtdLAp9OwpleHBvcnQgZGVmYXVsdCBjb25maWc7Cg=="}
+import type { Config } from 'tailwindcss';
+const config: Config = {
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
+  theme: {
+    extend: {
+      fontFamily: { cairo: ['Cairo', 'sans-serif'] },
+      colors: {
+        primary: { DEFAULT:'#a855f7', dark:'#7e22ce', light:'#d8b4fe' },
+        secondary: '#6366f1',
+        dark: { DEFAULT:'#08080f', card:'rgba(255,255,255,0.04)', border:'rgba(255,255,255,0.08)' },
+      },
+      animation: {
+        'float-up': 'floatUp 2.5s ease-out forwards',
+        'pulse-live': 'pulse 1.2s infinite',
+        'slide-up': 'slideUp 0.3s ease',
+        'fade-in': 'fadeIn 0.2s ease',
+        'spin-slow': 'spin 0.8s linear infinite',
+      },
+      keyframes: {
+        floatUp: { '0%': {opacity:'1',transform:'translateY(0) scale(1.2)'}, '100%': {opacity:'0',transform:'translateY(-180px) scale(0.4)'} },
+        slideUp: { from: {transform:'translateY(100%)',opacity:'0'}, to: {transform:'translateY(0)',opacity:'1'} },
+        fadeIn: { from: {opacity:'0'}, to: {opacity:'1'} },
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
