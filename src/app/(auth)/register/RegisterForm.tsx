@@ -1,1 +1,157 @@
-{"data":"J3VzZSBjbGllbnQnOwppbXBvcnQgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAnQC9saWIvc3VwYWJhc2UvY2xpZW50JzsKaW1wb3J0IHsgdXNlUm91dGVyIH0gZnJvbSAnbmV4dC9uYXZpZ2F0aW9uJzsKaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFJlZ2lzdGVyRm9ybSgpIHsKICBjb25zdCBbZm9ybSwgc2V0Rm9ybV0gPSB1c2VTdGF0ZSh7IGVtYWlsOiAnJywgcGFzc3dvcmQ6ICcnLCBmdWxsX25hbWU6ICcnLCB1c2VybmFtZTogJycgfSk7CiAgY29uc3QgW2xvYWRpbmcsIHNldExvYWRpbmddID0gdXNlU3RhdGUoZmFsc2UpOwogIGNvbnN0IFtlcnJvciwgc2V0RXJyb3JdID0gdXNlU3RhdGUoJycpOwogIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpOwogIGNvbnN0IHN1cGFiYXNlID0gY3JlYXRlQ2xpZW50KCk7CiAgY29uc3Qgc2V0ID0gKGs6IHN0cmluZywgdjogc3RyaW5nKSA9PiBzZXRGb3JtKGYgPT4gKHsuLi5mLCBba106IHZ9KSk7CgogIGNvbnN0IGhhbmRsZVN1Ym1pdCA9IGFzeW5jIChlOiBSZWFjdC5Gb3JtRXZlbnQpID0+IHsKICAgIGUucHJldmVudERlZmF1bHQoKTsKICAgIHNldExvYWRpbmcodHJ1ZSk7IHNldEVycm9yKCcnKTsKCiAgICB0cnkgewogICAgICBjb25zb2xlLmxvZygnW1JlZ2lzdGVyRm9ybV0gQXR0ZW1wdGluZyBzaWduVXAgd2l0aCBlbWFpbDonLCBmb3JtLmVtYWlsKTsKCiAgICAgIGNvbnN0IHsgZGF0YSwgZXJyb3I6IGF1dGhFcnJvciB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5zaWduVXAoewogICAgICAgIGVtYWlsOiBmb3JtLmVtYWlsLAogICAgICAgIHBhc3N3b3JkOiBmb3JtLnBhc3N3b3JkLAogICAgICAgIG9wdGlvbnM6IHsgZGF0YTogeyBmdWxsX25hbWU6IGZvcm0uZnVsbF9uYW1lLCB1c2VybmFtZTogZm9ybS51c2VybmFtZSB9IH0KICAgICAgfSk7CgogICAgICBjb25zb2xlLmxvZygnW1JlZ2lzdGVyRm9ybV0gc2lnblVwIHJlc3BvbnNlOicsIHsgZGF0YSwgZXJyb3I6IGF1dGhFcnJvciB9KTsKCiAgICAgIGlmIChhdXRoRXJyb3IpIHsKICAgICAgICBjb25zb2xlLmVycm9yKCdbUmVnaXN0ZXJGb3JtXSBTdXBhYmFzZSBBdXRoIEVycm9yOicsIGF1dGhFcnJvcik7CiAgICAgICAgY29uc29sZS5lcnJvcignW1JlZ2lzdGVyRm9ybV0gQXV0aCBFcnJvciBtZXNzYWdlOicsIGF1dGhFcnJvci5tZXNzYWdlKTsKICAgICAgICBjb25zb2xlLmVycm9yKCdbUmVnaXN0ZXJGb3JtXSBBdXRoIEVycm9yIHN0YXR1czonLCBhdXRoRXJyb3Iuc3RhdHVzKTsKICAgICAgICBzZXRFcnJvcihhdXRoRXJyb3IubWVzc2FnZSk7CiAgICAgICAgc2V0TG9hZGluZyhmYWxzZSk7CiAgICAgICAgcmV0dXJuOwogICAgICB9CgogICAgICBpZiAoZGF0YS51c2VyKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1tSZWdpc3RlckZvcm1dIFVzZXIgY3JlYXRlZDonLCBkYXRhLnVzZXIuaWQpOwoKICAgICAgICBjb25zdCB7IGVycm9yOiBpbnNlcnRVc2VyRXJyb3IgfSA9IGF3YWl0IHN1cGFiYXNlLmZyb20oJ3VzZXJzJykuaW5zZXJ0KHsKICAgICAgICAgIGlkOiBkYXRhLnVzZXIuaWQsCiAgICAgICAgICBlbWFpbDogZm9ybS5lbWFpbCwKICAgICAgICAgIGZ1bGxfbmFtZTogZm9ybS5mdWxsX25hbWUsCiAgICAgICAgICB1c2VybmFtZTogZm9ybS51c2VybmFtZSwKICAgICAgICAgIHJvbGU6ICd1c2VyJywKICAgICAgICAgIGlzX3ZlcmlmaWVkOiBmYWxzZSwKICAgICAgICAgIGlzX2FjdGl2ZTogdHJ1ZQogICAgICAgIH0pOwoKICAgICAgICBpZiAoaW5zZXJ0VXNlckVycm9yKSB7CiAgICAgICAgICBjb25zb2xlLmVycm9yKCdbUmVnaXN0ZXJGb3JtXSBEQiBpbnNlcnQgdXNlcnMgZXJyb3I6JywgaW5zZXJ0VXNlckVycm9yKTsKICAgICAgICAgIGNvbnNvbGUuZXJyb3IoJ1tSZWdpc3RlckZvcm1dIERCIGluc2VydCB1c2VycyBlcnJvciBtZXNzYWdlOicsIGluc2VydFVzZXJFcnJvci5tZXNzYWdlKTsKICAgICAgICAgIGNvbnNvbGUuZXJyb3IoJ1tSZWdpc3RlckZvcm1dIERCIGluc2VydCB1c2VycyBlcnJvciBjb2RlOicsIGluc2VydFVzZXJFcnJvci5jb2RlKTsKICAgICAgICAgIGNvbnNvbGUuZXJyb3IoJ1tSZWdpc3RlckZvcm1dIERCIGluc2VydCB1c2VycyBlcnJvciBkZXRhaWxzOicsIGluc2VydFVzZXJFcnJvci5kZXRhaWxzKTsKICAgICAgICAgIGNvbnNvbGUuZXJyb3IoJ1tSZWdpc3RlckZvcm1dIERCIGluc2VydCB1c2VycyBlcnJvciBoaW50OicsIGluc2VydFVzZXJFcnJvci5oaW50KTsKICAgICAgICAgIHNldEVycm9yKCdEQiBFcnJvciAodXNlcnMpOiAnICsgaW5zZXJ0VXNlckVycm9yLm1lc3NhZ2UgKyAnIHwgY29kZTogJyArIGluc2VydFVzZXJFcnJvci5jb2RlKTsKICAgICAgICAgIHNldExvYWRpbmcoZmFsc2UpOwogICAgICAgICAgcmV0dXJuOwogICAgICAgIH0KCiAgICAgICAgY29uc3QgeyBlcnJvcjogaW5zZXJ0V2FsbGV0RXJyb3IgfSA9IGF3YWl0IHN1cGFiYXNlLmZyb20oJ3dhbGxldHMnKS5pbnNlcnQoewogICAgICAgICAgdXNlcl9pZDogZGF0YS51c2VyLmlkLAogICAgICAgICAgYmFsYW5jZTogMCwKICAgICAgICAgIHRvdGFsX2Vhcm5lZDogMCwKICAgICAgICAgIHRvdGFsX3NwZW50OiAwCiAgICAgICAgfSk7CgogICAgICAgIGlmIChpbnNlcnRXYWxsZXRFcnJvcikgewogICAgICAgICAgY29uc29sZS5lcnJvcignW1JlZ2lzdGVyRm9ybV0gREIgaW5zZXJ0IHdhbGxldHMgZXJyb3I6JywgaW5zZXJ0V2FsbGV0RXJyb3IpOwogICAgICAgICAgY29uc29sZS5lcnJvcignW1JlZ2lzdGVyRm9ybV0gREIgaW5zZXJ0IHdhbGxldHMgZXJyb3IgbWVzc2FnZTonLCBpbnNlcnRXYWxsZXRFcnJvci5tZXNzYWdlKTsKICAgICAgICAgIGNvbnNvbGUuZXJyb3IoJ1tSZWdpc3RlckZvcm1dIERCIGluc2VydCB3YWxsZXRzIGVycm9yIGNvZGU6JywgaW5zZXJ0V2FsbGV0RXJyb3IuY29kZSk7CiAgICAgICAgICBzZXRFcnJvcignREIgRXJyb3IgKHdhbGxldHMpOiAnICsgaW5zZXJ0V2FsbGV0RXJyb3IubWVzc2FnZSArICcgfCBjb2RlOiAnICsgaW5zZXJ0V2FsbGV0RXJyb3IuY29kZSk7CiAgICAgICAgICBzZXRMb2FkaW5nKGZhbHNlKTsKICAgICAgICAgIHJldHVybjsKICAgICAgICB9CgogICAgICAgIGNvbnNvbGUubG9nKCdbUmVnaXN0ZXJGb3JtXSBSZWdpc3RyYXRpb24gY29tcGxldGUg4oCUIHJlZGlyZWN0aW5nIHRvIC9mZWVkJyk7CiAgICAgICAgcm91dGVyLnB1c2goJy9mZWVkJyk7CiAgICAgICAgcm91dGVyLnJlZnJlc2goKTsKICAgICAgfSBlbHNlIHsKICAgICAgICBjb25zb2xlLndhcm4oJ1tSZWdpc3RlckZvcm1dIHNpZ25VcCByZXR1cm5lZCBubyB1c2VyIGFuZCBubyBlcnJvci4gZGF0YTonLCBkYXRhKTsKICAgICAgICBzZXRFcnJvcign2KrYrdmC2YIg2YXZhiDYqNix2YrYr9mDINin2YTYpdmE2YPYqtix2YjZhtmKINmE2KrYo9mD2YrYryDYp9mE2KrYs9is2YrZhCcpOwogICAgICAgIHNldExvYWRpbmcoZmFsc2UpOwogICAgICB9CiAgICB9IGNhdGNoICh1bmV4cGVjdGVkRXJyb3I6IHVua25vd24pIHsKICAgICAgY29uc3QgZXJyID0gdW5leHBlY3RlZEVycm9yIGFzIEVycm9yOwogICAgICBjb25zb2xlLmVycm9yKCdbUmVnaXN0ZXJGb3JtXSBVTkVYUEVDVEVEIEVYQ0VQVElPTjonLCBlcnIpOwogICAgICBjb25zb2xlLmVycm9yKCdbUmVnaXN0ZXJGb3JtXSBVTkVYUEVDVEVEIG1lc3NhZ2U6JywgZXJyPy5tZXNzYWdlKTsKICAgICAgY29uc29sZS5lcnJvcignW1JlZ2lzdGVyRm9ybV0gVU5FWFBFQ1RFRCBzdGFjazonLCBlcnI/LnN0YWNrKTsKICAgICAgc2V0RXJyb3IoJ0V4Y2VwdGlvbjogJyArIChlcnI/Lm1lc3NhZ2UgPz8gU3RyaW5nKHVuZXhwZWN0ZWRFcnJvcikpKTsKICAgICAgc2V0TG9hZGluZyhmYWxzZSk7CiAgICB9CiAgfTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJ3LWZ1bGwgbWF4LXctbWQgYmctd2hpdGUvWzAuMDRdIGJvcmRlciBib3JkZXItd2hpdGUvWzAuMDhdIHJvdW5kZWQtM3hsIHAtOCI+CiAgICAgIDxoMSBjbGFzc05hbWU9InRleHQtM3hsIGZvbnQtYmxhY2sgdGV4dC1jZW50ZXIgdGV4dC1ncmFkaWVudCBtYi0xIj7Yp9mC2LHYozwvaDE+CiAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1jZW50ZXIgdGV4dC1bIzY2Nl0gdGV4dC1zbSBtYi02Ij7YpdmG2LTYp9ihINit2LPYp9ioINis2K/ZitivPC9wPgoKICAgICAge2Vycm9yICYmICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYmctcmVkLTUwMC8xMCBib3JkZXIgYm9yZGVyLXJlZC01MDAvMzAgcm91bmRlZC14bCBwLTMgbWItNCB0ZXh0LXJlZC00MDAgdGV4dC1zbSBmb250LW1vbm8gd2hpdGVzcGFjZS1wcmUtd3JhcCBicmVhay1hbGwiPgogICAgICAgICAge2Vycm9yfQogICAgICAgIDwvZGl2PgogICAgICApfQoKICAgICAgPGZvcm0gb25TdWJtaXQ9e2hhbmRsZVN1Ym1pdH0gY2xhc3NOYW1lPSJzcGFjZS15LTQiPgogICAgICAgIDxpbnB1dAogICAgICAgICAgdHlwZT0idGV4dCIKICAgICAgICAgIHBsYWNlaG9sZGVyPSLYp9mE2KfYs9mFINin2YTZg9in2YXZhCIKICAgICAgICAgIHZhbHVlPXtmb3JtLmZ1bGxfbmFtZX0KICAgICAgICAgIG9uQ2hhbmdlPXtlID0+IHNldCgnZnVsbF9uYW1lJywgZS50YXJnZXQudmFsdWUpfQogICAgICAgICAgcmVxdWlyZWQKICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIGJnLXdoaXRlL1swLjA1XSBib3JkZXIgYm9yZGVyLXdoaXRlL1swLjFdIHJvdW5kZWQteGwgcHgtNCBweS0zIHRleHQtd2hpdGUgcGxhY2Vob2xkZXItWyM1NTVdIG91dGxpbmUtbm9uZSBmb2N1czpib3JkZXItcHVycGxlLTUwMC81MCB0ZXh0LXNtIgogICAgICAgIC8+CiAgICAgICAgPGlucHV0CiAgICAgICAgICB0eXBlPSJ0ZXh0IgogICAgICAgICAgcGxhY2Vob2xkZXI9Itin2LPZhSDYp9mE2YXYs9iq2K7Yr9mFIgogICAgICAgICAgdmFsdWU9e2Zvcm0udXNlcm5hbWV9CiAgICAgICAgICBvbkNoYW5nZT17ZSA9PiBzZXQoJ3VzZXJuYW1lJywgZS50YXJnZXQudmFsdWUpfQogICAgICAgICAgcmVxdWlyZWQKICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIGJnLXdoaXRlL1swLjA1XSBib3JkZXIgYm9yZGVyLXdoaXRlL1swLjFdIHJvdW5kZWQteGwgcHgtNCBweS0zIHRleHQtd2hpdGUgcGxhY2Vob2xkZXItWyM1NTVdIG91dGxpbmUtbm9uZSBmb2N1czpib3JkZXItcHVycGxlLTUwMC81MCB0ZXh0LXNtIgogICAgICAgIC8+CiAgICAgICAgPGlucHV0CiAgICAgICAgICB0eXBlPSJlbWFpbCIKICAgICAgICAgIHBsYWNlaG9sZGVyPSLYp9mE2KjYsdmK2K8g2KfZhNil2YTZg9iq2LHZiNmG2YoiCiAgICAgICAgICB2YWx1ZT17Zm9ybS5lbWFpbH0KICAgICAgICAgIG9uQ2hhbmdlPXtlID0+IHNldCgnZW1haWwnLCBlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICByZXF1aXJlZAogICAgICAgICAgY2xhc3NOYW1lPSJ3LWZ1bGwgYmctd2hpdGUvWzAuMDVdIGJvcmRlciBib3JkZXItd2hpdGUvWzAuMV0gcm91bmRlZC14bCBweC00IHB5LTMgdGV4dC13aGl0ZSBwbGFjZWhvbGRlci1bIzU1NV0gb3V0bGluZS1ub25lIGZvY3VzOmJvcmRlci1wdXJwbGUtNTAwLzUwIHRleHQtc20iCiAgICAgICAgLz4KICAgICAgICA8aW5wdXQKICAgICAgICAgIHR5cGU9InBhc3N3b3JkIgogICAgICAgICAgcGxhY2Vob2xkZXI9ItmD2YTZhdipINin2YTZhdix2YjYsSIKICAgICAgICAgIHZhbHVlPXtmb3JtLnBhc3N3b3JkfQogICAgICAgICAgb25DaGFuZ2U9e2UgPT4gc2V0KCdwYXNzd29yZCcsIGUudGFyZ2V0LnZhbHVlKX0KICAgICAgICAgIHJlcXVpcmVkCiAgICAgICAgICBtaW5MZW5ndGg9ezZ9CiAgICAgICAgICBjbGFzc05hbWU9InctZnVsbCBiZy13aGl0ZS9bMC4wNV0gYm9yZGVyIGJvcmRlci13aGl0ZS9bMC4xXSByb3VuZGVkLXhsIHB4LTQgcHktMyB0ZXh0LXdoaXRlIHBsYWNlaG9sZGVyLVsjNTU1XSBvdXRsaW5lLW5vbmUgZm9jdXM6Ym9yZGVyLXB1cnBsZS01MDAvNTAgdGV4dC1zbSIKICAgICAgICAvPgogICAgICAgIDxidXR0b24KICAgICAgICAgIHR5cGU9InN1Ym1pdCIKICAgICAgICAgIGRpc2FibGVkPXtsb2FkaW5nfQogICAgICAgICAgY2xhc3NOYW1lPSJ3LWZ1bGwgYmctZ3JhZGllbnQtdG8tciBmcm9tLXB1cnBsZS02MDAgdG8tcHVycGxlLTgwMCB0ZXh0LXdoaXRlIHJvdW5kZWQteGwgcHktMyBmb250LWJvbGQgdGV4dC1zbSBkaXNhYmxlZDpvcGFjaXR5LTUwIGhvdmVyOm9wYWNpdHktOTAgdHJhbnNpdGlvbiIKICAgICAgICA+CiAgICAgICAgICB7bG9hZGluZyA/ICfYrNin2LHZjSDYp9mE2KrYs9is2YrZhC4uLicgOiAn2KXZhti02KfYoSDYrdiz2KfYqCd9CiAgICAgICAgPC9idXR0b24+CiAgICAgIDwvZm9ybT4KCiAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1jZW50ZXIgdGV4dC1bIzY2Nl0gdGV4dC1zbSBtdC00Ij4KICAgICAgICDZhNiv2YrZgyDYrdiz2KfYqNifeycgJ30KICAgICAgICA8TGluayBocmVmPSIvbG9naW4iIGNsYXNzTmFtZT0idGV4dC1wdXJwbGUtNDAwIGhvdmVyOnRleHQtcHVycGxlLTMwMCI+2KrYs9is2YrZhCDYp9mE2K/YrtmI2YQ8L0xpbms+CiAgICAgIDwvcD4KICAgIDwvZGl2PgogICk7Cn0K"}
+'use client';
+import { useState } from 'react';
+import { createClient } from '@/lib/supabase/client';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+
+export default function RegisterForm() {
+  const [form, setForm] = useState({ email: '', password: '', full_name: '', username: '' });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const router = useRouter();
+  const supabase = createClient();
+  const set = (k: string, v: string) => setForm(f => ({...f, [k]: v}));
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true); setError('');
+
+    try {
+      console.log('[RegisterForm] Attempting signUp with email:', form.email);
+
+      const { data, error: authError } = await supabase.auth.signUp({
+        email: form.email,
+        password: form.password,
+        options: { data: { full_name: form.full_name, username: form.username } }
+      });
+
+      console.log('[RegisterForm] signUp response:', { data, error: authError });
+
+      if (authError) {
+        console.error('[RegisterForm] Supabase Auth Error:', authError);
+        console.error('[RegisterForm] Auth Error message:', authError.message);
+        console.error('[RegisterForm] Auth Error status:', authError.status);
+        setError(authError.message);
+        setLoading(false);
+        return;
+      }
+
+      if (data.user) {
+        console.log('[RegisterForm] User created:', data.user.id);
+
+        const { error: insertUserError } = await supabase.from('users').insert({
+          id: data.user.id,
+          email: form.email,
+          full_name: form.full_name,
+          username: form.username,
+          role: 'user',
+          is_verified: false,
+          is_active: true
+        });
+
+        if (insertUserError) {
+          console.error('[RegisterForm] DB insert users error:', insertUserError);
+          console.error('[RegisterForm] DB insert users error message:', insertUserError.message);
+          console.error('[RegisterForm] DB insert users error code:', insertUserError.code);
+          console.error('[RegisterForm] DB insert users error details:', insertUserError.details);
+          console.error('[RegisterForm] DB insert users error hint:', insertUserError.hint);
+          setError('DB Error (users): ' + insertUserError.message + ' | code: ' + insertUserError.code);
+          setLoading(false);
+          return;
+        }
+
+        const { error: insertWalletError } = await supabase.from('wallets').insert({
+          user_id: data.user.id,
+          balance: 0,
+          total_earned: 0,
+          total_spent: 0
+        });
+
+        if (insertWalletError) {
+          console.error('[RegisterForm] DB insert wallets error:', insertWalletError);
+          console.error('[RegisterForm] DB insert wallets error message:', insertWalletError.message);
+          console.error('[RegisterForm] DB insert wallets error code:', insertWalletError.code);
+          setError('DB Error (wallets): ' + insertWalletError.message + ' | code: ' + insertWalletError.code);
+          setLoading(false);
+          return;
+        }
+
+        console.log('[RegisterForm] Registration complete â redirecting to /feed');
+        router.push('/feed');
+        router.refresh();
+      } else {
+        console.warn('[RegisterForm] signUp returned no user and no error. data:', data);
+        setError('ØªØ­ÙÙ ÙÙ Ø¨Ø±ÙØ¯Ù Ø§ÙØ¥ÙÙØªØ±ÙÙÙ ÙØªØ£ÙÙØ¯ Ø§ÙØªØ³Ø¬ÙÙ');
+        setLoading(false);
+      }
+    } catch (unexpectedError: unknown) {
+      const err = unexpectedError as Error;
+      console.error('[RegisterForm] UNEXPECTED EXCEPTION:', err);
+      console.error('[RegisterForm] UNEXPECTED message:', err?.message);
+      console.error('[RegisterForm] UNEXPECTED stack:', err?.stack);
+      setError('Exception: ' + (err?.message ?? String(unexpectedError)));
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="w-full max-w-md bg-white/[0.04] border border-white/[0.08] rounded-3xl p-8">
+      <h1 className="text-3xl font-black text-center text-gradient mb-1">Ø§ÙØ±Ø£</h1>
+      <p className="text-center text-[#666] text-sm mb-6">Ø¥ÙØ´Ø§Ø¡ Ø­Ø³Ø§Ø¨ Ø¬Ø¯ÙØ¯</p>
+
+      {error && (
+        <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-3 mb-4 text-red-400 text-sm font-mono whitespace-pre-wrap break-all">
+          {error}
+        </div>
+      )}
+
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <input
+          type="text"
+          placeholder="Ø§ÙØ§Ø³Ù Ø§ÙÙØ§ÙÙ"
+          value={form.full_name}
+          onChange={e => set('full_name', e.target.value)}
+          required
+          className="w-full bg-white/[0.05] border border-white/[0.1] rounded-xl px-4 py-3 text-white placeholder-[#555] outline-none focus:border-purple-500/50 text-sm"
+        />
+        <input
+          type="text"
+          placeholder="Ø§Ø³Ù Ø§ÙÙØ³ØªØ®Ø¯Ù"
+          value={form.username}
+          onChange={e => set('username', e.target.value)}
+          required
+          className="w-full bg-white/[0.05] border border-white/[0.1] rounded-xl px-4 py-3 text-white placeholder-[#555] outline-none focus:border-purple-500/50 text-sm"
+        />
+        <input
+          type="email"
+          placeholder="Ø§ÙØ¨Ø±ÙØ¯ Ø§ÙØ¥ÙÙØªØ±ÙÙÙ"
+          value={form.email}
+          onChange={e => set('email', e.target.value)}
+          required
+          className="w-full bg-white/[0.05] border border-white/[0.1] rounded-xl px-4 py-3 text-white placeholder-[#555] outline-none focus:border-purple-500/50 text-sm"
+        />
+        <input
+          type="password"
+          placeholder="ÙÙÙØ© Ø§ÙÙØ±ÙØ±"
+          value={form.password}
+          onChange={e => set('password', e.target.value)}
+          required
+          minLength={6}
+          className="w-full bg-white/[0.05] border border-white/[0.1] rounded-xl px-4 py-3 text-white placeholder-[#555] outline-none focus:border-purple-500/50 text-sm"
+        />
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-xl py-3 font-bold text-sm disabled:opacity-50 hover:opacity-90 transition"
+        >
+          {loading ? 'Ø¬Ø§Ø±Ù Ø§ÙØªØ³Ø¬ÙÙ...' : 'Ø¥ÙØ´Ø§Ø¡ Ø­Ø³Ø§Ø¨'}
+        </button>
+      </form>
+
+      <p className="text-center text-[#666] text-sm mt-4">
+        ÙØ¯ÙÙ Ø­Ø³Ø§Ø¨Ø{' '}
+        <Link href="/login" className="text-purple-400 hover:text-purple-300">ØªØ³Ø¬ÙÙ Ø§ÙØ¯Ø®ÙÙ</Link>
+      </p>
+    </div>
+  );
+}
