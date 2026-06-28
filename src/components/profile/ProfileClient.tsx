@@ -1,1 +1,74 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCB9IGZyb20gJ3JlYWN0JzsNCmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gJ25leHQvbmF2aWdhdGlvbic7DQppbXBvcnQgeyBVc2VyLCBMaXZlU3RyZWFtIH0gZnJvbSAnQC90eXBlcyc7DQppbXBvcnQgQXZhdGFyIGZyb20gJ0AvY29tcG9uZW50cy91aS9BdmF0YXInOw0KaW1wb3J0IHsgZm9ybWF0RGF0ZSwgZm9ybWF0TnVtYmVyIH0gZnJvbSAnQC9saWIvdXRpbHMnOw0KDQppbnRlcmZhY2UgUHJvcHMgeyBwcm9maWxlOiBVc2VyOyBjdXJyZW50VXNlcjogVXNlciB8IG51bGw7IGlzT3duOiBib29sZWFuOyB9DQoNCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFByb2ZpbGVDbGllbnQoeyBwcm9maWxlLCBjdXJyZW50VXNlciwgaXNPd24gfTogUHJvcHMpIHsNCiAgY29uc3QgW3N0cmVhbXMsIHNldFN0cmVhbXNdID0gdXNlU3RhdGU8TGl2ZVN0cmVhbVtdPihbXSk7DQogIGNvbnN0IFtzdGF0cywgc2V0U3RhdHNdID0gdXNlU3RhdGUoeyBmb2xsb3dlcnM6MCwgZm9sbG93aW5nOjAsIHN0cmVhbXM6MCB9KTsNCiAgY29uc3QgW2lzRm9sbG93aW5nLCBzZXRJc0ZvbGxvd2luZ10gPSB1c2VTdGF0ZShmYWxzZSk7DQogIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpOw0KDQogIHVzZUVmZmVjdCgoKSA9PiB7DQogICAgY29uc3QgbG9hZCA9IGFzeW5jICgpID0+IHsNCiAgICAgIGNvbnN0IHsgY3JlYXRlQ2xpZW50IH0gPSBhd2FpdCBpbXBvcnQoJ0AvbGliL3N1cGFiYXNlL2NsaWVudCcpOw0KICAgICAgY29uc3QgcyA9IGNyZWF0ZUNsaWVudCgpOw0KICAgICAgY29uc3QgW3N0cmVhbXNSZXMsIGZvbGxvd2Vyc1JlcywgZm9sbG93aW5nUmVzXSA9IGF3YWl0IFByb21pc2UuYWxsKFsNCiAgICAgICAgcy5mcm9tKCdsaXZlX3N0cmVhbXMnKS5zZWxlY3QoJyonKS5lcSgndXNlcl9pZCcscHJvZmlsZS5pZCkub3JkZXIoJ3N0YXJ0ZWRfYXQnLHthc2NlbmRpbmc6ZmFsc2V9KS5saW1pdCgyMCksDQogICAgICAgIHMuZnJvbSgnZm9sbG93cycpLnNlbGVjdCgnaWQnKS5lcSgnZm9sbG93aW5nX2lkJyxwcm9maWxlLmlkKSwNCiAgICAgICAgcy5mcm9tKCdmb2xsb3dzJykuc2VsZWN0KCdpZCcpLmVxKCdmb2xsb3dlcl9pZCcscHJvZmlsZS5pZCksDQogICAgICBdKTsNCiAgICAgIHNldFN0cmVhbXMoc3RyZWFtc1Jlcy5kYXRhfHxbXSk7DQogICAgICBzZXRTdGF0cyh7Zm9sbG93ZXJzOihmb2xsb3dlcnNSZXMuZGF0YXx8W10pLmxlbmd0aCxmb2xsb3dpbmc6KGZvbGxvd2luZ1Jlcy5kYXRhfHxbXSkubGVuZ3RoLHN0cmVhbXM6KHN0cmVhbXNSZXMuZGF0YXx8W10pLmxlbmd0aH0pOw0KICAgICAgaWYgKGN1cnJlbnRVc2VyICYmICFpc093bikgew0KICAgICAgICBjb25zdCB7ZGF0YX0gPSBhd2FpdCBzLmZyb20oJ2ZvbGxvd3MnKS5zZWxlY3QoJ2lkJykuZXEoJ2ZvbGxvd2VyX2lkJyxjdXJyZW50VXNlci5pZCkuZXEoJ2ZvbGxvd2luZ19pZCcscHJvZmlsZS5pZCkuc2luZ2xlKCk7DQogICAgICAgIHNldElzRm9sbG93aW5nKCEhZGF0YSk7DQogICAgICB9DQogICAgfTsNCiAgICBsb2FkKCk7DQogIH0sIFtwcm9maWxlLmlkXSk7DQoNCiAgY29uc3QgdG9nZ2xlRm9sbG93ID0gYXN5bmMgKCkgPT4gew0KICAgIGlmICghY3VycmVudFVzZXIgfHwgaXNPd24pIHJldHVybjsNCiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaCgnL2FwaS9mb2xsb3cnLHttZXRob2Q6J1BPU1QnLGhlYWRlcnM6eydDb250ZW50LVR5cGUnOidhcHBsaWNhdGlvbi9qc29uJ30sYm9keTpKU09OLnN0cmluZ2lmeSh7dGFyZ2V0SWQ6cHJvZmlsZS5pZH0pfSk7DQogICAgY29uc3QgeyBmb2xsb3dpbmcgfSA9IGF3YWl0IHJlcy5qc29uKCk7DQogICAgc2V0SXNGb2xsb3dpbmcoZm9sbG93aW5nKTsNCiAgICBzZXRTdGF0cyhzPT4oey4uLnMsZm9sbG93ZXJzOmZvbGxvd2luZz9zLmZvbGxvd2VycysxOk1hdGgubWF4KDAscy5mb2xsb3dlcnMtMSl9KSk7DQogIH07DQoNCiAgcmV0dXJuICgNCiAgICA8ZGl2IGNsYXNzTmFtZT0naC1mdWxsIG92ZXJmbG93LXktYXV0byc+DQogICAgICA8ZGl2IGNsYXNzTmFtZT0naC0zNiBiZy1ncmFkaWVudC10by1iciBmcm9tLXB1cnBsZS01MDAvMjAgdG8taW5kaWdvLTUwMC8xMCByZWxhdGl2ZScvPg0KICAgICAgPGRpdiBjbGFzc05hbWU9J3B4LTQgLW10LTEwIHBiLTQnPg0KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0nZmxleCBpdGVtcy1lbmQganVzdGlmeS1iZXR3ZWVuIG1iLTMnPg0KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSd3LTIwIGgtMjAgcm91bmRlZC1mdWxsIGJvcmRlci00IGJvcmRlci1bIzA4MDgwZl0gb3ZlcmZsb3ctaGlkZGVuIGJnLWdyYWRpZW50LXRvLWJyIGZyb20tcHVycGxlLTUwMCB0by1pbmRpZ28tNTAwIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHRleHQtM3hsIGZvbnQtYm9sZCc+DQogICAgICAgICAgICB7cHJvZmlsZS5hdmF0YXJfdXJsID8gPGltZyBzcmM9e3Byb2ZpbGUuYXZhdGFyX3VybH0gYWx0PScnIGNsYXNzTmFtZT0ndy1mdWxsIGgtZnVsbCBvYmplY3QtY292ZXInLz4gOiBwcm9maWxlLmZ1bGxfbmFtZT8uWzBdfHwn2J8nfQ0KICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgIHtpc093biA/IDxidXR0b24gY2xhc3NOYW1lPSd0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgcHgtNCBweS0yIHJvdW5kZWQteGwgYmctd2hpdGUvWzAuMDZdIGJvcmRlciBib3JkZXItd2hpdGUvMTAnPtiq2LnYr9mK2YQg2KfZhNmF2YTZgTwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICA6IDxidXR0b24gb25DbGljaz17dG9nZ2xlRm9sbG93fSBjbGFzc05hbWU9eyd0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgcHgtNCBweS0yIHJvdW5kZWQteGwgdHJhbnNpdGlvbi1hbGwgJysoaXNGb2xsb3dpbmc/J2JnLXdoaXRlL1swLjA2XSBib3JkZXIgYm9yZGVyLXdoaXRlLzEwJzonZ3JhZGllbnQtcHVycGxlIHRleHQtd2hpdGUnKX0+e2lzRm9sbG93aW5nPyfYpdmE2LrYp9ihINin2YTZhdiq2KfYqNi52KknOifZhdiq2KfYqNi52KknfTwvYnV0dG9uPn0NCiAgICAgICAgPC9kaXY+DQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSdmb250LWJvbGQgdGV4dC1sZyc+e3Byb2ZpbGUuZnVsbF9uYW1lfSB7cHJvZmlsZS5pc192ZXJpZmllZCYmPHNwYW4gY2xhc3NOYW1lPSd0ZXh0LXB1cnBsZS00MDAgdGV4dC1zbSc+4pyTINmF2YjYq9mCPC9zcGFuPn08L2Rpdj4NCiAgICAgICAgPGRpdiBjbGFzc05hbWU9J3RleHQtWyM2NjZdIHRleHQtc20gbWItMic+QHtwcm9maWxlLnVzZXJuYW1lfTwvZGl2Pg0KICAgICAgICB7cHJvZmlsZS5iaW8gJiYgPHAgY2xhc3NOYW1lPSd0ZXh0LXNtIHRleHQtWyNhYWFdIG1iLTMnPntwcm9maWxlLmJpb308L3A+fQ0KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0nZmxleCBib3JkZXIteSBib3JkZXItd2hpdGUvWzAuMDZdIG15LTMnPg0KICAgICAgICAgIHtbWyfZhdiq2KfYqNi5JyxzdGF0cy5mb2xsb3dlcnNdLFsn2YXYqtin2KjZjti5JyxzdGF0cy5mb2xsb3dpbmddLFsn2KjYqycsc3RhdHMuc3RyZWFtc11dLm1hcCgoW2wsbl0pPT48ZGl2IGtleT17bCBhcyBzdHJpbmd9IGNsYXNzTmFtZT0nZmxleC0xIHB5LTMgdGV4dC1jZW50ZXIgYm9yZGVyLWwgYm9yZGVyLXdoaXRlL1swLjA2XSBsYXN0OmJvcmRlci1sLTAnPjxkaXYgY2xhc3NOYW1lPSd0ZXh0LWxnIGZvbnQtYm9sZCB0ZXh0LXB1cnBsZS00MDAnPntmb3JtYXROdW1iZXIobiBhcyBudW1iZXIpfTwvZGl2PjxkaXYgY2xhc3NOYW1lPSd0ZXh0LVsxMXB4XSB0ZXh0LVsjNTU1XSc+e2x9PC9kaXY+PC9kaXY+KX0NCiAgICAgICAgPC9kaXY+DQogICAgICAgIDxoMyBjbGFzc05hbWU9J3RleHQtc20gZm9udC1ib2xkIHRleHQtWyNkZGRdIG1iLTMnPtin2YTYqNir2YjYqzwvaDM+DQogICAgICAgIHtzdHJlYW1zLmxlbmd0aD09PTAgPyA8ZGl2IGNsYXNzTmFtZT0ndGV4dC1jZW50ZXIgcHktOCB0ZXh0LVsjNDQ0XSB0ZXh0LXNtJz7ZhNinINiq2YjYrNivINio2KvZiNirPC9kaXY+IDogc3RyZWFtcy5tYXAocz0+KA0KICAgICAgICAgIDxkaXYga2V5PXtzLmlkfSBvbkNsaWNrPXsoKT0+cy5zdGF0dXM9PT0nbGl2ZScmJnJvdXRlci5wdXNoKCcvbGl2ZS8nK3MuaWQpfSBjbGFzc05hbWU9eydmbGV4IGdhcC0zIHB5LTMgYm9yZGVyLWIgYm9yZGVyLXdoaXRlL1swLjA1XSAnKyhzLnN0YXR1cz09PSdsaXZlJz8nY3Vyc29yLXBvaW50ZXInOicnKX0+DQogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ndy0xNCBoLTE0IHJvdW5kZWQteGwgYmctZ3JhZGllbnQtdG8tYnIgZnJvbS1bIzFhMGQyZV0gdG8tWyMwZDFhMmVdIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHRleHQtMnhsIGZsZXgtc2hyaW5rLTAnPvCfk6E8L2Rpdj4NCiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSdmbGV4LTEgbWluLXctMCc+DQogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSd0ZXh0LXNtIGZvbnQtYm9sZCB0cnVuY2F0ZSc+e3MudGl0bGV9PC9kaXY+DQogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSd0ZXh0LXhzIHRleHQtWyM2NjZdJz57Zm9ybWF0RGF0ZShzLnN0YXJ0ZWRfYXQpfTwvZGl2Pg0KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0nZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgbXQtMSc+e3Muc3RhdHVzPT09J2xpdmUnPzxzcGFuIGNsYXNzTmFtZT0ndGV4dC1bMTBweF0gZm9udC1ib2xkIGJnLXJlZC01MDAvMjAgdGV4dC1yZWQtNDAwIGJvcmRlciBib3JkZXItcmVkLTUwMC8zMCBweC0yIHB5LTAuNSByb3VuZGVkLWxnJz7wn5S0INmF2KjYp9i02LE8L3NwYW4+OjxzcGFuIGNsYXNzTmFtZT0ndGV4dC1bMTBweF0gZm9udC1ib2xkIGJnLXB1cnBsZS01MDAvMjAgdGV4dC1wdXJwbGUtNDAwIGJvcmRlciBib3JkZXItcHVycGxlLTUwMC8zMCBweC0yIHB5LTAuNSByb3VuZGVkLWxnJz7ZhdmG2KrZh9mKPC9zcGFuPn08c3BhbiBjbGFzc05hbWU9J3RleHQtWzEwcHhdIHRleHQtWyM1NTVdJz7wn5GBIHtzLnZpZXdlcl9jb3VudHx8MH08L3NwYW4+PC9kaXY+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgKSl9DQogICAgICA8L2Rpdj4NCiAgICA8L2Rpdj4NCiAgKTsNCn0="}
+'use client';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { User, LiveStream } from '@/types';
+import Avatar from '@/components/ui/Avatar';
+import { formatDate, formatNumber } from '@/lib/utils';
+
+interface Props { profile: User; currentUser: User | null; isOwn: boolean; }
+
+export default function ProfileClient({ profile, currentUser, isOwn }: Props) {
+  const [streams, setStreams] = useState<LiveStream[]>([]);
+  const [stats, setStats] = useState({ followers:0, following:0, streams:0 });
+  const [isFollowing, setIsFollowing] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    const load = async () => {
+      const { createClient } = await import('@/lib/supabase/client');
+      const s = createClient();
+      const [streamsRes, followersRes, followingRes] = await Promise.all([
+        s.from('live_streams').select('*').eq('user_id',profile.id).order('started_at',{ascending:false}).limit(20),
+        s.from('follows').select('id').eq('following_id',profile.id),
+        s.from('follows').select('id').eq('follower_id',profile.id),
+      ]);
+      setStreams(streamsRes.data||[]);
+      setStats({followers:(followersRes.data||[]).length,following:(followingRes.data||[]).length,streams:(streamsRes.data||[]).length});
+      if (currentUser && !isOwn) {
+        const {data} = await s.from('follows').select('id').eq('follower_id',currentUser.id).eq('following_id',profile.id).single();
+        setIsFollowing(!!data);
+      }
+    };
+    load();
+  }, [profile.id]);
+
+  const toggleFollow = async () => {
+    if (!currentUser || isOwn) return;
+    const res = await fetch('/api/follow',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({targetId:profile.id})});
+    const { following } = await res.json();
+    setIsFollowing(following);
+    setStats(s=>({...s,followers:following?s.followers+1:Math.max(0,s.followers-1)}));
+  };
+
+  return (
+    <div className='h-full overflow-y-auto'>
+      <div className='h-36 bg-gradient-to-br from-purple-500/20 to-indigo-500/10 relative'/>
+      <div className='px-4 -mt-10 pb-4'>
+        <div className='flex items-end justify-between mb-3'>
+          <div className='w-20 h-20 rounded-full border-4 border-[#08080f] overflow-hidden bg-gradient-to-br from-purple-500 to-indigo-500 flex items-center justify-center text-3xl font-bold'>
+            {profile.avatar_url ? <img src={profile.avatar_url} alt='' className='w-full h-full object-cover'/> : profile.full_name?.[0]||'Ø'}
+          </div>
+          {isOwn ? <button className='text-sm font-semibold px-4 py-2 rounded-xl bg-white/[0.06] border border-white/10'>ØªØ¹Ø¯ÙÙ Ø§ÙÙÙÙ</button>
+                 : <button onClick={toggleFollow} className={'text-sm font-semibold px-4 py-2 rounded-xl transition-all '+(isFollowing?'bg-white/[0.06] border border-white/10':'gradient-purple text-white')}>{isFollowing?'Ø¥ÙØºØ§Ø¡ Ø§ÙÙØªØ§Ø¨Ø¹Ø©':'ÙØªØ§Ø¨Ø¹Ø©'}</button>}
+        </div>
+        <div className='font-bold text-lg'>{profile.full_name} {profile.is_verified&&<span className='text-purple-400 text-sm'>â ÙÙØ«Ù</span>}</div>
+        <div className='text-[#666] text-sm mb-2'>@{profile.username}</div>
+        {profile.bio && <p className='text-sm text-[#aaa] mb-3'>{profile.bio}</p>}
+        <div className='flex border-y border-white/[0.06] my-3'>
+          {[['ÙØªØ§Ø¨Ø¹',stats.followers],['ÙØªØ§Ø¨ÙØ¹',stats.following],['Ø¨Ø«',stats.streams]].map(([l,n])=><div key={l as string} className='flex-1 py-3 text-center border-l border-white/[0.06] last:border-l-0'><div className='text-lg font-bold text-purple-400'>{formatNumber(n as number)}</div><div className='text-[11px] text-[#555]'>{l}</div></div>)}
+        </div>
+        <h3 className='text-sm font-bold text-[#ddd] mb-3'>Ø§ÙØ¨Ø«ÙØ«</h3>
+        {streams.length===0 ? <div className='text-center py-8 text-[#444] text-sm'>ÙØ§ ØªÙØ¬Ø¯ Ø¨Ø«ÙØ«</div> : streams.map(s=>(
+          <div key={s.id} onClick={()=>s.status==='live'&&router.push('/live/'+s.id)} className={'flex gap-3 py-3 border-b border-white/[0.05] '+(s.status==='live'?'cursor-pointer':'')}>
+            <div className='w-14 h-14 rounded-xl bg-gradient-to-br from-[#1a0d2e] to-[#0d1a2e] flex items-center justify-center text-2xl flex-shrink-0'>ð¡</div>
+            <div className='flex-1 min-w-0'>
+              <div className='text-sm font-bold truncate'>{s.title}</div>
+              <div className='text-xs text-[#666]'>{formatDate(s.started_at)}</div>
+              <div className='flex items-center gap-2 mt-1'>{s.status==='live'?<span className='text-[10px] font-bold bg-red-500/20 text-red-400 border border-red-500/30 px-2 py-0.5 rounded-lg'>ð´ ÙØ¨Ø§Ø´Ø±</span>:<span className='text-[10px] font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 px-2 py-0.5 rounded-lg'>ÙÙØªÙÙ</span>}<span className='text-[10px] text-[#555]'>ð {s.viewer_count||0}</span></div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
