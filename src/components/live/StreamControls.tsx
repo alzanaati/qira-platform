@@ -1,1 +1,60 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7DQppbXBvcnQgeyBNaWMsIE1pY09mZiwgVmlkZW8sIFZpZGVvT2ZmLCBNb25pdG9yVXAsIFBob25lT2ZmLCBTZXR0aW5ncyB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7DQppbnRlcmZhY2UgU3RyZWFtQ29udHJvbHNQcm9wcyB7DQogIGlzSG9zdDogYm9vbGVhbjsNCiAgb25Ub2dnbGVNaWM/OiAoKSA9PiB2b2lkOw0KICBvblRvZ2dsZUNhbWVyYT86ICgpID0+IHZvaWQ7DQogIG9uU2NyZWVuU2hhcmU/OiAoKSA9PiB2b2lkOw0KICBvbkVuZFN0cmVhbT86ICgpID0+IHZvaWQ7DQogIG1pY0VuYWJsZWQ/OiBib29sZWFuOw0KICBjYW1lcmFFbmFibGVkPzogYm9vbGVhbjsNCiAgc2NyZWVuU2hhcmluZz86IGJvb2xlYW47DQp9DQpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBTdHJlYW1Db250cm9scyh7DQogIGlzSG9zdCwgb25Ub2dnbGVNaWMsIG9uVG9nZ2xlQ2FtZXJhLCBvblNjcmVlblNoYXJlLCBvbkVuZFN0cmVhbSwNCiAgbWljRW5hYmxlZCA9IHRydWUsIGNhbWVyYUVuYWJsZWQgPSB0cnVlLCBzY3JlZW5TaGFyaW5nID0gZmFsc2UNCn06IFN0cmVhbUNvbnRyb2xzUHJvcHMpIHsNCiAgY29uc3QgW2NvbmZpcm1FbmQsIHNldENvbmZpcm1FbmRdID0gdXNlU3RhdGUoZmFsc2UpOw0KICBjb25zdCBidG4gPSAnZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIgZ2FwLTEgcC0zIHJvdW5kZWQtMnhsIHRyYW5zaXRpb24tYWxsIHRleHQtc20nOw0KICBjb25zdCBhY3RpdmUgPSAnYmctZ3JheS03MDAgaG92ZXI6YmctZ3JheS02MDAgdGV4dC13aGl0ZSc7DQogIGNvbnN0IGluYWN0aXZlID0gJ2JnLXJlZC05MDAvNTAgaG92ZXI6YmctcmVkLTkwMC83MCB0ZXh0LXJlZC00MDAnOw0KICByZXR1cm4gKA0KICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMyBwLTQgYmctZ3JheS05MDAvOTUgYmFja2Ryb3AtYmx1ciI+DQogICAgICA8YnV0dG9uIG9uQ2xpY2s9e29uVG9nZ2xlTWljfSBjbGFzc05hbWU9e2Ake2J0bn0gJHttaWNFbmFibGVkID8gYWN0aXZlIDogaW5hY3RpdmV9YH0+DQogICAgICAgIHttaWNFbmFibGVkID8gPE1pYyBzaXplPXsyMH0gLz4gOiA8TWljT2ZmIHNpemU9ezIwfSAvPn0NCiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXhzIj57bWljRW5hYmxlZCA/ICfZhdmK2YPYsdmI2YHZiNmGJyA6ICfYtdin2YXYqid9PC9zcGFuPg0KICAgICAgPC9idXR0b24+DQogICAgICB7aXNIb3N0ICYmICgNCiAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXtvblRvZ2dsZUNhbWVyYX0gY2xhc3NOYW1lPXtgJHtidG59ICR7Y2FtZXJhRW5hYmxlZCA/IGFjdGl2ZSA6IGluYWN0aXZlfWB9Pg0KICAgICAgICAgIHtjYW1lcmFFbmFibGVkID8gPFZpZGVvIHNpemU9ezIwfSAvPiA6IDxWaWRlb09mZiBzaXplPXsyMH0gLz59DQogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXhzIj57Y2FtZXJhRW5hYmxlZCA/ICfZg9in2YXZitix2KcnIDogJ9il2YrZgtin2YEnfTwvc3Bhbj4NCiAgICAgICAgPC9idXR0b24+DQogICAgICApfQ0KICAgICAge2lzSG9zdCAmJiAoDQogICAgICAgIDxidXR0b24gb25DbGljaz17b25TY3JlZW5TaGFyZX0gY2xhc3NOYW1lPXtgJHtidG59ICR7c2NyZWVuU2hhcmluZyA/ICdiZy1ibHVlLTcwMCBob3ZlcjpiZy1ibHVlLTgwMCB0ZXh0LXdoaXRlJyA6IGFjdGl2ZX1gfT4NCiAgICAgICAgICA8TW9uaXRvclVwIHNpemU9ezIwfSAvPg0KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC14cyI+e3NjcmVlblNoYXJpbmcgPyAn2KXZitmC2KfZgSDYp9mE2YXYtNin2LHZg9ipJyA6ICfZhdi02KfYsdmD2Kkg2KfZhNi02KfYtNipJ308L3NwYW4+DQogICAgICAgIDwvYnV0dG9uPg0KICAgICAgKX0NCiAgICAgIHtpc0hvc3QgJiYgKA0KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUiPg0KICAgICAgICAgIHshY29uZmlybUVuZCA/ICgNCiAgICAgICAgICAgIDxidXR0b24gb25DbGljaz17KCkgPT4gc2V0Q29uZmlybUVuZCh0cnVlKX0gY2xhc3NOYW1lPXtgJHtidG59IGJnLXJlZC03MDAgaG92ZXI6YmctcmVkLTgwMCB0ZXh0LXdoaXRlYH0+DQogICAgICAgICAgICAgIDxQaG9uZU9mZiBzaXplPXsyMH0gLz4NCiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXhzIj7YpdmG2YfYp9ihPC9zcGFuPg0KICAgICAgICAgICAgPC9idXR0b24+DQogICAgICAgICAgKSA6ICgNCiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGdhcC0yIGJnLWdyYXktODAwIGJvcmRlciBib3JkZXItcmVkLTcwMCByb3VuZGVkLTJ4bCBwLTMiPg0KICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtd2hpdGUgdGV4dC14cyB0ZXh0LWNlbnRlciI+2KXZhtmH2KfYoSDYp9mE2KjYq9ifPC9zcGFuPg0KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBnYXAtMiI+DQogICAgICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXtvbkVuZFN0cmVhbX0gY2xhc3NOYW1lPSJweC0zIHB5LTEgYmctcmVkLTYwMCBob3ZlcjpiZy1yZWQtNzAwIHRleHQtd2hpdGUgcm91bmRlZC14bCB0ZXh0LXhzIj7Zhti52YU8L2J1dHRvbj4NCiAgICAgICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9eygpID0+IHNldENvbmZpcm1FbmQoZmFsc2UpfSBjbGFzc05hbWU9InB4LTMgcHktMSBiZy1ncmF5LTYwMCBob3ZlcjpiZy1ncmF5LTcwMCB0ZXh0LXdoaXRlIHJvdW5kZWQteGwgdGV4dC14cyI+2YTYpzwvYnV0dG9uPg0KICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICl9DQogICAgICAgIDwvZGl2Pg0KICAgICAgKX0NCiAgICA8L2Rpdj4NCiAgKTsNCn0NCg=="}
+'use client';
+import { useState } from 'react';
+import { Mic, MicOff, Video, VideoOff, MonitorUp, PhoneOff, Settings } from 'lucide-react';
+interface StreamControlsProps {
+  isHost: boolean;
+  onToggleMic?: () => void;
+  onToggleCamera?: () => void;
+  onScreenShare?: () => void;
+  onEndStream?: () => void;
+  micEnabled?: boolean;
+  cameraEnabled?: boolean;
+  screenSharing?: boolean;
+}
+export default function StreamControls({
+  isHost, onToggleMic, onToggleCamera, onScreenShare, onEndStream,
+  micEnabled = true, cameraEnabled = true, screenSharing = false
+}: StreamControlsProps) {
+  const [confirmEnd, setConfirmEnd] = useState(false);
+  const btn = 'flex flex-col items-center gap-1 p-3 rounded-2xl transition-all text-sm';
+  const active = 'bg-gray-700 hover:bg-gray-600 text-white';
+  const inactive = 'bg-red-900/50 hover:bg-red-900/70 text-red-400';
+  return (
+    <div className="flex items-center justify-center gap-3 p-4 bg-gray-900/95 backdrop-blur">
+      <button onClick={onToggleMic} className={`${btn} ${micEnabled ? active : inactive}`}>
+        {micEnabled ? <Mic size={20} /> : <MicOff size={20} />}
+        <span className="text-xs">{micEnabled ? 'ÙÙÙØ±ÙÙÙÙ' : 'ØµØ§ÙØª'}</span>
+      </button>
+      {isHost && (
+        <button onClick={onToggleCamera} className={`${btn} ${cameraEnabled ? active : inactive}`}>
+          {cameraEnabled ? <Video size={20} /> : <VideoOff size={20} />}
+          <span className="text-xs">{cameraEnabled ? 'ÙØ§ÙÙØ±Ø§' : 'Ø¥ÙÙØ§Ù'}</span>
+        </button>
+      )}
+      {isHost && (
+        <button onClick={onScreenShare} className={`${btn} ${screenSharing ? 'bg-blue-700 hover:bg-blue-800 text-white' : active}`}>
+          <MonitorUp size={20} />
+          <span className="text-xs">{screenSharing ? 'Ø¥ÙÙØ§Ù Ø§ÙÙØ´Ø§Ø±ÙØ©' : 'ÙØ´Ø§Ø±ÙØ© Ø§ÙØ´Ø§Ø´Ø©'}</span>
+        </button>
+      )}
+      {isHost && (
+        <div className="relative">
+          {!confirmEnd ? (
+            <button onClick={() => setConfirmEnd(true)} className={`${btn} bg-red-700 hover:bg-red-800 text-white`}>
+              <PhoneOff size={20} />
+              <span className="text-xs">Ø¥ÙÙØ§Ø¡</span>
+            </button>
+          ) : (
+            <div className="flex flex-col gap-2 bg-gray-800 border border-red-700 rounded-2xl p-3">
+              <span className="text-white text-xs text-center">Ø¥ÙÙØ§Ø¡ Ø§ÙØ¨Ø«Ø</span>
+              <div className="flex gap-2">
+                <button onClick={onEndStream} className="px-3 py-1 bg-red-600 hover:bg-red-700 text-white rounded-xl text-xs">ÙØ¹Ù</button>
+                <button onClick={() => setConfirmEnd(false)} className="px-3 py-1 bg-gray-600 hover:bg-gray-700 text-white rounded-xl text-xs">ÙØ§</button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
