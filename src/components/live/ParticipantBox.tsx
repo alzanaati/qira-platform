@@ -1,1 +1,36 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgUGFydGljaXBhbnQgfSBmcm9tICdsaXZla2l0LWNsaWVudCc7DQppbXBvcnQgeyB1c2VQYXJ0aWNpcGFudHMgfSBmcm9tICdAbGl2ZWtpdC9jb21wb25lbnRzLXJlYWN0JzsNCmltcG9ydCB7IE1pY09mZiB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7DQppbnRlcmZhY2UgUGFydGljaXBhbnRCb3hQcm9wcyB7IHBhcnRpY2lwYW50OiBQYXJ0aWNpcGFudDsgaXNIb3N0PzogYm9vbGVhbjsgbGFiZWw/OiBzdHJpbmc7IH0NCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFBhcnRpY2lwYW50Qm94KHsgcGFydGljaXBhbnQsIGlzSG9zdCwgbGFiZWwgfTogUGFydGljaXBhbnRCb3hQcm9wcykgew0KICBjb25zdCBwYXJ0aWNpcGFudHMgPSB1c2VQYXJ0aWNpcGFudHMoKTsNCiAgY29uc3QgaXNTcGVha2luZyA9IHBhcnRpY2lwYW50LmlzU3BlYWtpbmc7DQogIGNvbnN0IGlzTXV0ZWQgPSBwYXJ0aWNpcGFudC5pc01pY3JvcGhvbmVFbmFibGVkID09PSBmYWxzZTsNCiAgcmV0dXJuICgNCiAgICA8ZGl2IGNsYXNzTmFtZT17YHJlbGF0aXZlIHJvdW5kZWQteGwgb3ZlcmZsb3ctaGlkZGVuIGJnLWdyYXktODAwIGFzcGVjdC12aWRlbw0KICAgICAgJHtpc1NwZWFraW5nID8gJ3JpbmctMiByaW5nLWdyZWVuLTQwMCcgOiAncmluZy0xIHJpbmctZ3JheS03MDAnfWB9Pg0KICAgICAgPHZpZGVvIHJlZj17ZWwgPT4geyBpZiAoZWwgJiYgcGFydGljaXBhbnQudmlkZW9UcmFja1B1YmxpY2F0aW9ucy5zaXplID4gMCkgew0KICAgICAgICBjb25zdCB0cmFjayA9IEFycmF5LmZyb20ocGFydGljaXBhbnQudmlkZW9UcmFja1B1YmxpY2F0aW9ucy52YWx1ZXMoKSlbMF0/LnZpZGVvVHJhY2s7DQogICAgICAgIGlmICh0cmFjaykgdHJhY2suYXR0YWNoKGVsKTsNCiAgICAgIH19fSBhdXRvUGxheSBtdXRlZCBwbGF5c0lubGluZSBjbGFzc05hbWU9InctZnVsbCBoLWZ1bGwgb2JqZWN0LWNvdmVyIiAvPg0KICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LTAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIiPg0KICAgICAgICB7cGFydGljaXBhbnQudmlkZW9UcmFja1B1YmxpY2F0aW9ucy5zaXplID09PSAwICYmICgNCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy0xNiBoLTE2IHJvdW5kZWQtZnVsbCBiZy1ncmF5LTcwMCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciB0ZXh0LTJ4bCB0ZXh0LXdoaXRlIj4NCiAgICAgICAgICAgIHtwYXJ0aWNpcGFudC5uYW1lPy5bMF0/LnRvVXBwZXJDYXNlKCkgfHwgJ9ifJ30NCiAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgKX0NCiAgICAgIDwvZGl2Pg0KICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGJvdHRvbS0yIGxlZnQtMiByaWdodC0yIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiI+DQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMSBiZy1ibGFjay82MCByb3VuZGVkLWZ1bGwgcHgtMiBweS0xIj4NCiAgICAgICAgICB7aXNNdXRlZCAmJiA8TWljT2ZmIHNpemU9ezEwfSBjbGFzc05hbWU9InRleHQtcmVkLTQwMCIgLz59DQogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXdoaXRlIHRleHQteHMgdHJ1bmNhdGUgbWF4LXctWzZyZW1dIj4NCiAgICAgICAgICAgIHtsYWJlbCB8fCBwYXJ0aWNpcGFudC5uYW1lIHx8ICfZhdi02KfYsdmDJ30NCiAgICAgICAgICA8L3NwYW4+DQogICAgICAgICAge2lzSG9zdCAmJiA8c3BhbiBjbGFzc05hbWU9InRleHQteWVsbG93LTQwMCB0ZXh0LXhzIG1sLTEiPtmF2LbZitmBPC9zcGFuPn0NCiAgICAgICAgPC9kaXY+DQogICAgICAgIHtpc1NwZWFraW5nICYmIDxkaXYgY2xhc3NOYW1lPSJ3LTIgaC0yIHJvdW5kZWQtZnVsbCBiZy1ncmVlbi00MDAgYW5pbWF0ZS1wdWxzZSIgLz59DQogICAgICA8L2Rpdj4NCiAgICA8L2Rpdj4NCiAgKTsNCn0NCg=="}
+'use client';
+import { Participant } from 'livekit-client';
+import { useParticipants } from '@livekit/components-react';
+import { MicOff } from 'lucide-react';
+interface ParticipantBoxProps { participant: Participant; isHost?: boolean; label?: string; }
+export default function ParticipantBox({ participant, isHost, label }: ParticipantBoxProps) {
+  const participants = useParticipants();
+  const isSpeaking = participant.isSpeaking;
+  const isMuted = participant.isMicrophoneEnabled === false;
+  return (
+    <div className={`relative rounded-xl overflow-hidden bg-gray-800 aspect-video
+      ${isSpeaking ? 'ring-2 ring-green-400' : 'ring-1 ring-gray-700'}`}>
+      <video ref={el => { if (el && participant.videoTrackPublications.size > 0) {
+        const track = Array.from(participant.videoTrackPublications.values())[0]?.videoTrack;
+        if (track) track.attach(el);
+      }}} autoPlay muted playsInline className="w-full h-full object-cover" />
+      <div className="absolute inset-0 flex items-center justify-center">
+        {participant.videoTrackPublications.size === 0 && (
+          <div className="w-16 h-16 rounded-full bg-gray-700 flex items-center justify-center text-2xl text-white">
+            {participant.name?.[0]?.toUpperCase() || 'Ø'}
+          </div>
+        )}
+      </div>
+      <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between">
+        <div className="flex items-center gap-1 bg-black/60 rounded-full px-2 py-1">
+          {isMuted && <MicOff size={10} className="text-red-400" />}
+          <span className="text-white text-xs truncate max-w-[6rem]">
+            {label || participant.name || 'ÙØ´Ø§Ø±Ù'}
+          </span>
+          {isHost && <span className="text-yellow-400 text-xs ml-1">ÙØ¶ÙÙ</span>}
+        </div>
+        {isSpeaking && <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />}
+      </div>
+    </div>
+  );
+}
