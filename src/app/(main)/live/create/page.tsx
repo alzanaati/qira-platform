@@ -1,1 +1,9 @@
-{"data":"aW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAnQC9saWIvc3VwYWJhc2Uvc2VydmVyJzsNCmltcG9ydCBDcmVhdGVMaXZlQ2xpZW50IGZyb20gJ0AvY29tcG9uZW50cy9saXZlL0NyZWF0ZUxpdmVDbGllbnQnOw0KDQpleHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiBDcmVhdGVMaXZlUGFnZSgpIHsNCiAgY29uc3Qgc3VwYWJhc2UgPSBjcmVhdGVDbGllbnQoKTsNCiAgY29uc3QgeyBkYXRhOiB7IHVzZXIgfSB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5nZXRVc2VyKCk7DQogIGNvbnN0IHsgZGF0YTogcHJvZmlsZSB9ID0gYXdhaXQgc3VwYWJhc2UuZnJvbSgndXNlcnMnKS5zZWxlY3QoJyonKS5lcSgnaWQnLCB1c2VyIS5pZCkuc2luZ2xlKCk7DQogIHJldHVybiA8Q3JlYXRlTGl2ZUNsaWVudCBjdXJyZW50VXNlcj17cHJvZmlsZX0gLz47DQp9DQo="}
+import { createClient } from '@/lib/supabase/server';
+import CreateLiveClient from '@/components/live/CreateLiveClient';
+
+export default async function CreateLivePage() {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  const { data: profile } = await supabase.from('users').select('*').eq('id', user!.id).single();
+  return <CreateLiveClient currentUser={profile} />;
+}
