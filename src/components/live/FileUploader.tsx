@@ -1,1 +1,65 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgdXNlUmVmLCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsNCmltcG9ydCB7IGNyZWF0ZUNsaWVudCB9IGZyb20gJ0AvbGliL3N1cGFiYXNlL2NsaWVudCc7DQppbXBvcnQgeyBVcGxvYWQsIEZpbGVUZXh0LCBDaGVjayB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7DQppbnRlcmZhY2UgRmlsZVVwbG9hZGVyUHJvcHMgew0KICBzdHJlYW1JZDogc3RyaW5nOw0KICBvbkZpbGVVcGxvYWRlZDogKGZpbGU6IHsgaWQ6IHN0cmluZzsgZmlsZV91cmw6IHN0cmluZzsgZmlsZV90eXBlOiBzdHJpbmc7IGZpbGVfbmFtZTogc3RyaW5nIH0pID0+IHZvaWQ7DQp9DQppbnRlcmZhY2UgVXBGaWxlIHsgaWQ6IHN0cmluZzsgZmlsZV9uYW1lOiBzdHJpbmc7IGZpbGVfdXJsOiBzdHJpbmc7IGZpbGVfdHlwZTogc3RyaW5nOyB9DQpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBGaWxlVXBsb2FkZXIoeyBzdHJlYW1JZCwgb25GaWxlVXBsb2FkZWQgfTogRmlsZVVwbG9hZGVyUHJvcHMpIHsNCiAgY29uc3Qgc3VwYWJhc2UgPSBjcmVhdGVDbGllbnQoKTsNCiAgY29uc3QgcmVmID0gdXNlUmVmPEhUTUxJbnB1dEVsZW1lbnQ+KG51bGwpOw0KICBjb25zdCBbdXBsb2FkaW5nLCBzZXRVcGxvYWRpbmddID0gdXNlU3RhdGUoZmFsc2UpOw0KICBjb25zdCBbcHJvZ3Jlc3MsIHNldFByb2dyZXNzXSA9IHVzZVN0YXRlKDApOw0KICBjb25zdCBbZmlsZXMsIHNldEZpbGVzXSA9IHVzZVN0YXRlPFVwRmlsZVtdPihbXSk7DQogIGNvbnN0IFtlcnJvciwgc2V0RXJyb3JdID0gdXNlU3RhdGUoJycpOw0KICBjb25zdCBoYW5kbGVVcGxvYWQgPSBhc3luYyAoZTogUmVhY3QuQ2hhbmdlRXZlbnQ8SFRNTElucHV0RWxlbWVudD4pID0+IHsNCiAgICBjb25zdCBmaWxlID0gZS50YXJnZXQuZmlsZXM/LlswXTsNCiAgICBpZiAoIWZpbGUpIHJldHVybjsNCiAgICBpZiAoZmlsZS5zaXplID4gNTAgKiAxMDI0ICogMTAyNCkgeyBzZXRFcnJvcign2KfZhNit2K8g2KfZhNij2YLYtdmJIDUwTUInKTsgcmV0dXJuOyB9DQogICAgY29uc3QgYWxsb3dlZCA9IFsnYXBwbGljYXRpb24vcGRmJywnYXBwbGljYXRpb24vdm5kLm1zLXBvd2VycG9pbnQnLCdhcHBsaWNhdGlvbi92bmQub3BlbnhtbGZvcm1hdHMtb2ZmaWNlZG9jdW1lbnQucHJlc2VudGF0aW9ubWwucHJlc2VudGF0aW9uJ107DQogICAgaWYgKCFhbGxvd2VkLmluY2x1ZGVzKGZpbGUudHlwZSkpIHsgc2V0RXJyb3IoJ1BERiDYo9mIIFBQVCDZgdmC2LcnKTsgcmV0dXJuOyB9DQogICAgc2V0RXJyb3IoJycpOyBzZXRVcGxvYWRpbmcodHJ1ZSk7IHNldFByb2dyZXNzKDIwKTsNCiAgICB0cnkgew0KICAgICAgY29uc3QgeyBkYXRhOiB7IHVzZXIgfSB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5nZXRVc2VyKCk7DQogICAgICBpZiAoIXVzZXIpIHRocm93IG5ldyBFcnJvcign2LrZitixINmF2LPYrNmR2YQnKTsNCiAgICAgIGNvbnN0IGV4dCA9IGZpbGUubmFtZS5zcGxpdCgnLicpLnBvcCgpOw0KICAgICAgY29uc3QgZmlsZVBhdGggPSBgJHtzdHJlYW1JZH0vJHtEYXRlLm5vdygpfS4ke2V4dH1gOw0KICAgICAgc2V0UHJvZ3Jlc3MoNDApOw0KICAgICAgY29uc3QgeyBlcnJvcjogdXBFcnIgfSA9IGF3YWl0IHN1cGFiYXNlLnN0b3JhZ2UuZnJvbSgnc3RyZWFtLWZpbGVzJykudXBsb2FkKGZpbGVQYXRoLCBmaWxlLCB7IGNvbnRlbnRUeXBlOiBmaWxlLnR5cGUgfSk7DQogICAgICBpZiAodXBFcnIpIHRocm93IHVwRXJyOw0KICAgICAgc2V0UHJvZ3Jlc3MoNzApOw0KICAgICAgY29uc3QgeyBkYXRhOiB7IHB1YmxpY1VybCB9IH0gPSBzdXBhYmFzZS5zdG9yYWdlLmZyb20oJ3N0cmVhbS1maWxlcycpLmdldFB1YmxpY1VybChmaWxlUGF0aCk7DQogICAgICBjb25zdCBmaWxlVHlwZSA9IGZpbGUudHlwZSA9PT0gJ2FwcGxpY2F0aW9uL3BkZicgPyAncGRmJyA6ICdwcHQnOw0KICAgICAgY29uc3QgeyBkYXRhOiBkYkZpbGUsIGVycm9yOiBkYkVyciB9ID0gYXdhaXQgc3VwYWJhc2UuZnJvbSgnc3RyZWFtX2ZpbGVzJykNCiAgICAgICAgLmluc2VydCh7IHN0cmVhbV9pZDogc3RyZWFtSWQsIHVwbG9hZGVkX2J5OiB1c2VyLmlkLCBmaWxlX25hbWU6IGZpbGUubmFtZSwgZmlsZV91cmw6IHB1YmxpY1VybCwgZmlsZV90eXBlOiBmaWxlVHlwZSwgZmlsZV9zaXplOiBmaWxlLnNpemUgfSkNCiAgICAgICAgLnNlbGVjdCgpLnNpbmdsZSgpOw0KICAgICAgaWYgKGRiRXJyKSB0aHJvdyBkYkVycjsNCiAgICAgIHNldFByb2dyZXNzKDEwMCk7DQogICAgICBjb25zdCBuZXdGaWxlID0geyBpZDogZGJGaWxlLmlkLCBmaWxlX25hbWU6IGZpbGUubmFtZSwgZmlsZV91cmw6IHB1YmxpY1VybCwgZmlsZV90eXBlOiBmaWxlVHlwZSB9Ow0KICAgICAgc2V0RmlsZXMocHJldiA9PiBbLi4ucHJldiwgbmV3RmlsZV0pOw0KICAgICAgb25GaWxlVXBsb2FkZWQobmV3RmlsZSk7DQogICAgfSBjYXRjaCAoZXJyOiBhbnkpIHsgc2V0RXJyb3IoZXJyLm1lc3NhZ2UgfHwgJ9mB2LTZhCDYp9mE2LHZgdi5Jyk7IH0NCiAgICBmaW5hbGx5IHsgc2V0VXBsb2FkaW5nKGZhbHNlKTsgc2V0UHJvZ3Jlc3MoMCk7IGlmIChyZWYuY3VycmVudCkgcmVmLmN1cnJlbnQudmFsdWUgPSAnJzsgfQ0KICB9Ow0KICByZXR1cm4gKA0KICAgIDxkaXYgY2xhc3NOYW1lPSJwLTMgYmctZ3JheS04MDAgcm91bmRlZC1sZyBzcGFjZS15LTIiPg0KICAgICAgPGlucHV0IHJlZj17cmVmfSB0eXBlPSJmaWxlIiBhY2NlcHQ9Ii5wZGYsLnBwdCwucHB0eCIgY2xhc3NOYW1lPSJoaWRkZW4iIG9uQ2hhbmdlPXtoYW5kbGVVcGxvYWR9IC8+DQogICAgICA8YnV0dG9uIG9uQ2xpY2s9eygpID0+IHJlZi5jdXJyZW50Py5jbGljaygpfSBkaXNhYmxlZD17dXBsb2FkaW5nfQ0KICAgICAgICBjbGFzc05hbWU9InctZnVsbCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMiBweS0yIHB4LTQgYmctYmx1ZS02MDAgaG92ZXI6YmctYmx1ZS03MDAgZGlzYWJsZWQ6b3BhY2l0eS01MCB0ZXh0LXdoaXRlIHJvdW5kZWQtbGcgdGV4dC1zbSB0cmFuc2l0aW9uLWNvbG9ycyI+DQogICAgICAgIDxVcGxvYWQgc2l6ZT17MTZ9IC8+e3VwbG9hZGluZyA/IGDYrNin2LHZjSDYp9mE2LHZgdi5ICR7cHJvZ3Jlc3N9JWAgOiAn2LHZgdi5IFBERi9QUFQnfQ0KICAgICAgPC9idXR0b24+DQogICAgICB7dXBsb2FkaW5nICYmIDxkaXYgY2xhc3NOYW1lPSJiZy1ncmF5LTcwMCByb3VuZGVkLWZ1bGwgaC0xLjUiPjxkaXYgY2xhc3NOYW1lPSJiZy1ibHVlLTUwMCBoLTEuNSByb3VuZGVkLWZ1bGwgdHJhbnNpdGlvbi1hbGwiIHN0eWxlPXt7IHdpZHRoOiBgJHtwcm9ncmVzc30lYCB9fSAvPjwvZGl2Pn0NCiAgICAgIHtlcnJvciAmJiA8cCBjbGFzc05hbWU9InRleHQtcmVkLTQwMCB0ZXh0LXhzIj57ZXJyb3J9PC9wPn0NCiAgICAgIHtmaWxlcy5tYXAoZiA9PiAoDQogICAgICAgIDxidXR0b24ga2V5PXtmLmlkfSBvbkNsaWNrPXsoKSA9PiBvbkZpbGVVcGxvYWRlZChmKX0NCiAgICAgICAgICBjbGFzc05hbWU9InctZnVsbCBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBwLTIgYmctZ3JheS03MDAgaG92ZXI6YmctZ3JheS02MDAgcm91bmRlZCB0ZXh0LXNtIHRleHQtd2hpdGUgdHJhbnNpdGlvbi1jb2xvcnMiPg0KICAgICAgICAgIDxGaWxlVGV4dCBzaXplPXsxNH0gY2xhc3NOYW1lPSJ0ZXh0LWJsdWUtNDAwIHNocmluay0wIiAvPg0KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idHJ1bmNhdGUgZmxleC0xIHRleHQtcmlnaHQiPntmLmZpbGVfbmFtZX08L3NwYW4+DQogICAgICAgICAgPENoZWNrIHNpemU9ezE0fSBjbGFzc05hbWU9InRleHQtZ3JlZW4tNDAwIHNocmluay0wIiAvPg0KICAgICAgICA8L2J1dHRvbj4NCiAgICAgICkpfQ0KICAgIDwvZGl2Pg0KICApOw0KfQ0K"}
+'use client';
+import { useRef, useState } from 'react';
+import { createClient } from '@/lib/supabase/client';
+import { Upload, FileText, Check } from 'lucide-react';
+interface FileUploaderProps {
+  streamId: string;
+  onFileUploaded: (file: { id: string; file_url: string; file_type: string; file_name: string }) => void;
+}
+interface UpFile { id: string; file_name: string; file_url: string; file_type: string; }
+export default function FileUploader({ streamId, onFileUploaded }: FileUploaderProps) {
+  const supabase = createClient();
+  const ref = useRef<HTMLInputElement>(null);
+  const [uploading, setUploading] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [files, setFiles] = useState<UpFile[]>([]);
+  const [error, setError] = useState('');
+  const handleUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    if (file.size > 50 * 1024 * 1024) { setError('Ø§ÙØ­Ø¯ Ø§ÙØ£ÙØµÙ 50MB'); return; }
+    const allowed = ['application/pdf','application/vnd.ms-powerpoint','application/vnd.openxmlformats-officedocument.presentationml.presentation'];
+    if (!allowed.includes(file.type)) { setError('PDF Ø£Ù PPT ÙÙØ·'); return; }
+    setError(''); setUploading(true); setProgress(20);
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) throw new Error('ØºÙØ± ÙØ³Ø¬ÙÙ');
+      const ext = file.name.split('.').pop();
+      const filePath = `${streamId}/${Date.now()}.${ext}`;
+      setProgress(40);
+      const { error: upErr } = await supabase.storage.from('stream-files').upload(filePath, file, { contentType: file.type });
+      if (upErr) throw upErr;
+      setProgress(70);
+      const { data: { publicUrl } } = supabase.storage.from('stream-files').getPublicUrl(filePath);
+      const fileType = file.type === 'application/pdf' ? 'pdf' : 'ppt';
+      const { data: dbFile, error: dbErr } = await supabase.from('stream_files')
+        .insert({ stream_id: streamId, uploaded_by: user.id, file_name: file.name, file_url: publicUrl, file_type: fileType, file_size: file.size })
+        .select().single();
+      if (dbErr) throw dbErr;
+      setProgress(100);
+      const newFile = { id: dbFile.id, file_name: file.name, file_url: publicUrl, file_type: fileType };
+      setFiles(prev => [...prev, newFile]);
+      onFileUploaded(newFile);
+    } catch (err: any) { setError(err.message || 'ÙØ´Ù Ø§ÙØ±ÙØ¹'); }
+    finally { setUploading(false); setProgress(0); if (ref.current) ref.current.value = ''; }
+  };
+  return (
+    <div className="p-3 bg-gray-800 rounded-lg space-y-2">
+      <input ref={ref} type="file" accept=".pdf,.ppt,.pptx" className="hidden" onChange={handleUpload} />
+      <button onClick={() => ref.current?.click()} disabled={uploading}
+        className="w-full flex items-center justify-center gap-2 py-2 px-4 bg-blue-600 hover:bg-blue-700 disabled:opacity-50 text-white rounded-lg text-sm transition-colors">
+        <Upload size={16} />{uploading ? `Ø¬Ø§Ø±Ù Ø§ÙØ±ÙØ¹ ${progress}%` : 'Ø±ÙØ¹ PDF/PPT'}
+      </button>
+      {uploading && <div className="bg-gray-700 rounded-full h-1.5"><div className="bg-blue-500 h-1.5 rounded-full transition-all" style={{ width: `${progress}%` }} /></div>}
+      {error && <p className="text-red-400 text-xs">{error}</p>}
+      {files.map(f => (
+        <button key={f.id} onClick={() => onFileUploaded(f)}
+          className="w-full flex items-center gap-2 p-2 bg-gray-700 hover:bg-gray-600 rounded text-sm text-white transition-colors">
+          <FileText size={14} className="text-blue-400 shrink-0" />
+          <span className="truncate flex-1 text-right">{f.file_name}</span>
+          <Check size={14} className="text-green-400 shrink-0" />
+        </button>
+      ))}
+    </div>
+  );
+}
