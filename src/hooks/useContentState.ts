@@ -1,1 +1,7 @@
-{"data":"J3VzZSBjbGllbnQnOyBpbXBvcnQgeyB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnOyBpbXBvcnQgeyBTdHJlYW1Db250ZW50U3RhdGUgfSBmcm9tICdAL3R5cGVzJzsNCmV4cG9ydCBmdW5jdGlvbiB1c2VDb250ZW50U3RhdGUoc3RyZWFtSWQ6IHN0cmluZykgew0KICBjb25zdCBbc3RhdGUsIHNldFN0YXRlXSA9IHVzZVN0YXRlPFN0cmVhbUNvbnRlbnRTdGF0ZXxudWxsPihudWxsKTsNCiAgdXNlRWZmZWN0KCgpPT57IGNvbnN0IGxvYWQ9YXN5bmMoKT0+e2NvbnN0IHI9YXdhaXQgZmV0Y2goJy9hcGkvc3RyZWFtcy8nK3N0cmVhbUlkKycvY29udGVudC1zdGF0ZScpO2NvbnN0e2RhdGF9PWF3YWl0IHIuanNvbigpO2lmKGRhdGEpc2V0U3RhdGUoZGF0YSk7fTsgbG9hZCgpOyBjb25zdCBpPXNldEludGVydmFsKGxvYWQsMzAwMCk7IHJldHVybigpPT5jbGVhckludGVydmFsKGkpOyB9LFtzdHJlYW1JZF0pOw0KICBjb25zdCB1cGRhdGU9YXN5bmModXBkYXRlczpQYXJ0aWFsPFN0cmVhbUNvbnRlbnRTdGF0ZT4pPT57YXdhaXQgZmV0Y2goJy9hcGkvc3RyZWFtcy8nK3N0cmVhbUlkKycvY29udGVudC1zdGF0ZScse21ldGhvZDonUEFUQ0gnLGhlYWRlcnM6eydDb250ZW50LVR5cGUnOidhcHBsaWNhdGlvbi9qc29uJ30sYm9keTpKU09OLnN0cmluZ2lmeSh1cGRhdGVzKX0pO307DQogIHJldHVybntzdGF0ZSx1cGRhdGV9Ow0KfQ0K"}
+'use client'; import { useEffect, useState } from 'react'; import { StreamContentState } from '@/types';
+export function useContentState(streamId: string) {
+  const [state, setState] = useState<StreamContentState|null>(null);
+  useEffect(()=>{ const load=async()=>{const r=await fetch('/api/streams/'+streamId+'/content-state');const{data}=await r.json();if(data)setState(data);}; load(); const i=setInterval(load,3000); return()=>clearInterval(i); },[streamId]);
+  const update=async(updates:Partial<StreamContentState>)=>{await fetch('/api/streams/'+streamId+'/content-state',{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify(updates)});};
+  return{state,update};
+}
