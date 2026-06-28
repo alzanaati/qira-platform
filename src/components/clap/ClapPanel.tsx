@@ -1,1 +1,36 @@
-{"data":"J3VzZSBjbGllbnQnOw0KaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7DQppbXBvcnQgeyBHaWZ0IH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsNCmltcG9ydCBDbGFwQnV0dG9uIGZyb20gJy4vQ2xhcEJ1dHRvbic7DQppbnRlcmZhY2UgQ2xhcFBhbmVsUHJvcHMgeyBzdHJlYW1JZDogc3RyaW5nOyBob3N0SWQ6IHN0cmluZzsgb25DbGFwOiAodHlwZTogc3RyaW5nKSA9PiB2b2lkOyB9DQpjb25zdCBDTEFQX1RZUEVTID0gWw0KICB7IHR5cGU6ICdicm9uemUnIGFzIGNvbnN0LCBlbW9qaTogJ/CfpYknLCBwcmljZTogMTAsIGxhYmVsOiAn2KjYsdmI2YbYstmKJyB9LA0KICB7IHR5cGU6ICdzaWx2ZXInIGFzIGNvbnN0LCBlbW9qaTogJ/CfpYgnLCBwcmljZTogMjAsIGxhYmVsOiAn2YHYttmKJyB9LA0KICB7IHR5cGU6ICdnb2xkJyBhcyBjb25zdCwgZW1vamk6ICfwn6WHJywgcHJpY2U6IDUwLCBsYWJlbDogJ9iw2YfYqNmKJyB9LA0KICB7IHR5cGU6ICdkaWFtb25kJyBhcyBjb25zdCwgZW1vamk6ICfwn5KOJywgcHJpY2U6IDEwMCwgbGFiZWw6ICfYp9mE2YXYp9izJyB9LA0KXTsNCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIENsYXBQYW5lbCh7IHN0cmVhbUlkLCBob3N0SWQsIG9uQ2xhcCB9OiBDbGFwUGFuZWxQcm9wcykgew0KICBjb25zdCBbb3Blbiwgc2V0T3Blbl0gPSB1c2VTdGF0ZShmYWxzZSk7DQogIHJldHVybiAoDQogICAgPGRpdiBjbGFzc05hbWU9InJlbGF0aXZlIj4NCiAgICAgIDxidXR0b24gb25DbGljaz17KCkgPT4gc2V0T3BlbihwID0+ICFwKX0NCiAgICAgICAgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBweC00IHB5LTIgYmctZ3JhZGllbnQtdG8tciBmcm9tLXllbGxvdy02MDAgdG8tb3JhbmdlLTYwMCBob3Zlcjpmcm9tLXllbGxvdy01MDAgaG92ZXI6dG8tb3JhbmdlLTUwMCB0ZXh0LXdoaXRlIHJvdW5kZWQtZnVsbCB0ZXh0LXNtIGZvbnQtbWVkaXVtIHRyYW5zaXRpb24tYWxsIGFjdGl2ZTpzY2FsZS05NSI+DQogICAgICAgIDxHaWZ0IHNpemU9ezE2fSAvPg0KICAgICAgICA8c3Bhbj7Yqti12YHZitmCPC9zcGFuPg0KICAgICAgPC9idXR0b24+DQogICAgICB7b3BlbiAmJiAoDQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSBib3R0b20tMTQgbGVmdC0xLzIgLXRyYW5zbGF0ZS14LTEvMiBiZy1ncmF5LTkwMC85NSBiYWNrZHJvcC1ibHVyIGJvcmRlciBib3JkZXItZ3JheS03MDAgcm91bmRlZC0zeGwgcC00IHNoYWRvdy0yeGwiPg0KICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTQwMCB0ZXh0LXhzIHRleHQtY2VudGVyIG1iLTMiPtin2K7YqtixINmG2YjYuSDYp9mE2KrYtdmB2YrZgjwvcD4NCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBncmlkLWNvbHMtMiBnYXAtMiI+DQogICAgICAgICAgICB7Q0xBUF9UWVBFUy5tYXAoY3QgPT4gKA0KICAgICAgICAgICAgICA8Q2xhcEJ1dHRvbiBrZXk9e2N0LnR5cGV9IHN0cmVhbUlkPXtzdHJlYW1JZH0gaG9zdElkPXtob3N0SWR9DQogICAgICAgICAgICAgICAgY2xhcFR5cGU9e2N0LnR5cGV9IHByaWNlPXtjdC5wcmljZX0gZW1vamk9e2N0LmVtb2ppfQ0KICAgICAgICAgICAgICAgIG9uQ2xhcD17KCkgPT4geyBvbkNsYXAoY3QudHlwZSk7IHNldE9wZW4oZmFsc2UpOyB9fSAvPg0KICAgICAgICAgICAgKSl9DQogICAgICAgICAgPC9kaXY+DQogICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNTAwIHRleHQteHMgdGV4dC1jZW50ZXIgbXQtMyI+NzUlINmE2YTZhdi22YrZgSDCtyAyNSUg2YTZhNmF2YbYtdipPC9wPg0KICAgICAgICA8L2Rpdj4NCiAgICAgICl9DQogICAgPC9kaXY+DQogICk7DQp9DQo="}
+'use client';
+import { useState } from 'react';
+import { Gift } from 'lucide-react';
+import ClapButton from './ClapButton';
+interface ClapPanelProps { streamId: string; hostId: string; onClap: (type: string) => void; }
+const CLAP_TYPES = [
+  { type: 'bronze' as const, emoji: 'ð¥', price: 10, label: 'Ø¨Ø±ÙÙØ²Ù' },
+  { type: 'silver' as const, emoji: 'ð¥', price: 20, label: 'ÙØ¶Ù' },
+  { type: 'gold' as const, emoji: 'ð¥', price: 50, label: 'Ø°ÙØ¨Ù' },
+  { type: 'diamond' as const, emoji: 'ð', price: 100, label: 'Ø§ÙÙØ§Ø³' },
+];
+export default function ClapPanel({ streamId, hostId, onClap }: ClapPanelProps) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="relative">
+      <button onClick={() => setOpen(p => !p)}
+        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-600 to-orange-600 hover:from-yellow-500 hover:to-orange-500 text-white rounded-full text-sm font-medium transition-all active:scale-95">
+        <Gift size={16} />
+        <span>ØªØµÙÙÙ</span>
+      </button>
+      {open && (
+        <div className="absolute bottom-14 left-1/2 -translate-x-1/2 bg-gray-900/95 backdrop-blur border border-gray-700 rounded-3xl p-4 shadow-2xl">
+          <p className="text-gray-400 text-xs text-center mb-3">Ø§Ø®ØªØ± ÙÙØ¹ Ø§ÙØªØµÙÙÙ</p>
+          <div className="grid grid-cols-2 gap-2">
+            {CLAP_TYPES.map(ct => (
+              <ClapButton key={ct.type} streamId={streamId} hostId={hostId}
+                clapType={ct.type} price={ct.price} emoji={ct.emoji}
+                onClap={() => { onClap(ct.type); setOpen(false); }} />
+            ))}
+          </div>
+          <p className="text-gray-500 text-xs text-center mt-3">75% ÙÙÙØ¶ÙÙ Â· 25% ÙÙÙÙØµØ©</p>
+        </div>
+      )}
+    </div>
+  );
+}
