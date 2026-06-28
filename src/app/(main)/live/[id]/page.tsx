@@ -1,1 +1,16 @@
-{"data":"aW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAnQC9saWIvc3VwYWJhc2Uvc2VydmVyJzsNCmltcG9ydCB7IG5vdEZvdW5kIH0gZnJvbSAnbmV4dC9uYXZpZ2F0aW9uJzsNCmltcG9ydCBMaXZlUm9vbVBhZ2UgZnJvbSAnQC9jb21wb25lbnRzL2xpdmUvTGl2ZVJvb21QYWdlJzsNCg0KZXhwb3J0IGRlZmF1bHQgYXN5bmMgZnVuY3Rpb24gTGl2ZVBhZ2UoeyBwYXJhbXMgfTogeyBwYXJhbXM6IHsgaWQ6IHN0cmluZyB9IH0pIHsNCiAgY29uc3Qgc3VwYWJhc2UgPSBjcmVhdGVDbGllbnQoKTsNCiAgY29uc3QgeyBkYXRhOiB7IHVzZXIgfSB9ID0gYXdhaXQgc3VwYWJhc2UuYXV0aC5nZXRVc2VyKCk7DQogIGNvbnN0IHsgZGF0YTogc3RyZWFtIH0gPSBhd2FpdCBzdXBhYmFzZQ0KICAgIC5mcm9tKCdsaXZlX3N0cmVhbXMnKQ0KICAgIC5zZWxlY3QoJyosIHVzZXJzKGlkLGZ1bGxfbmFtZSx1c2VybmFtZSxhdmF0YXJfdXJsLGlzX3ZlcmlmaWVkLHJvbGUpJykNCiAgICAuZXEoJ2lkJywgcGFyYW1zLmlkKQ0KICAgIC5zaW5nbGUoKTsNCiAgaWYgKCFzdHJlYW0pIG5vdEZvdW5kKCk7DQogIGNvbnN0IHsgZGF0YTogcHJvZmlsZSB9ID0gYXdhaXQgc3VwYWJhc2UuZnJvbSgndXNlcnMnKS5zZWxlY3QoJyonKS5lcSgnaWQnLCB1c2VyIS5pZCkuc2luZ2xlKCk7DQogIHJldHVybiA8TGl2ZVJvb21QYWdlIHN0cmVhbT17c3RyZWFtfSBjdXJyZW50VXNlcj17cHJvZmlsZX0gLz47DQp9DQo="}
+import { createClient } from '@/lib/supabase/server';
+import { notFound } from 'next/navigation';
+import LiveRoomPage from '@/components/live/LiveRoomPage';
+
+export default async function LivePage({ params }: { params: { id: string } }) {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  const { data: stream } = await supabase
+    .from('live_streams')
+    .select('*, users(id,full_name,username,avatar_url,is_verified,role)')
+    .eq('id', params.id)
+    .single();
+  if (!stream) notFound();
+  const { data: profile } = await supabase.from('users').select('*').eq('id', user!.id).single();
+  return <LiveRoomPage stream={stream} currentUser={profile} />;
+}
