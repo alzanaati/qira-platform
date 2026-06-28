@@ -1,180 +1,115 @@
 'use client';
-
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { Stream, User } from '@/types';
-import { useLiveChat } from '@/hooks/useLiveChat';
-import { useSpeakerRequests } from '@/hooks/useSpeakerRequests';
-import { useContentState } from '@/hooks/useContentState';
+import { LiveStream, User, LiveMessage, SpeakerRequest } from '@/types';
+import Avatar from '@/components/ui/Avatar';
+import { ArrowRight, Mic, Video, Hand, MessageCircle, Users } from 'lucide-react';
+import { formatNumber } from '@/lib/utils';
 
-interface LiveRoomPageProps {
-  stream: Stream;
-  currentUser: User | null;
-}
-
-export default function LiveRoomPage({ stream, currentUser }: LiveRoomPageProps) {
+export default function LiveRoomPage({ stream, currentUser }: { stream: LiveStream; currentUser: User | null }) {
+  const [messages, setMessages] = useState<LiveMessage[]>([]);
+  const [speakerRequests, setSpeakerRequests] = useState<SpeakerRequest[]>([]);
+  const [participants, setParticipants] = useState<any[]>([]);
+  const [chatText, setChatText] = useState('');
+  const [tab, setTab] = useState<'chat'|'participants'|'requests'>('chat');
+  const [handRaised, setHandRaised] = useState(false);
+  const [viewerCount, setViewerCount] = useState(stream.viewer_count || 0);
+  const [myRole, setMyRole] = useState('viewer');
+  const [isMic, setIsMic] = useState(false);
+  const [isCam, setIsCam] = useState(false);
   const router = useRouter();
-  const [livekitToken, setLivekitToken] = useState<string | null>(null);
-  const [livekitError, setLivekitError] = useState<string | null>(null);
-  const [isConnecting, setIsConnecting] = useState(false);
-  const [isConnected, setIsConnected] = useState(false);
-  const [message, setMessage] = useState('');
-  const chatEndRef = useRef<HTMLDivElement>(null);
-
-  const { messages, sendMessage } = useLiveChat(stream.id, currentUser);
-  const { speakerRequests, raiseHand, approveSpeaker } = useSpeakerRequests(stream.id, currentUser);
-  const { contentState, updateContentState } = useContentState(stream.id);
-
   const isHost = currentUser?.id === stream.user_id;
 
-  // Auto-fetch LiveKit token on mount
-  useEffect(() => {
-    if (!currentUser) return;
-    
-    const fetchToken = async () => {
-      setIsConnecting(true);
-      try {
-        const res = await fetch('/api/livekit/token', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ streamId: stream.id }),
-        });
-        
-        if (!res.ok) {
-          const err = await res.json();
-          setLivekitError(err.error || 'Failed to get LiveKit token');
-          return;
-        }
-        
-        const data = await res.json();
-        setLivekitToken(data.token);
-        setIsConnected(true);
-      } catch (err) {
-        setLivekitError('Failed to connect to LiveKit');
-      } finally {
-        setIsConnecting(false);
-      }
-    };
-
-    fetchToken();
-  }, [stream.id, currentUser]);
-
-  // Auto-scroll chat
-  useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages]);
-
-  const handleSendMessage = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!message.trim() || !currentUser) return;
-    await sendMessage(message.trim());
-    setMessage('');
+  const loadData = async () => {
+    try {
+      const { createClient } = await import('@/lib/supabase/client');
+      const s = createClient();
+      const [msgRes, partRes, reqRes] = await Promise.all([
+        s.from('live_messages').select('*,users(id,full_name,username,avatar_url)').eq('stream_id',stream.id).order('created_at',{ascending:true}).limit(100),
+        s.from('stream_participants').select('*,users(id,full_name,username,avatar_url)').eq('stream_id',stream.id),
+        isHost ? s.from('speaker_requests').select('*,users(id,full_name,username,avatar_url)').eq('stream_id',stream.id).eq('status','pending') : Promise.resolve({data:[]}),
+      ]);
+      if (msgRes.data) setMessages(msgRes.data as any);
+      if (partRes.data) { setParticipants(partRes.data as any); setViewerCount(partRes.data.length); }
+      if (reqRes.data) setSpeakerRequests(reqRes.data as any);
+      const me = partRes.data?.find((p:any) => p.user_id === currentUser?.id);
+      if (me) setMyRole(me.role);
+    } catch {}
   };
 
-  const handleEndStream = async () => {
-    if (!isHost) return;
-    await fetch('/api/streams/' + stream.id + '/end', { method: 'POST' });
-    router.push('/');
+  const handleLeave = async () => { await fetch('/api/streams/'+stream.id+'/leave',{method:'POST'}); router.push('/feed'); };
+  const handleEnd = async () => { await fetch('/api/streams/'+stream.id+'/end',{method:'POST'}); router.push('/feed'); };
+  const raiseHand = async () => { if(handRaised) return; setHandRaised(true); await fetch('/api/streams/'+stream.id+'/speaker-request',{method:'POST'}); };
+  const lowerHand = async () => { setHandRaised(false); };
+
+  const sendMsg = async (e: React.FormEvent) => {
+    e.preventDefault(); if (!chatText.trim() || !currentUser) return;
+    const c = chatText.trim(); setChatText('');
+    try { const {createClient} = await import('@/lib/supabase/client'); await createClient().from('live_messages').insert({stream_id:stream.id,user_id:currentUser.id,content:c,message_type:'text'}); } catch {}
   };
+
+  const approveRequest = async (r: any) => {
+    await fetch('/api/streams/'+stream.id+'/speaker-request',{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({requestId:r.id,status:'approved',userId:r.user_id})});
+    setSpeakerRequests(x => x.filter(q => q.id !== r.id));
+  };
+  const rejectRequest = async (r: any) => {
+    await fetch('/api/streams/'+stream.id+'/speaker-request',{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({requestId:r.id,status:'rejected',userId:r.user_id})});
+    setSpeakerRequests(x => x.filter(q => q.id !== r.id));
+  };
+
+  useEffect(() => {
+    fetch('/api/streams/'+stream.id+'/join', {method:'POST'});
+    loadData();
+    const i = setInterval(loadData, 4000);
+    return () => { clearInterval(i); fetch('/api/streams/'+stream.id+'/leave',{method:'POST'}); };
+  }, []);
+
+  const canPublish = isHost || myRole === 'speaker';
+  const host = participants.find((p:any)=>p.role==='host') || { users: stream.users };
+  const speakers = participants.filter((p:any)=>p.role==='speaker');
 
   return (
-    <div className="flex flex-col h-screen bg-gray-950 text-white">
-      {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 bg-gray-900 border-b border-gray-800">
-        <h1 className="text-lg font-bold truncate">{stream.title}</h1>
-        <div className="flex items-center gap-2">
-          {isConnecting && <span className="text-yellow-400 text-sm">جارٍ الاتصال...</span>}
-          {isConnected && <span className="text-green-400 text-sm">متصل بـ LiveKit ✓</span>}
-          {livekitError && <span className="text-red-400 text-xs">{livekitError}</span>}
-          {isHost && (
-            <button
-              onClick={handleEndStream}
-              className="bg-red-600 hover:bg-red-700 text-white text-sm px-3 py-1 rounded-lg"
-            >
-              إنهاء البث
-            </button>
-          )}
+    <div className='flex flex-col h-full bg-[#07070e] overflow-hidden'>
+      <div className='flex items-center gap-2.5 px-3 py-2.5 bg-black/50 border-b border-white/[0.06] flex-shrink-0'>
+        <button onClick={handleLeave} className='p-1.5 rounded-xl bg-white/[0.06] hover:bg-white/10'><ArrowRight size={18}/></button>
+        <div className='flex-1 min-w-0'>
+          <div className='flex items-center gap-2'><span className='flex items-center gap-1 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md'><span className='w-1.5 h-1.5 bg-white rounded-full animate-pulse-live'/>ÙØ¨Ø§Ø´Ø±</span><span className='text-sm font-bold truncate'>{stream.title}</span></div>
+          <div className='text-[10px] text-[#666]'>ð {formatNumber(viewerCount)} ÙØ´Ø§ÙØ¯ Â· {stream.category}</div>
         </div>
+        {isHost && <button onClick={handleEnd} className='text-xs font-bold px-3 py-1.5 rounded-xl bg-red-500/15 text-red-400 border border-red-500/30'>Ø¥ÙÙØ§Ø¡ Ø§ÙØ¨Ø«</button>}
       </div>
-
-      <div className="flex flex-1 overflow-hidden">
-        {/* Video Area */}
-        <div className="flex-1 flex flex-col items-center justify-center bg-gray-950 relative">
-          {livekitToken ? (
-            <div className="w-full h-full flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-24 h-24 bg-purple-600 rounded-full flex items-center justify-center text-4xl font-bold mx-auto mb-4">
-                  {currentUser?.full_name?.[0] || 'U'}
-                </div>
-                <p className="text-green-400 text-sm">متصل بـ LiveKit WebRTC</p>
-                <p className="text-gray-400 text-xs mt-1">Room: {stream.id.substring(0, 8)}</p>
-              </div>
-            </div>
-          ) : (
-            <div className="text-center text-gray-500">
-              <div className="text-5xl mb-4">📡</div>
-              {isConnecting ? (
-                <p>جارٍ الاتصال بـ LiveKit...</p>
-              ) : (
-                <p>انتظر ربط LiveKit للبث الحقيقي</p>
-              )}
-            </div>
-          )}
-        </div>
-
-        {/* Chat Sidebar */}
-        <div className="w-72 flex flex-col bg-gray-900 border-l border-gray-800">
-          {/* Chat Messages */}
-          <div className="flex-1 overflow-y-auto p-3 space-y-2">
-            {messages.map((msg, i) => (
-              <div key={i} className="flex items-start gap-2">
-                <div className="w-7 h-7 bg-purple-600 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">
-                  {msg.user_name?.[0] || 'U'}
-                </div>
-                <div>
-                  <p className="text-xs text-purple-400 font-medium">{msg.user_name}</p>
-                  <p className="text-sm text-gray-200">{msg.content}</p>
-                </div>
-              </div>
-            ))}
-            <div ref={chatEndRef} />
+      <div className='flex flex-1 overflow-hidden'>
+        <div className='flex-1 flex flex-col overflow-hidden'>
+          <div className='flex-1 bg-[#0d0d1a] flex items-center justify-center text-[#333] text-sm'>
+            <div className='text-center'><div className='text-5xl mb-2'>ð¡</div><div>ÙÙØ·ÙØ© Ø§ÙÙØ­ØªÙÙ Â· Ø§Ø±Ø¨Ø· LiveKit ÙÙØ¨Ø« Ø§ÙØ­ÙÙÙÙ</div></div>
           </div>
-
-          {/* Chat Input */}
-          <form onSubmit={handleSendMessage} className="p-3 border-t border-gray-800">
-            <div className="flex gap-2">
-              <input
-                type="text"
-                value={message}
-                onChange={e => setMessage(e.target.value)}
-                placeholder="اكتب رسالة..."
-                className="flex-1 bg-gray-800 text-white text-sm px-3 py-2 rounded-lg outline-none"
-              />
-              <button type="submit" className="bg-purple-600 hover:bg-purple-700 text-white text-sm px-3 py-2 rounded-lg">
-                إرسال
-              </button>
+          <div className='flex gap-2 p-2 bg-[#09091a] border-t border-white/[0.06] overflow-x-auto flex-shrink-0' style={{height:148}}>
+            <div className='w-32 h-full bg-[#111] rounded-xl flex items-center justify-center border-2 border-purple-500 relative flex-shrink-0'>
+              <Avatar user={host?.users || stream.users} size='lg'/><div className='absolute bottom-1 inset-x-1 bg-black/70 rounded text-center text-[9px] px-1 truncate'>ð ÙØ¶ÙÙ</div>
             </div>
-          </form>
+            {speakers.map((sp:any) => <div key={sp.id} className='w-32 h-full bg-[#111] rounded-xl flex items-center justify-center border-2 border-yellow-500 relative flex-shrink-0'><Avatar user={sp.users} size='lg'/><div className='absolute bottom-1 inset-x-1 bg-black/70 rounded text-center text-[9px] px-1 truncate'>ð¤ {sp.users?.full_name}</div></div>)}
+          </div>
+          <div className='flex gap-2 p-2 justify-center flex-wrap bg-black/60 border-t border-white/[0.06] flex-shrink-0'>
+            {canPublish && <><button onClick={()=>setIsMic(m=>!m)} className={'flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-xl text-[10px] border '+(isMic?'border-purple-500 bg-purple-500/20 text-purple-400':'border-white/10 bg-white/[0.06] text-[#ccc]')}><Mic size={15}/>ØµÙØª</button><button onClick={()=>setIsCam(c=>!c)} className={'flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-xl text-[10px] border '+(isCam?'border-purple-500 bg-purple-500/20 text-purple-400':'border-white/10 bg-white/[0.06] text-[#ccc]')}><Video size={15}/>ÙØ§ÙÙØ±Ø§</button></>}
+            {!isHost && myRole!=='speaker' && <button onClick={handRaised?lowerHand:raiseHand} className={'flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-xl text-[10px] border '+(handRaised?'border-yellow-500 bg-yellow-500/20 text-yellow-400':'border-white/10 bg-white/[0.06] text-[#ccc]')}><Hand size={15}/>{handRaised?'Ø¥ÙØ²Ø§Ù Ø§ÙÙØ¯':'Ø±ÙØ¹ Ø§ÙÙØ¯'}</button>}
+          </div>
         </div>
-      </div>
-
-      {/* Bottom Controls */}
-      <div className="flex items-center justify-center gap-4 py-4 bg-gray-900 border-t border-gray-800">
-        <button
-          onClick={() => !isHost && raiseHand()}
-          className="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors"
-        >
-          <span className="text-2xl">✋</span>
-          <span className="text-xs">رفع يد</span>
-        </button>
-        <button className="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors">
-          <span className="text-2xl">🎤</span>
-          <span className="text-xs">صوت</span>
-        </button>
-        <button className="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors">
-          <span className="text-2xl">📷</span>
-          <span className="text-xs">كاميرا</span>
-        </button>
+        <div className='w-72 flex flex-col border-r border-white/[0.06] bg-black/40 overflow-hidden flex-shrink-0'>
+          <div className='flex border-b border-white/[0.06] flex-shrink-0'>
+            {([['chat','ð¬'],['participants','ð¥'],...(isHost?[['requests','â']]:[])] as [string,string][]).map(([t,ic])=>(<button key={t} onClick={()=>setTab(t as any)} className={'flex-1 py-2 text-xs font-semibold border-b-2 transition-all '+(tab===t?'border-purple-500 text-purple-400':'border-transparent text-[#666]')}>{ic} {t==='requests'&&speakerRequests.length>0&&<span className='inline-flex items-center justify-center w-4 h-4 bg-red-500 rounded-full text-[9px] text-white'>{speakerRequests.length}</span>}</button>))}
+          </div>
+          {tab==='chat' && <>
+            <div className='flex-1 overflow-y-auto p-2.5 flex flex-col gap-2'>
+              {messages.map((m,i)=>(<div key={i} className='flex gap-2 items-start'><Avatar user={(m as any).users} size='sm'/><div className='bg-white/[0.05] rounded-xl rounded-tl-sm px-2.5 py-1.5 max-w-[90%]'><div className='text-[10px] text-purple-400 font-bold mb-0.5'>{(m as any).users?.full_name||'ÙØ¬ÙÙÙ'}</div><div className='text-xs leading-relaxed'>{m.content}</div></div></div>))}
+            </div>
+            <form onSubmit={sendMsg} className='flex gap-2 p-2 border-t border-white/[0.06] flex-shrink-0'>
+              <input value={chatText} onChange={e=>setChatText(e.target.value)} placeholder='Ø§ÙØªØ¨ Ø±Ø³Ø§ÙØ©...' className='flex-1 bg-white/[0.06] border border-white/10 rounded-xl px-3 py-1.5 text-white text-xs outline-none focus:border-purple-500'/>
+              <button type='submit' className='gradient-purple text-white px-3 py-1.5 rounded-xl text-xs font-bold disabled:opacity-50' disabled={!chatText.trim()}>Ø¥Ø±Ø³Ø§Ù</button>
+            </form>
+          </>}
+          {tab==='participants' && <div className='flex-1 overflow-y-auto p-2'>{participants.map((p:any)=>(<div key={p.id} className='flex items-center gap-2 p-2 border-b border-white/[0.05]'><Avatar user={p.users} size='sm'/><div className='flex-1 min-w-0'><div className='text-xs truncate'>{p.users?.full_name}</div><div className='text-[10px] text-[#666]'>{p.role==='host'?'ð ÙØ¶ÙÙ':p.role==='speaker'?'ð¤ ÙØªØ­Ø¯Ø«':'ð ÙØ´Ø§ÙØ¯'}</div></div></div>))}</div>}
+          {tab==='requests' && <div className='flex-1 overflow-y-auto p-2'>{speakerRequests.map((r:any)=>(<div key={r.id} className='flex items-center gap-2 p-2 mb-1.5 bg-yellow-500/10 border border-yellow-500/20 rounded-xl'><Avatar user={r.users} size='sm'/><span className='flex-1 text-xs truncate'>{r.users?.full_name}</span><button onClick={()=>approveRequest(r)} className='text-[10px] font-bold px-2 py-1 rounded-lg bg-green-500/15 text-green-400 border border-green-500/30'>ÙØ¨ÙÙ</button><button onClick={()=>rejectRequest(r)} className='text-[10px] font-bold px-2 py-1 rounded-lg bg-red-500/15 text-red-400 border border-red-500/30 mr-1'>Ø±ÙØ¶</button></div>))}</div>}
+        </div>
       </div>
     </div>
   );
