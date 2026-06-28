@@ -1,1 +1,18 @@
-{"data":"ZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gRmVlZFNrZWxldG9uKCkgew0KICByZXR1cm4gKA0KICAgIDxkaXYgY2xhc3NOYW1lPSJ3LWZ1bGwgaC1zY3JlZW4gYmctZ3JheS05MDAgYW5pbWF0ZS1wdWxzZSBmbGV4IGZsZXgtY29sIGp1c3RpZnktZW5kIHAtNiI+DQogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1lbmQgZ2FwLTMiPg0KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleC0xIHNwYWNlLXktMyI+DQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImgtNSBiZy1ncmF5LTcwMCByb3VuZGVkLWZ1bGwgdy0zMiIgLz4NCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaC00IGJnLWdyYXktNzAwIHJvdW5kZWQtZnVsbCB3LTQ4IiAvPg0KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJoLTQgYmctZ3JheS03MDAgcm91bmRlZC1mdWxsIHctMjQiIC8+DQogICAgICAgIDwvZGl2Pg0KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBnYXAtNCI+DQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InctMTIgaC0xMiBiZy1ncmF5LTcwMCByb3VuZGVkLWZ1bGwiIC8+DQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InctMTIgaC0xMiBiZy1ncmF5LTcwMCByb3VuZGVkLWZ1bGwiIC8+DQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InctMTIgaC0xMiBiZy1ncmF5LTcwMCByb3VuZGVkLWZ1bGwiIC8+DQogICAgICAgIDwvZGl2Pg0KICAgICAgPC9kaXY+DQogICAgPC9kaXY+DQogICk7DQp9"}
+export default function FeedSkeleton() {
+  return (
+    <div className="w-full h-screen bg-gray-900 animate-pulse flex flex-col justify-end p-6">
+      <div className="flex items-end gap-3">
+        <div className="flex-1 space-y-3">
+          <div className="h-5 bg-gray-700 rounded-full w-32" />
+          <div className="h-4 bg-gray-700 rounded-full w-48" />
+          <div className="h-4 bg-gray-700 rounded-full w-24" />
+        </div>
+        <div className="flex flex-col gap-4">
+          <div className="w-12 h-12 bg-gray-700 rounded-full" />
+          <div className="w-12 h-12 bg-gray-700 rounded-full" />
+          <div className="w-12 h-12 bg-gray-700 rounded-full" />
+        </div>
+      </div>
+    </div>
+  );
+}
