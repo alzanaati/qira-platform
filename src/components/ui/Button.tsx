@@ -1,1 +1,13 @@
-{"data":"aW1wb3J0IHsgQnV0dG9uSFRNTEF0dHJpYnV0ZXMsIFJlYWN0Tm9kZSB9IGZyb20gJ3JlYWN0JzsNCmltcG9ydCB7IGNuIH0gZnJvbSAnQC9saWIvdXRpbHMnOw0KaW50ZXJmYWNlIEJ1dHRvblByb3BzIGV4dGVuZHMgQnV0dG9uSFRNTEF0dHJpYnV0ZXM8SFRNTEJ1dHRvbkVsZW1lbnQ+IHsNCiAgdmFyaWFudD86ICdwcmltYXJ5JyB8ICdzZWNvbmRhcnknIHwgJ2RhbmdlcicgfCAnZ2hvc3QnOw0KICBzaXplPzogJ3NtJyB8ICdtZCcgfCAnbGcnOw0KICBjaGlsZHJlbjogUmVhY3ROb2RlOw0KfQ0KZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQnV0dG9uKHsgdmFyaWFudCA9ICdwcmltYXJ5Jywgc2l6ZSA9ICdtZCcsIGNsYXNzTmFtZSwgY2hpbGRyZW4sIC4uLnByb3BzIH06IEJ1dHRvblByb3BzKSB7DQogIGNvbnN0IGJhc2UgPSAnaW5saW5lLWZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGZvbnQtbWVkaXVtIHJvdW5kZWQteGwgdHJhbnNpdGlvbi1hbGwgZGlzYWJsZWQ6b3BhY2l0eS01MCBkaXNhYmxlZDpjdXJzb3Itbm90LWFsbG93ZWQgYWN0aXZlOnNjYWxlLTk1JzsNCiAgY29uc3QgdmFyaWFudHMgPSB7IHByaW1hcnk6ICdiZy1ibHVlLTYwMCBob3ZlcjpiZy1ibHVlLTcwMCB0ZXh0LXdoaXRlJywgc2Vjb25kYXJ5OiAnYmctZ3JheS03MDAgaG92ZXI6YmctZ3JheS02MDAgdGV4dC13aGl0ZScsIGRhbmdlcjogJ2JnLXJlZC02MDAgaG92ZXI6YmctcmVkLTcwMCB0ZXh0LXdoaXRlJywgZ2hvc3Q6ICdiZy10cmFuc3BhcmVudCBob3ZlcjpiZy1ncmF5LTcwMCB0ZXh0LWdyYXktMzAwJyB9Ow0KICBjb25zdCBzaXplcyA9IHsgc206ICd0ZXh0LXhzIHB4LTMgcHktMS41IGdhcC0xLjUnLCBtZDogJ3RleHQtc20gcHgtNCBweS0yIGdhcC0yJywgbGc6ICd0ZXh0LWJhc2UgcHgtNiBweS0zIGdhcC0yLjUnIH07DQogIHJldHVybiA8YnV0dG9uIGNsYXNzTmFtZT17Y24oYmFzZSwgdmFyaWFudHNbdmFyaWFudF0sIHNpemVzW3NpemVdLCBjbGFzc05hbWUpfSB7Li4ucHJvcHN9PntjaGlsZHJlbn08L2J1dHRvbj47DQp9"}
+import { ButtonHTMLAttributes, ReactNode } from 'react';
+import { cn } from '@/lib/utils';
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: 'primary' | 'secondary' | 'danger' | 'ghost';
+  size?: 'sm' | 'md' | 'lg';
+  children: ReactNode;
+}
+export default function Button({ variant = 'primary', size = 'md', className, children, ...props }: ButtonProps) {
+  const base = 'inline-flex items-center justify-center font-medium rounded-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed active:scale-95';
+  const variants = { primary: 'bg-blue-600 hover:bg-blue-700 text-white', secondary: 'bg-gray-700 hover:bg-gray-600 text-white', danger: 'bg-red-600 hover:bg-red-700 text-white', ghost: 'bg-transparent hover:bg-gray-700 text-gray-300' };
+  const sizes = { sm: 'text-xs px-3 py-1.5 gap-1.5', md: 'text-sm px-4 py-2 gap-2', lg: 'text-base px-6 py-3 gap-2.5' };
+  return <button className={cn(base, variants[variant], sizes[size], className)} {...props}>{children}</button>;
+}
