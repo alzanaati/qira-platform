@@ -1,1 +1,10 @@
-{"data":"ewogICJleHRlbmRzIjogWwogICAgIm5leHQvY29yZS13ZWItdml0YWxzIgogIF0sCiAgInJ1bGVzIjogewogICAgInJlYWN0L25vLXVuZXNjYXBlZC1lbnRpdGllcyI6ICJvZmYiLAogICAgInJlYWN0LWhvb2tzL2V4aGF1c3RpdmUtZGVwcyI6ICJvZmYiLAogICAgIm5vLXVudXNlZC12YXJzIjogIm9mZiIKICB9Cn0="}
+{
+  "extends": [
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "no-unused-vars": "off"
+  }
+}
