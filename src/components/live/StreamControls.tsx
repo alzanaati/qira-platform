@@ -23,18 +23,18 @@ export default function StreamControls({
     <div className="flex items-center justify-center gap-3 p-4 bg-gray-900/95 backdrop-blur">
       <button onClick={onToggleMic} className={`${btn} ${micEnabled ? active : inactive}`}>
         {micEnabled ? <Mic size={20} /> : <MicOff size={20} />}
-        <span className="text-xs">{micEnabled ? 'ÙÙÙØ±ÙÙÙÙ' : 'ØµØ§ÙØª'}</span>
+        <span className="text-xs">{micEnabled ? 'ميكروفون' : 'صامت'}</span>
       </button>
       {isHost && (
         <button onClick={onToggleCamera} className={`${btn} ${cameraEnabled ? active : inactive}`}>
           {cameraEnabled ? <Video size={20} /> : <VideoOff size={20} />}
-          <span className="text-xs">{cameraEnabled ? 'ÙØ§ÙÙØ±Ø§' : 'Ø¥ÙÙØ§Ù'}</span>
+          <span className="text-xs">{cameraEnabled ? 'كاميرا' : 'إيقاف'}</span>
         </button>
       )}
       {isHost && (
         <button onClick={onScreenShare} className={`${btn} ${screenSharing ? 'bg-blue-700 hover:bg-blue-800 text-white' : active}`}>
           <MonitorUp size={20} />
-          <span className="text-xs">{screenSharing ? 'Ø¥ÙÙØ§Ù Ø§ÙÙØ´Ø§Ø±ÙØ©' : 'ÙØ´Ø§Ø±ÙØ© Ø§ÙØ´Ø§Ø´Ø©'}</span>
+          <span className="text-xs">{screenSharing ? 'إيقاف المشاركة' : 'مشاركة الشاشة'}</span>
         </button>
       )}
       {isHost && (
@@ -42,14 +42,14 @@ export default function StreamControls({
           {!confirmEnd ? (
             <button onClick={() => setConfirmEnd(true)} className={`${btn} bg-red-700 hover:bg-red-800 text-white`}>
               <PhoneOff size={20} />
-              <span className="text-xs">Ø¥ÙÙØ§Ø¡</span>
+              <span className="text-xs">إنهاء</span>
             </button>
           ) : (
             <div className="flex flex-col gap-2 bg-gray-800 border border-red-700 rounded-2xl p-3">
-              <span className="text-white text-xs text-center">Ø¥ÙÙØ§Ø¡ Ø§ÙØ¨Ø«Ø</span>
+              <span className="text-white text-xs text-center">إنهاء البث؟</span>
               <div className="flex gap-2">
-                <button onClick={onEndStream} className="px-3 py-1 bg-red-600 hover:bg-red-700 text-white rounded-xl text-xs">ÙØ¹Ù</button>
-                <button onClick={() => setConfirmEnd(false)} className="px-3 py-1 bg-gray-600 hover:bg-gray-700 text-white rounded-xl text-xs">ÙØ§</button>
+                <button onClick={onEndStream} className="px-3 py-1 bg-red-600 hover:bg-red-700 text-white rounded-xl text-xs">نعم</button>
+                <button onClick={() => setConfirmEnd(false)} className="px-3 py-1 bg-gray-600 hover:bg-gray-700 text-white rounded-xl text-xs">لا</button>
               </div>
             </div>
           )}
