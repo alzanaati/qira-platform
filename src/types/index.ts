@@ -54,8 +54,8 @@ export interface Clap {
   created_at: string; sender?: User; receiver?: User; stream?: LiveStream;
 }
 export const CLAP_PRICES: Record<ClapType, number> = { bronze:10, silver:20, gold:50, diamond:100 };
-export const CLAP_EMOJIS: Record<ClapType, string> = { bronze:'ð¥', silver:'ð¥', gold:'ð¥', diamond:'ð' };
+export const CLAP_EMOJIS: Record<ClapType, string> = { bronze:'🥉', silver:'🥈', gold:'🥇', diamond:'💎' };
 export const STREAM_CATEGORIES: Record<StreamCategory, string> = {
-  educational:'ð ØªØ¹ÙÙÙÙ', training:'ð¯ ØªØ¯Ø±ÙØ¨Ù', discussion:'ð¬ ÙÙØ§Ø´Ù',
-  social:'ð Ø§Ø¬ØªÙØ§Ø¹Ù', business:'ð¼ Ø£Ø¹ÙØ§Ù', entertainment:'ð­ ØªØ±ÙÙÙÙ',
+  educational:'📚 تعليمي', training:'🎯 تدريبي', discussion:'💬 نقاشي',
+  social:'🌐 اجتماعي', business:'💼 أعمال', entertainment:'🎭 ترفيهي',
 };
