@@ -59,7 +59,7 @@ export default function ContentViewer({ streamId, isHost, currentFile }: Content
   const chgZoom = async (d: number) => { const z = Math.max(0.5, Math.min(3.0, zoom + d)); setZoom(z); await sync(currentPage, z); };
   if (!currentFile) return (
     <div className="flex items-center justify-center h-full bg-gray-900 text-gray-400">
-      <div className="text-center"><FileText size={48} className="mx-auto mb-3 opacity-50" /><p className="text-sm">ÙØ§ ÙÙØ¬Ø¯ ÙØ­ØªÙÙ</p>{isHost && <p className="text-xs mt-1 opacity-60">Ø§Ø±ÙØ¹ ÙÙÙØ§Ù</p>}</div>
+      <div className="text-center"><FileText size={48} className="mx-auto mb-3 opacity-50" /><p className="text-sm">لا يوجد محتوى</p>{isHost && <p className="text-xs mt-1 opacity-60">ارفع ملفاً</p>}</div>
     </div>
   );
   return (
@@ -82,7 +82,7 @@ export default function ContentViewer({ streamId, isHost, currentFile }: Content
       <div className="flex-1 overflow-auto flex items-start justify-center p-2">
         {loading ? <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 m-auto" /> : <canvas ref={canvasRef} className="shadow-2xl max-w-full" />}
       </div>
-      {!isHost && <div className="p-2 bg-gray-800 text-center text-gray-400 text-xs">{currentFile.file_name} â ØµÙØ­Ø© {currentPage}/{totalPages}</div>}
+      {!isHost && <div className="p-2 bg-gray-800 text-center text-gray-400 text-xs">{currentFile.file_name} — صفحة {currentPage}/{totalPages}</div>}
     </div>
   );
 }
