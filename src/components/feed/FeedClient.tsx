@@ -22,11 +22,11 @@ export default function FeedClient({ initialStreams, currentUser }: Props) {
 
   if (streams.length === 0) return (
     <div className="flex flex-col items-center justify-center h-full gap-4 text-[#444]">
-      <span className="text-6xl">ð¡</span>
-      <p className="font-bold text-white text-lg">ÙØ§ ØªÙØ¬Ø¯ Ø¨Ø«ÙØ« ÙØ¨Ø§Ø´Ø±Ø© Ø§ÙØ¢Ù</p>
-      <p className="text-sm">Ø§Ø¨Ø¯Ø£ Ø¨Ø«Ø§Ù Ø£Ù ØªØ­ÙÙ ÙØ§Ø­ÙØ§Ù</p>
+      <span className="text-6xl">📡</span>
+      <p className="font-bold text-white text-lg">لا توجد بثوث مباشرة الآن</p>
+      <p className="text-sm">ابدأ بثاً أو تحقق لاحقاً</p>
       <button onClick={()=>router.push('/live/create')} className="gradient-purple text-white font-bold px-6 py-3 rounded-2xl mt-2">
-        Ø§Ø¨Ø¯Ø£ Ø¨Ø«Ø§Ù Ø§ÙØ¢Ù
+        ابدأ بثاً الآن
       </button>
     </div>
   );
