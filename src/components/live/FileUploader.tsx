@@ -17,13 +17,13 @@ export default function FileUploader({ streamId, onFileUploaded }: FileUploaderP
   const handleUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
-    if (file.size > 50 * 1024 * 1024) { setError('Ø§ÙØ­Ø¯ Ø§ÙØ£ÙØµÙ 50MB'); return; }
+    if (file.size > 50 * 1024 * 1024) { setError('الحد الأقصى 50MB'); return; }
     const allowed = ['application/pdf','application/vnd.ms-powerpoint','application/vnd.openxmlformats-officedocument.presentationml.presentation'];
-    if (!allowed.includes(file.type)) { setError('PDF Ø£Ù PPT ÙÙØ·'); return; }
+    if (!allowed.includes(file.type)) { setError('PDF أو PPT فقط'); return; }
     setError(''); setUploading(true); setProgress(20);
     try {
       const { data: { user } } = await supabase.auth.getUser();
-      if (!user) throw new Error('ØºÙØ± ÙØ³Ø¬ÙÙ');
+      if (!user) throw new Error('غير مسجّل');
       const ext = file.name.split('.').pop();
       const filePath = `${streamId}/${Date.now()}.${ext}`;
       setProgress(40);
@@ -40,7 +40,7 @@ export default function FileUploader({ streamId, onFileUploaded }: FileUploaderP
       const newFile = { id: dbFile.id, file_name: file.name, file_url: publicUrl, file_type: fileType };
       setFiles(prev => [...prev, newFile]);
       onFileUploaded(newFile);
-    } catch (err: any) { setError(err.message || 'ÙØ´Ù Ø§ÙØ±ÙØ¹'); }
+    } catch (err: any) { setError(err.message || 'فشل الرفع'); }
     finally { setUploading(false); setProgress(0); if (ref.current) ref.current.value = ''; }
   };
   return (
@@ -48,7 +48,7 @@ export default function FileUploader({ streamId, onFileUploaded }: FileUploaderP
       <input ref={ref} type="file" accept=".pdf,.ppt,.pptx" className="hidden" onChange={handleUpload} />
       <button onClick={() => ref.current?.click()} disabled={uploading}
         className="w-full flex items-center justify-center gap-2 py-2 px-4 bg-blue-600 hover:bg-blue-700 disabled:opacity-50 text-white rounded-lg text-sm transition-colors">
-        <Upload size={16} />{uploading ? `Ø¬Ø§Ø±Ù Ø§ÙØ±ÙØ¹ ${progress}%` : 'Ø±ÙØ¹ PDF/PPT'}
+        <Upload size={16} />{uploading ? `جارٍ الرفع ${progress}%` : 'رفع PDF/PPT'}
       </button>
       {uploading && <div className="bg-gray-700 rounded-full h-1.5"><div className="bg-blue-500 h-1.5 rounded-full transition-all" style={{ width: `${progress}%` }} /></div>}
       {error && <p className="text-red-400 text-xs">{error}</p>}
