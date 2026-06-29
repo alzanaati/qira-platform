@@ -4,11 +4,11 @@ import { Home, Search, Plus, Wallet, User } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const items = [
-  { path:'/feed', icon:Home, label:'Ø§ÙØ±Ø¦ÙØ³ÙØ©' },
-  { path:'/explore', icon:Search, label:'Ø§Ø³ØªÙØ´Ù' },
-  { path:'/live/create', icon:Plus, label:'Ø¨Ø«', isCreate:true },
-  { path:'/wallet', icon:Wallet, label:'Ø§ÙÙØ­ÙØ¸Ø©' },
-  { path:'/profile', icon:User, label:'Ø­Ø³Ø§Ø¨Ù' },
+  { path:'/feed', icon:Home, label:'الرئيسية' },
+  { path:'/explore', icon:Search, label:'استكشف' },
+  { path:'/live/create', icon:Plus, label:'بث', isCreate:true },
+  { path:'/wallet', icon:Wallet, label:'المحفظة' },
+  { path:'/profile', icon:User, label:'حسابي' },
 ];
 
 export default function BottomNav() {
