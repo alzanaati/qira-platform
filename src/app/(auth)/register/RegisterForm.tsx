@@ -76,12 +76,12 @@ export default function RegisterForm() {
           return;
         }
 
-        console.log('[RegisterForm] Registration complete â redirecting to /feed');
+        console.log('[RegisterForm] Registration complete — redirecting to /feed');
         router.push('/feed');
         router.refresh();
       } else {
         console.warn('[RegisterForm] signUp returned no user and no error. data:', data);
-        setError('ØªØ­ÙÙ ÙÙ Ø¨Ø±ÙØ¯Ù Ø§ÙØ¥ÙÙØªØ±ÙÙÙ ÙØªØ£ÙÙØ¯ Ø§ÙØªØ³Ø¬ÙÙ');
+        setError('تحقق من بريدك الإلكتروني لتأكيد التسجيل');
         setLoading(false);
       }
     } catch (unexpectedError: unknown) {
@@ -96,8 +96,8 @@ export default function RegisterForm() {
 
   return (
     <div className="w-full max-w-md bg-white/[0.04] border border-white/[0.08] rounded-3xl p-8">
-      <h1 className="text-3xl font-black text-center text-gradient mb-1">Ø§ÙØ±Ø£</h1>
-      <p className="text-center text-[#666] text-sm mb-6">Ø¥ÙØ´Ø§Ø¡ Ø­Ø³Ø§Ø¨ Ø¬Ø¯ÙØ¯</p>
+      <h1 className="text-3xl font-black text-center text-gradient mb-1">اقرأ</h1>
+      <p className="text-center text-[#666] text-sm mb-6">إنشاء حساب جديد</p>
 
       {error && (
         <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-3 mb-4 text-red-400 text-sm font-mono whitespace-pre-wrap break-all">
@@ -108,7 +108,7 @@ export default function RegisterForm() {
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
           type="text"
-          placeholder="Ø§ÙØ§Ø³Ù Ø§ÙÙØ§ÙÙ"
+          placeholder="الاسم الكامل"
           value={form.full_name}
           onChange={e => set('full_name', e.target.value)}
           required
@@ -116,7 +116,7 @@ export default function RegisterForm() {
         />
         <input
           type="text"
-          placeholder="Ø§Ø³Ù Ø§ÙÙØ³ØªØ®Ø¯Ù"
+          placeholder="اسم المستخدم"
           value={form.username}
           onChange={e => set('username', e.target.value)}
           required
@@ -124,7 +124,7 @@ export default function RegisterForm() {
         />
         <input
           type="email"
-          placeholder="Ø§ÙØ¨Ø±ÙØ¯ Ø§ÙØ¥ÙÙØªØ±ÙÙÙ"
+          placeholder="البريد الإلكتروني"
           value={form.email}
           onChange={e => set('email', e.target.value)}
           required
@@ -132,7 +132,7 @@ export default function RegisterForm() {
         />
         <input
           type="password"
-          placeholder="ÙÙÙØ© Ø§ÙÙØ±ÙØ±"
+          placeholder="كلمة المرور"
           value={form.password}
           onChange={e => set('password', e.target.value)}
           required
@@ -144,13 +144,13 @@ export default function RegisterForm() {
           disabled={loading}
           className="w-full bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-xl py-3 font-bold text-sm disabled:opacity-50 hover:opacity-90 transition"
         >
-          {loading ? 'Ø¬Ø§Ø±Ù Ø§ÙØªØ³Ø¬ÙÙ...' : 'Ø¥ÙØ´Ø§Ø¡ Ø­Ø³Ø§Ø¨'}
+          {loading ? 'جارٍ التسجيل...' : 'إنشاء حساب'}
         </button>
       </form>
 
       <p className="text-center text-[#666] text-sm mt-4">
-        ÙØ¯ÙÙ Ø­Ø³Ø§Ø¨Ø{' '}
-        <Link href="/login" className="text-purple-400 hover:text-purple-300">ØªØ³Ø¬ÙÙ Ø§ÙØ¯Ø®ÙÙ</Link>
+        لديك حساب؟{' '}
+        <Link href="/login" className="text-purple-400 hover:text-purple-300">تسجيل الدخول</Link>
       </p>
     </div>
   );
