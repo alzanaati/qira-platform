@@ -17,7 +17,7 @@ export default function ParticipantBox({ participant, isHost, label }: Participa
       <div className="absolute inset-0 flex items-center justify-center">
         {participant.videoTrackPublications.size === 0 && (
           <div className="w-16 h-16 rounded-full bg-gray-700 flex items-center justify-center text-2xl text-white">
-            {participant.name?.[0]?.toUpperCase() || 'Ø'}
+            {participant.name?.[0]?.toUpperCase() || '؟'}
           </div>
         )}
       </div>
@@ -25,9 +25,9 @@ export default function ParticipantBox({ participant, isHost, label }: Participa
         <div className="flex items-center gap-1 bg-black/60 rounded-full px-2 py-1">
           {isMuted && <MicOff size={10} className="text-red-400" />}
           <span className="text-white text-xs truncate max-w-[6rem]">
-            {label || participant.name || 'ÙØ´Ø§Ø±Ù'}
+            {label || participant.name || 'مشارك'}
           </span>
-          {isHost && <span className="text-yellow-400 text-xs ml-1">ÙØ¶ÙÙ</span>}
+          {isHost && <span className="text-yellow-400 text-xs ml-1">مضيف</span>}
         </div>
         {isSpeaking && <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />}
       </div>
