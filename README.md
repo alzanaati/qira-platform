@@ -1,3 +1,3 @@
 # qira-platform
 
-Production deployment - all 5 fixes applied.
+All encoding fixed - Arabic text correct in all 76 source files.
