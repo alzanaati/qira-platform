@@ -12,8 +12,8 @@ export default function ProfileStreams({ userId }: ProfileStreamsProps) {
     supabase.from('live_streams').select('*').eq('user_id', userId).order('created_at', { ascending: false }).limit(20)
       .then(({ data }) => { if (data) setStreams(data as LiveStream[]); setLoading(false); });
   }, [userId]);
-  if (loading) return <div className="p-4 text-center text-gray-400 animate-pulse">Ø¬Ø§Ø±Ù Ø§ÙØªØ­ÙÙÙ...</div>;
-  if (streams.length === 0) return <div className="p-8 text-center text-gray-400 text-sm">ÙØ§ ØªÙØ¬Ø¯ Ø¨Ø«ÙØ« Ø³Ø§Ø¨ÙØ©</div>;
+  if (loading) return <div className="p-4 text-center text-gray-400 animate-pulse">جارٍ التحميل...</div>;
+  if (streams.length === 0) return <div className="p-8 text-center text-gray-400 text-sm">لا توجد بثوث سابقة</div>;
   return (
     <div className="divide-y divide-gray-800">
       {streams.map(s => (
@@ -25,9 +25,9 @@ export default function ProfileStreams({ userId }: ProfileStreamsProps) {
             <p className="text-white text-sm font-medium truncate">{s.title}</p>
             <div className="flex items-center gap-2 mt-1">
               {s.status === 'live'
-                ? <span className="text-xs bg-red-600 text-white px-2 py-0.5 rounded-full animate-pulse">ÙØ¨Ø§Ø´Ø±</span>
+                ? <span className="text-xs bg-red-600 text-white px-2 py-0.5 rounded-full animate-pulse">مباشر</span>
                 : <span className="text-gray-500 text-xs flex items-center gap-1"><Clock size={10} />{new Date(s.created_at).toLocaleDateString('ar-SA')}</span>}
-              <span className="text-gray-500 text-xs">{s.viewer_count || 0} ÙØ´Ø§ÙØ¯</span>
+              <span className="text-gray-500 text-xs">{s.viewer_count || 0} مشاهد</span>
             </div>
           </div>
         </div>
