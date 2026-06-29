@@ -2,14 +2,14 @@
 import { useEffect, useState } from 'react';
 interface FloatItem { id: string; emoji: string; x: number; }
 interface ClapFloatProps { clapType?: string; trigger: number; }
-const CLAP_EMOJIS: Record<string, string> = { bronze: 'ð¥', silver: 'ð¥', gold: 'ð¥', diamond: 'ð' };
+const CLAP_EMOJIS: Record<string, string> = { bronze: '🥉', silver: '🥈', gold: '🥇', diamond: '💎' };
 export default function ClapFloat({ clapType = 'bronze', trigger }: ClapFloatProps) {
   const [items, setItems] = useState<FloatItem[]>([]);
   useEffect(() => {
     if (trigger === 0) return;
     const id = Date.now().toString();
     const x = 20 + Math.random() * 60;
-    setItems(prev => [...prev, { id, emoji: CLAP_EMOJIS[clapType] || 'ð', x }]);
+    setItems(prev => [...prev, { id, emoji: CLAP_EMOJIS[clapType] || '👏', x }]);
     const t = setTimeout(() => setItems(prev => prev.filter(i => i.id !== id)), 2500);
     return () => clearTimeout(t);
   }, [trigger]);
