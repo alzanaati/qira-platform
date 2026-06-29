@@ -15,7 +15,8 @@ import {
   useRoomContext,
 } from '@livekit/components-react';
 import '@livekit/components-styles';
-import { Track, RoomEvent } from 'livekit-client';
+import { Track, RoomEvent, type TrackReference } from 'livekit-client';
+import { isTrackReference } from '@livekit/components-core';
 
 // ---- inner room UI (rendered inside <LiveKitRoom>) ----
 function RoomInner({ stream, currentUser, isHost, canPublish }: { stream: LiveStream; currentUser: User | null; isHost: boolean; canPublish: boolean }) {
@@ -37,7 +38,8 @@ function RoomInner({ stream, currentUser, isHost, canPublish }: { stream: LiveSt
   };
 
   // All camera tracks from all participants
-  const cameraTracks = useTracks([{ source: Track.Source.Camera, withPlaceholder: false }]);
+  const allCameraTracks = useTracks([{ source: Track.Source.Camera, withPlaceholder: false }]);
+const cameraTracks = allCameraTracks.filter(isTrackReference) as TrackReference[];
 
   return (
     <>
