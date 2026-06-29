@@ -25,11 +25,11 @@ export default function HandRaise({ streamId, userId, isHost }: HandRaiseProps) 
   if (isHost) return null;
   return (
     <button onClick={toggle} disabled={loading}
-      title={raised ? 'Ø¥ÙØºØ§Ø¡ Ø±ÙØ¹ Ø§ÙÙØ¯' : 'Ø±ÙØ¹ Ø§ÙÙØ¯ ÙÙØªØ­Ø¯Ø«'}
+      title={raised ? 'إلغاء رفع اليد' : 'رفع اليد للتحدث'}
       className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all disabled:opacity-50
         ${raised ? 'bg-yellow-500 hover:bg-yellow-600 text-white animate-pulse' : 'bg-gray-700 hover:bg-gray-600 text-gray-200'}`}>
       <Hand size={18} className={raised ? 'animate-bounce' : ''} />
-      {raised ? 'ÙØ¯Ù ÙØ±ÙÙØ¹Ø©' : 'Ø§Ø±ÙØ¹ ÙØ¯Ù'}
+      {raised ? 'يدك مرفوعة' : 'ارفع يدك'}
     </button>
   );
 }
