@@ -33,15 +33,15 @@ export default function SpeakerRequests({ streamId, isHost, onApprove }: Speaker
   return (
     <div className="p-3 bg-yellow-900/30 border border-yellow-700/50 rounded-lg space-y-2">
       <div className="flex items-center gap-2 text-yellow-400 text-sm font-medium">
-        <Hand size={16} /><span>Ø·ÙØ¨Ø§Øª Ø±ÙØ¹ Ø§ÙÙØ¯ ({requests.length})</span>
+        <Hand size={16} /><span>طلبات رفع اليد ({requests.length})</span>
       </div>
       {requests.map(req => (
         <div key={req.id} className="flex items-center justify-between bg-gray-800 rounded-lg p-2">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-full bg-yellow-600 flex items-center justify-center text-white text-xs">
-              {req.users?.username?.[0]?.toUpperCase() || 'Ø'}
+              {req.users?.username?.[0]?.toUpperCase() || '؟'}
             </div>
-            <span className="text-white text-sm">{req.users?.username || 'ÙØ¬ÙÙÙ'}</span>
+            <span className="text-white text-sm">{req.users?.username || 'مجهول'}</span>
           </div>
           <div className="flex gap-2">
             <button onClick={() => handleRequest(req, true)}
