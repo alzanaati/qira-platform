@@ -1,9 +1,9 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { LiveStream, User, LiveMessage, SpeakerRequest } from '@/types';
 import Avatar from '@/components/ui/Avatar';
-import { ArrowRight, Mic, MicOff, Video, VideoOff, Hand, PhoneOff } from 'lucide-react';
+import { ArrowRight, Mic, MicOff, Video, VideoOff, Hand } from 'lucide-react';
 import { formatNumber } from '@/lib/utils';
 import {
   LiveKitRoom,
@@ -15,8 +15,7 @@ import {
   useRoomContext,
 } from '@livekit/components-react';
 import '@livekit/components-styles';
-import { Track, RoomEvent, type TrackReference } from 'livekit-client';
-import { isTrackReference } from '@livekit/components-core';
+import { Track } from 'livekit-client';
 
 // ---- inner room UI (rendered inside <LiveKitRoom>) ----
 function RoomInner({ stream, currentUser, isHost, canPublish }: { stream: LiveStream; currentUser: User | null; isHost: boolean; canPublish: boolean }) {
@@ -37,9 +36,8 @@ function RoomInner({ stream, currentUser, isHost, canPublish }: { stream: LiveSt
     setCamOn(c => !c);
   };
 
-  // All camera tracks from all participants
-  const allCameraTracks = useTracks([{ source: Track.Source.Camera, withPlaceholder: false }]);
-const cameraTracks = allCameraTracks.filter(isTrackReference) as TrackReference[];
+  // All camera tracks from all participants - withPlaceholder:false ensures only real tracks
+  const cameraTracks = useTracks([{ source: Track.Source.Camera, withPlaceholder: false }]);
 
   return (
     <>
@@ -53,11 +51,11 @@ const cameraTracks = allCameraTracks.filter(isTrackReference) as TrackReference[
           </div>
         ) : (
           <div className='grid gap-2 p-2' style={{ gridTemplateColumns: `repeat(auto-fill, minmax(280px, 1fr))` }}>
-            {cameraTracks.map(t => (
-              <div key={t.participant.sid} className='relative bg-black rounded-xl overflow-hidden aspect-video'>
-                <VideoTrack trackRef={t} className='w-full h-full object-cover' />
+            {cameraTracks.map((t, idx) => (
+              <div key={idx} className='relative bg-black rounded-xl overflow-hidden aspect-video'>
+                <VideoTrack trackRef={t as any} className='w-full h-full object-cover' />
                 <div className='absolute bottom-1 left-1 right-1 bg-black/60 rounded px-2 py-0.5 text-[10px] text-white truncate'>
-                  {t.participant.name || t.participant.identity}
+                  {t.participant?.name || t.participant?.identity || 'مشارك'}
                 </div>
               </div>
             ))}
