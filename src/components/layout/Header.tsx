@@ -16,7 +16,7 @@ export default function Header({ user }: { user: User | null }) {
       <button onClick={()=>router.push('/profile')} className="p-2 rounded-xl bg-white/[0.06] hover:bg-white/10 transition-colors">
         <Bell size={20} className="text-gray-400" />
       </button>
-      <h1 className="text-2xl font-black text-gradient">Ø§ÙØ±Ø£</h1>
+      <h1 className="text-2xl font-black text-gradient">اقرأ</h1>
       {user && (
         <button onClick={handleLogout} className="p-2 rounded-xl bg-white/[0.06] hover:bg-white/10 transition-colors">
           <LogOut size={18} className="text-gray-400" />
