@@ -20,7 +20,7 @@ export default function ClapButton({ streamId, hostId, clapType, price, emoji, o
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) return;
       const { data: wallet } = await supabase.from('wallets').select('balance').eq('user_id', user.id).single();
-      if (!wallet || wallet.balance < price) { alert('Ø±ØµÙØ¯Ù ØºÙØ± ÙØ§ÙÙ'); return; }
+      if (!wallet || wallet.balance < price) { alert('رصيدك غير كافٍ'); return; }
       const { error } = await supabase.from('claps').insert({
         stream_id: streamId,
         clapper_id: user.id,
@@ -41,7 +41,7 @@ export default function ClapButton({ streamId, hostId, clapType, price, emoji, o
       className={`flex flex-col items-center gap-1 p-3 rounded-2xl border transition-all disabled:opacity-50
         ${success ? 'bg-yellow-500/20 border-yellow-400 scale-110' : 'bg-gray-800/80 border-gray-600 hover:border-yellow-400 hover:bg-yellow-500/10 active:scale-95'}`}>
       <span className="text-2xl">{emoji}</span>
-      <span className="text-white text-xs font-medium">{price} Ø±.Ø³</span>
+      <span className="text-white text-xs font-medium">{price} ر.س</span>
     </button>
   );
 }
