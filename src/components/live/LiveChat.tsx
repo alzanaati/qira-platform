@@ -30,15 +30,15 @@ export default function LiveChat({ streamId, userId }: LiveChatProps) {
   };
   return (
     <div className="flex flex-col h-full bg-gray-900">
-      <div className="p-3 border-b border-gray-700"><h3 className="text-white font-medium text-sm">Ø§ÙØ¯Ø±Ø¯Ø´Ø© Ø§ÙÙØ¨Ø§Ø´Ø±Ø©</h3></div>
+      <div className="p-3 border-b border-gray-700"><h3 className="text-white font-medium text-sm">الدردشة المباشرة</h3></div>
       <div className="flex-1 overflow-y-auto p-3 space-y-3">
         {messages.map(m => (
           <div key={m.id} className={`flex gap-2 ${m.user_id === userId ? 'flex-row-reverse' : ''}`}>
             <div className="w-7 h-7 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs shrink-0">
-              {m.users?.username?.[0]?.toUpperCase() || 'Ø'}
+              {m.users?.username?.[0]?.toUpperCase() || '؟'}
             </div>
             <div className={`max-w-[75%] ${m.user_id === userId ? 'items-end' : 'items-start'} flex flex-col`}>
-              <span className="text-gray-400 text-xs mb-1">{m.users?.username || 'ÙØ¬ÙÙÙ'}</span>
+              <span className="text-gray-400 text-xs mb-1">{m.users?.username || 'مجهول'}</span>
               <div className={`px-3 py-2 rounded-2xl text-sm text-white ${m.user_id === userId ? 'bg-blue-600 rounded-tr-sm' : 'bg-gray-700 rounded-tl-sm'}`}>
                 {m.content}
               </div>
@@ -49,7 +49,7 @@ export default function LiveChat({ streamId, userId }: LiveChatProps) {
       </div>
       <div className="p-3 border-t border-gray-700 flex gap-2">
         <input value={text} onChange={e => setText(e.target.value)} onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); } }}
-          placeholder="Ø§ÙØªØ¨ Ø±Ø³Ø§ÙØ©..." className="flex-1 bg-gray-800 text-white text-sm rounded-full px-4 py-2 outline-none border border-gray-600 focus:border-blue-500 text-right" />
+          placeholder="اكتب رسالة..." className="flex-1 bg-gray-800 text-white text-sm rounded-full px-4 py-2 outline-none border border-gray-600 focus:border-blue-500 text-right" />
         <button onClick={send} disabled={!text.trim() || sending}
           className="w-9 h-9 bg-blue-600 hover:bg-blue-700 disabled:opacity-40 rounded-full flex items-center justify-center transition-colors">
           <Send size={14} className="text-white" />
